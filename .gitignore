@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Large inputs kept out of git: downloaded or rebuilt (see README, "Data").
+data/raw/
+data/processed/closed_sentences.jsonl
+
+# Run logs record machine-specific paths; every run writes them again.
+results/logs/
+
+# LaTeX build files from figures/render_figures.tex
+figures/*.aux
+figures/*.log
+figures/*.pdf

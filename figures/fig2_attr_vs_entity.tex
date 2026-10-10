@@ -1,0 +1,60 @@
+% The attribute/entity split, with the test of its explanation beside it.
+%
+% Three bars per model. The first two are the submitted figure: attribute-style
+% (date-valued) and entity-style (two named things) F1 under strict scoring.
+% The third is entity-style F1 with the relation name ignored, so a prediction
+% counts when its subject and object match a gold triple (script 12). If the
+% entity-style deficit came from naming the relation, the third bar would
+% reach the first; for most models it does not.
+%
+% Every bar carries its value. Springer's instructions ask for lettering of at
+% least 6 pt, never set one label on top of another. Horizontal bars could not
+% hold 33 such labels without a plot about 90 mm tall, so the bars are vertical
+% columns: each value sits above its bar, turned 90 degrees, at 6 pt, and the
+% bars are wider than a turned label, so neighbouring labels cannot touch.
+% Values have two decimals with trailing zeros kept (the submitted version
+% printed 0.4 next to 0.53).
+%
+% Numbers come from data_style3.dat, written by scripts/08_make_figures.py.
+\pgfplotstableread[header=true]{figures/data_style3.dat}\styledata
+
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=1.2pt,
+  % One filled box per legend entry, not pgfplots' default two-bar icon.
+  area legend,
+  scale only axis,
+  width=0.9\linewidth,
+  height=38mm,
+  bar width=6.4pt,
+  enlarge x limits={abs=0.6},
+  ymin=0, ymax=0.7, ytick distance=0.1,
+  xtick=data,
+  xticklabels from table={\styledata}{model},
+  xticklabel style={font=\scriptsize, rotate=40, anchor=north east, inner sep=1pt},
+  yticklabel style={font=\scriptsize, /pgf/number format/fixed,
+                    /pgf/number format/precision=1, /pgf/number format/zerofill},
+  ylabel={\scriptsize F1}, ylabel style={yshift=-1mm},
+  ymajorgrids, grid style={black!12, line width=0.3pt},
+  axis line style={black!45, line width=0.4pt},
+  tick style={black!45},
+  % Legend in one row above the plot, clear of every bar and label.
+  legend style={font=\scriptsize, at={(0.5,1.02)}, anchor=south, legend columns=3,
+                draw=none, fill=none, column sep=6pt, inner sep=1pt},
+  legend cell align=left,
+  % Bar values: text rounded once by script 08 from the exact F1 (*_lab).
+  point meta=explicit symbolic,
+  nodes near coords,
+  nodes near coords style={font=\fontsize{6}{6}\selectfont, rotate=90, anchor=west, inner sep=1pt},
+]
+\addplot[draw=accent, fill=accent!75]
+  table [x expr=\coordindex, y=attr_f1, meta=attr_lab] {\styledata};
+\addlegendentry{attribute-style (dates)}
+\addplot[draw=black!55, fill=black!25]
+  table [x expr=\coordindex, y=ent_f1, meta=ent_lab] {\styledata};
+\addlegendentry{entity-style}
+\addplot[draw=black!55, fill=white, line width=0.5pt]
+  table [x expr=\coordindex, y=ent_pair_f1, meta=pair_lab] {\styledata};
+\addlegendentry{entity, relation ignored}
+\end{axis}
+\end{tikzpicture}

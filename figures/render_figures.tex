@@ -1,0 +1,42 @@
+% Renders the paper's three figures from the data files in this folder, which
+% scripts/08_make_figures.py writes. Build from the repository root:
+%
+%   xelatex -output-directory=figures figures/render_figures.tex
+%
+% The text width is the paper's (122 mm, Springer proceedings layout), so the
+% figures come out at the size they have in the paper.
+\documentclass[10pt]{article}
+\usepackage[a4paper, textwidth=122mm, top=25mm]{geometry}
+\usepackage{newtxtext,newtxmath}  % Times, as in the paper
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,fit,backgrounds}
+\pgfplotsset{compat=1.18}
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{muted}{HTML}{8C8C8C}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{center}
+\input{figures/fig1_task.tex}\par\medskip
+{\small Fig.~1. How the benchmark is built, and the task.}
+\end{center}
+\bigskip
+
+\begin{center}
+\input{figures/fig_ci_errors.tex}\par\medskip
+{\small Fig.~2. (a) F1 with 95\% bootstrap intervals and seed runs.
+(b) Predicted triples by outcome, in per cent.}
+\end{center}
+\bigskip
+
+\begin{center}
+\input{figures/fig2_attr_vs_entity.tex}\par\medskip
+{\small Fig.~3. F1 by triple style.}
+\end{center}
+
+\end{document}

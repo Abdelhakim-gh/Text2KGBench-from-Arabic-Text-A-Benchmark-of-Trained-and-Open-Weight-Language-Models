@@ -1,0 +1,67 @@
+% Figure 1: how the benchmark is built (a) and what the task is (b).
+%
+% The audience at this venue is not an NLP audience, so this figure carries the
+% task definition on its own. Row (a) was added in the revision, when
+% a reviewer asked for more figures: it shows where the 1,000 test sentences
+% come from and the held-out set used to check the trained baseline, with the
+% counts the text quotes (script 01 for the first four boxes, script 16 for the
+% last). Row (b) is the submitted figure unchanged in content.
+%
+% Nodes are placed at explicit coordinates rather than with `right=of`.
+% Chaining off a midpoint coordinate between two boxes measures the gap from
+% that coordinate, not from the boxes' edges, which once overlapped the model
+% box on top of the inputs.
+\begin{tikzpicture}[
+  font=\scriptsize,
+  box/.style={draw, rounded corners=1.5pt, align=center, inner sep=3pt,
+              minimum height=9mm, line width=0.4pt},
+  input/.style={box, fill=black!3, text width=27mm},
+  stage/.style={box, fill=black!3, text width=22mm},
+  model/.style={box, fill=accent!12, draw=accent, line width=0.7pt,
+                text width=24mm},
+  outbox/.style={box, fill=white, text width=25mm},
+  scored/.style={draw, dashed, rounded corners=1.5pt, line width=0.4pt,
+                 fill=black!2, align=left, inner sep=4pt, text width=27mm},
+  flow/.style={-{Stealth[length=4pt]}, line width=0.5pt},
+  tag/.style={font=\scriptsize\bfseries, anchor=west},
+]
+
+% --- (a) building the benchmark -------------------------------------------
+\node[tag] at (-1.45,1.85) {(a) Building the benchmark};
+\node[stage, text width=18mm] (src) at (-0.25,1.1)
+  {\textbf{ArSRED}\\499{,}620 sent.,\\393 relations};
+\node[stage, text width=18mm] (top) at (2.05,1.1)
+  {\textbf{Top 20}\\relations: 87.6\%\\of triples};
+\node[stage, text width=18mm] (closed) at (4.35,1.1)
+  {\textbf{Closed}\\334{,}057 sent.\\use only those};
+\node[model, text width=18mm] (test) at (6.65,1.1)
+  {\textbf{Test set}\\1{,}000 sent.,\\5{,}772 triples};
+\node[stage, dashed, text width=22mm] (held) at (9.3,1.1)
+  % Superscript set at 6 pt: Springer's minimum for lettering in figures (the
+  % default superscript of 7 pt text is 5 pt).
+  {\textbf{Held-out check}\\1{,}000 sent. from\\SRED\textsuperscript{\fontsize{6}{6}\selectfont FM} val./test};
+\draw[flow] (src) -- (top);
+\draw[flow] (top) -- (closed);
+\draw[flow] (closed) -- (test);
+
+% --- (b) the task ------------------------------------------------------------
+\node[tag] at (-1.45,0.35) {(b) The task};
+\node[input, minimum height=7mm] (sent) at (0,-0.2)
+  {\textbf{Arabic sentence}\\[1pt]one of the 1{,}000};
+\node[input, minimum height=7mm] (onto) at (0,-1.05)
+  {\textbf{Closed ontology}\\[1pt]20 relations, Arabic gloss};
+\node[model] (llm) at (3.15,-0.625)
+  {\textbf{Model}\\[1pt]10 open-weight LLMs,\\[-1pt]zero-shot, local\\[1pt]
+   \textit{+ mREBEL}};
+\node[outbox] (triples) at (6.1,-0.625)
+  {\textbf{Triples}\\[1pt]\ttfamily(subject,\\[-1pt]\ttfamily relation, object)};
+\node[scored] (scored) at (9.15,-0.625)
+  {\textbf{Scored four ways}\\[1pt]
+   fact missed; fact invented;\\
+   off-list relation;\\
+   output unparseable};
+\draw[flow] (sent.east) -- ++(3mm,0) |- (llm.west);
+\draw[flow] (onto.east) -- ++(3mm,0) |- (llm.west);
+\draw[flow] (llm.east) -- (triples.west);
+\draw[flow] (triples.east) -- (scored.west);
+\end{tikzpicture}

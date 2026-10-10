@@ -1,0 +1,138 @@
+{
+ "scale": 1000,
+ "n_sentences": 1000,
+ "n_triples": 5772,
+ "topic_groups": {
+  "Biography": [
+   "country of citizenship",
+   "occupation",
+   "date of birth",
+   "place of birth",
+   "date of death",
+   "place of death",
+   "member of political party"
+  ],
+  "Geography and politics": [
+   "country",
+   "located in the administrative territorial entity",
+   "diplomatic relation"
+  ],
+  "Sport": [
+   "member of sports team",
+   "sport",
+   "position played on team / speciality"
+  ],
+  "Classification": [
+   "instance of",
+   "subclass of",
+   "part of",
+   "parent taxon"
+  ],
+  "Events and dates": [
+   "point in time",
+   "inception",
+   "participant"
+  ]
+ },
+ "by_group": {
+  "Biography": 2880,
+  "Sport": 664,
+  "Classification": 432,
+  "Geography and politics": 1399,
+  "Events and dates": 397
+ },
+ "sentences_by_group": {
+  "Biography": 701,
+  "Geography and politics": 558,
+  "Classification": 256,
+  "Sport": 256,
+  "Events and dates": 310
+ },
+ "by_relation": {
+  "occupation": 619,
+  "country of citizenship": 1125,
+  "position played on team/speciality": 121,
+  "place of birth": 384,
+  "member of sports team": 364,
+  "instance of": 265,
+  "country": 1202,
+  "point in time": 354,
+  "date of death": 164,
+  "sport": 179,
+  "place of death": 89,
+  "date of birth": 461,
+  "member of political party": 38,
+  "diplomatic relation": 64,
+  "parent taxon": 38,
+  "located in the administrative territorial entity": 133,
+  "part of": 43,
+  "subclass of": 86,
+  "inception": 21,
+  "participant": 22
+ },
+ "relation_group": {
+  "occupation": "Biography",
+  "country of citizenship": "Biography",
+  "position played on team/speciality": "Sport",
+  "place of birth": "Biography",
+  "member of sports team": "Sport",
+  "instance of": "Classification",
+  "country": "Geography and politics",
+  "point in time": "Events and dates",
+  "date of death": "Biography",
+  "sport": "Sport",
+  "place of death": "Biography",
+  "date of birth": "Biography",
+  "member of political party": "Biography",
+  "diplomatic relation": "Geography and politics",
+  "parent taxon": "Classification",
+  "located in the administrative territorial entity": "Geography and politics",
+  "part of": "Classification",
+  "subclass of": "Classification",
+  "inception": "Events and dates",
+  "participant": "Events and dates"
+ },
+ "relation_style": {
+  "occupation": "entity",
+  "country of citizenship": "entity",
+  "position played on team/speciality": "entity",
+  "place of birth": "entity",
+  "member of sports team": "entity",
+  "instance of": "entity",
+  "country": "entity",
+  "point in time": "attribute",
+  "date of death": "attribute",
+  "sport": "entity",
+  "place of death": "entity",
+  "date of birth": "attribute",
+  "member of political party": "entity",
+  "diplomatic relation": "entity",
+  "parent taxon": "entity",
+  "located in the administrative territorial entity": "entity",
+  "part of": "entity",
+  "subclass of": "entity",
+  "inception": "attribute",
+  "participant": "entity"
+ },
+ "by_subject_type": {
+  "per": 3463,
+  "concept": 409,
+  "loc": 1260,
+  "unk": 27,
+  "time": 311,
+  "misc": 5,
+  "org": 146,
+  "media": 76,
+  "eve": 75
+ },
+ "by_object_type": {
+  "concept": 1272,
+  "loc": 3010,
+  "media": 47,
+  "org": 318,
+  "per": 117,
+  "date": 1000,
+  "eve": 6,
+  "misc": 2
+ }
+}

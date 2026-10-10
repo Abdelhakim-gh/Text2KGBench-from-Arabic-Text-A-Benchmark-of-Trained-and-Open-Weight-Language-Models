@@ -1,0 +1,5217 @@
+{
+ "scale": 1000,
+ "wikidata_cache": "wikidata_properties_20261008.json",
+ "accepted_substitutions": {
+  "located in the administrative territorial entity": [
+   "part of"
+  ],
+  "parent taxon": [
+   "subclass of"
+  ],
+  "country of citizenship": [
+   "country",
+   "located in the administrative territorial entity",
+   "part of"
+  ],
+  "country": [
+   "located in the administrative territorial entity",
+   "part of"
+  ],
+  "date of birth": [
+   "inception"
+  ]
+ },
+ "related_pairs": [
+  [
+   "country",
+   "country of citizenship"
+  ],
+  [
+   "country",
+   "located in the administrative territorial entity"
+  ],
+  [
+   "country",
+   "part of"
+  ],
+  [
+   "country of citizenship",
+   "located in the administrative territorial entity"
+  ],
+  [
+   "country of citizenship",
+   "part of"
+  ],
+  [
+   "date of birth",
+   "date of death"
+  ],
+  [
+   "date of birth",
+   "inception"
+  ],
+  [
+   "date of birth",
+   "place of birth"
+  ],
+  [
+   "date of death",
+   "place of death"
+  ],
+  [
+   "inception",
+   "point in time"
+  ],
+  [
+   "instance of",
+   "part of"
+  ],
+  [
+   "instance of",
+   "subclass of"
+  ],
+  [
+   "located in the administrative territorial entity",
+   "part of"
+  ],
+  [
+   "parent taxon",
+   "subclass of"
+  ],
+  [
+   "part of",
+   "subclass of"
+  ]
+ ],
+ "runs": {
+  "aya-expanse_8b_1000_seed1": {
+   "n_predicted": 4135,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 1520,
+    "entity_error": 2375,
+    "different": 195,
+    "right_pair": 240,
+    "right_pair_off_list": 108,
+    "different_related": 10,
+    "broader": 13,
+    "alias": 32
+   },
+   "share_of_predictions": {
+    "correct": 0.3675937122128174,
+    "alias": 0.007738814993954051,
+    "broader": 0.003143893591293833,
+    "different": 0.0471584038694075,
+    "entity_error": 0.5743651753325272
+   },
+   "share_of_errors": {
+    "alias": 0.012237093690248566,
+    "broader": 0.00497131931166348,
+    "different": 0.0745697896749522,
+    "different_related": 0.0038240917782026767,
+    "entity_error": 0.9082217973231358,
+    "right_pair": 0.09177820267686425
+   },
+   "f1_strict": {
+    "precision": 0.3675937122128174,
+    "recall": 0.26334026334026334,
+    "f1": 0.30685373977995356,
+    "tp": 1520,
+    "fp": 2615,
+    "fn": 4252
+   },
+   "f1_implied": {
+    "precision": 0.3784764207980653,
+    "recall": 0.27113652113652115,
+    "f1": 0.31593822549712325,
+    "tp": 1565,
+    "fp": 2570,
+    "fn": 4207
+   },
+   "f1_pair": {
+    "precision": 0.42563482466747277,
+    "recall": 0.3049203049203049,
+    "f1": 0.35530433027152514,
+    "tp": 1760,
+    "fp": 2375,
+    "fn": 4012
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.5971459934138309,
+      "recall": 0.544,
+      "f1": 0.5693354264782836,
+      "tp": 544,
+      "fp": 367,
+      "fn": 456
+     },
+     "entity": {
+      "precision": 0.3027295285359802,
+      "recall": 0.20452640402347025,
+      "f1": 0.24412206103051526,
+      "tp": 976,
+      "fp": 2248,
+      "fn": 3796
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.5984682713347921,
+      "recall": 0.547,
+      "f1": 0.5715778474399164,
+      "tp": 547,
+      "fp": 367,
+      "fn": 453
+     },
+     "entity": {
+      "precision": 0.3160509158646383,
+      "recall": 0.21332774518021794,
+      "f1": 0.25472288252220693,
+      "tp": 1018,
+      "fp": 2203,
+      "fn": 3754
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.6036916395222585,
+      "recall": 0.556,
+      "f1": 0.5788651743883395,
+      "tp": 556,
+      "fp": 365,
+      "fn": 444
+     },
+     "entity": {
+      "precision": 0.3746110765401369,
+      "recall": 0.25230511316010057,
+      "f1": 0.30152767342849984,
+      "tp": 1204,
+      "fp": 2010,
+      "fn": 3568
+     }
+    }
+   },
+   "top_pairs": {
+    "different": [
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of birth",
+      "n": 41
+     },
+     {
+      "gold": "sport",
+      "predicted": "occupation",
+      "n": 32
+     },
+     {
+      "gold": "country",
+      "predicted": "country - بلد",
+      "n": 26
+     },
+     {
+      "gold": "country",
+      "predicted": "country of citizenship",
+      "n": 7
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of death",
+      "n": 7
+     },
+     {
+      "gold": "position played on team/speciality",
+      "predicted": "مركز في الفريق أو التخصص",
+      "n": 5
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "يقع في",
+      "n": 5
+     },
+     {
+      "gold": "parent taxon",
+      "predicted": "part of",
+      "n": 4
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "place of death",
+      "n": 4
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "country of citizenship",
+      "n": 4
+     },
+     {
+      "gold": "diplomatic relation",
+      "predicted": "country",
+      "n": 4
+     },
+     {
+      "gold": "country",
+      "predicted": "place of birth",
+      "n": 3
+     }
+    ],
+    "broader": [
+     {
+      "gold": "country",
+      "predicted": "located in the administrative territorial entity",
+      "n": 8
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "located in the administrative territorial entity",
+      "n": 3
+     },
+     {
+      "gold": "country",
+      "predicted": "part of",
+      "n": 1
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "country",
+      "n": 1
+     }
+    ],
+    "alias": [
+     {
+      "gold": "country of citizenship",
+      "predicted": "الجنسية",
+      "n": 13
+     },
+     {
+      "gold": "occupation",
+      "predicted": "مهنة",
+      "n": 5
+     },
+     {
+      "gold": "member of political party",
+      "predicted": "political party",
+      "n": 3
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "birth place",
+      "n": 2
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "location of birth",
+      "n": 2
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "birth date",
+      "n": 2
+     },
+     {
+      "gold": "member of political party",
+      "predicted": "الحزب السياسي",
+      "n": 1
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "فريق رياضي",
+      "n": 1
+     },
+     {
+      "gold": "sport",
+      "predicted": "الرياضة",
+      "n": 1
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "birthdate",
+      "n": 1
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "يلعب مع",
+      "n": 1
+     }
+    ]
+   },
+   "gold_fate": {
+    "occupation": {
+     "matched": 205,
+     "missed": 406,
+     "right_pair_alias": 5,
+     "right_pair_different": 3
+    },
+    "country of citizenship": {
+     "matched": 477,
+     "missed": 580,
+     "right_pair_different": 51,
+     "right_pair_broader": 4,
+     "right_pair_alias": 13
+    },
+    "place of birth": {
+     "matched": 150,
+     "missed": 221,
+     "right_pair_different": 9,
+     "right_pair_alias": 4
+    },
+    "member of sports team": {
+     "matched": 26,
+     "missed": 326,
+     "right_pair_alias": 2,
+     "right_pair_different": 10
+    },
+    "position played on team/speciality": {
+     "missed": 93,
+     "matched": 23,
+     "right_pair_different": 5
+    },
+    "instance of": {
+     "missed": 259,
+     "right_pair_different": 3,
+     "matched": 3
+    },
+    "country": {
+     "missed": 1123,
+     "right_pair_different": 48,
+     "right_pair_broader": 9,
+     "matched": 22
+    },
+    "point in time": {
+     "missed": 351,
+     "right_pair_different": 2,
+     "matched": 1
+    },
+    "date of death": {
+     "matched": 138,
+     "right_pair_different": 3,
+     "missed": 23
+    },
+    "sport": {
+     "missed": 143,
+     "right_pair_different": 33,
+     "matched": 2,
+     "right_pair_alias": 1
+    },
+    "date of birth": {
+     "matched": 402,
+     "missed": 55,
+     "right_pair_alias": 3,
+     "right_pair_different": 1
+    },
+    "place of death": {
+     "matched": 28,
+     "missed": 60,
+     "right_pair_different": 1
+    },
+    "member of political party": {
+     "right_pair_different": 2,
+     "missed": 10,
+     "matched": 22,
+     "right_pair_alias": 4
+    },
+    "diplomatic relation": {
+     "missed": 60,
+     "right_pair_different": 4
+    },
+    "parent taxon": {
+     "missed": 32,
+     "right_pair_different": 5,
+     "matched": 1
+    },
+    "located in the administrative territorial entity": {
+     "missed": 108,
+     "matched": 15,
+     "right_pair_different": 10
+    },
+    "part of": {
+     "missed": 42,
+     "matched": 1
+    },
+    "subclass of": {
+     "missed": 84,
+     "right_pair_different": 2
+    },
+    "inception": {
+     "missed": 15,
+     "right_pair_different": 3,
+     "matched": 3
+    },
+    "participant": {
+     "missed": 21,
+     "matched": 1
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "different": [
+     {
+      "item_id": "arsred_87627",
+      "gold": [
+       "العلاقات الأوزبكستانية الكندية",
+       "country",
+       "أوزبكستان"
+      ],
+      "predicted": [
+       "العلاقات الأوزبكستانية الكندية",
+       "بلد - country",
+       "أوزبكستان"
+      ]
+     },
+     {
+      "item_id": "arsred_87627",
+      "gold": [
+       "العلاقات الأوزبكستانية الكندية",
+       "country",
+       "كندا"
+      ],
+      "predicted": [
+       "العلاقات الأوزبكستانية الكندية",
+       "بلد - country",
+       "كندا"
+      ]
+     },
+     {
+      "item_id": "arsred_266901",
+      "gold": [
+       "أوزوالد",
+       "country of citizenship",
+       "نورثمبريا"
+      ],
+      "predicted": [
+       "أوزوالد",
+       "كان ملكاً لـ",
+       "نورثمبريا"
+      ]
+     },
+     {
+      "item_id": "arsred_452872",
+      "gold": [
+       "ميرزا سلطان غالييف",
+       "member of political party",
+       "الحزب الشيوعي السوفييتي"
+      ],
+      "predicted": [
+       "ميرزا سلطان غالييف",
+       "كان له دور قيادي في",
+       "الحزب الشيوعي السوفييتي"
+      ]
+     },
+     {
+      "item_id": "arsred_431399",
+      "gold": [
+       "العلاقات الرومانية الليبية",
+       "country",
+       "رومانيا"
+      ],
+      "predicted": [
+       "العلاقات الرومانية الليبية",
+       "country - بلد",
+       "رومانيا"
+      ]
+     }
+    ],
+    "broader": [
+     {
+      "item_id": "arsred_195220",
+      "gold": [
+       "إلم هرست",
+       "country",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "إلم هرست",
+       "located in the administrative territorial entity",
+       "الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_174383",
+      "gold": [
+       "جيمس فيليبس ويلسون",
+       "country of citizenship",
+       "أسترالي"
+      ],
+      "predicted": [
+       "جيمس فيليبس ويلسون",
+       "located in the administrative territorial entity",
+       "أستراليا"
+      ]
+     },
+     {
+      "item_id": "arsred_173707",
+      "gold": [
+       "مونت تريمبلانت",
+       "country",
+       "كندي"
+      ],
+      "predicted": [
+       "مونت تريمبلانت",
+       "located in the administrative territorial entity",
+       "كندا"
+      ]
+     },
+     {
+      "item_id": "arsred_223465",
+      "gold": [
+       "جزر ناتونا",
+       "country",
+       "إندونيسيا"
+      ],
+      "predicted": [
+       "جزر ناتونا",
+       "جزء من",
+       "إندونيسيا"
+      ]
+     },
+     {
+      "item_id": "arsred_482389",
+      "gold": [
+       "مركز الأمير سلطان للدراسات والبحوث الدفاعية",
+       "country",
+       "السعودية"
+      ],
+      "predicted": [
+       "مركز الأمير سلطان للدراسات والبحوث الدفاعية",
+       "located in the administrative territorial entity",
+       "السعودية"
+      ]
+     }
+    ],
+    "alias": [
+     {
+      "item_id": "arsred_174198",
+      "gold": [
+       "تشارلز نيل بارني",
+       "member of political party",
+       "الحزب الجمهوري"
+      ],
+      "predicted": [
+       "تشارلز نيل بارني",
+       "political party",
+       "الحزب الجمهوري"
+      ]
+     },
+     {
+      "item_id": "arsred_169570",
+      "gold": [
+       "غارفيلد شو",
+       "occupation",
+       "لاعب كرة قدم"
+      ],
+      "predicted": [
+       "غارفيلد شو",
+       "مهنة",
+       "لاعب كرة قدم"
+      ]
+     },
+     {
+      "item_id": "arsred_97874",
+      "gold": [
+       "ريموندس رومساس",
+       "country of citizenship",
+       "ليتوانيا"
+      ],
+      "predicted": [
+       "ريموندس رومساس",
+       "الجنسية",
+       "ليتوانيا"
+      ]
+     },
+     {
+      "item_id": "arsred_51326",
+      "gold": [
+       "رونالد بلاك",
+       "member of political party",
+       "الحزب الجمهوري"
+      ],
+      "predicted": [
+       "رونالد بلاك",
+       "الحزب السياسي",
+       "الحزب الجمهوري"
+      ]
+     },
+     {
+      "item_id": "arsred_149170",
+      "gold": [
+       "دارين اندرتون",
+       "place of birth",
+       "ساوثهامبتون"
+      ],
+      "predicted": [
+       "دارين اندرتون",
+       "birth place",
+       "ساوثهامبتون"
+      ]
+     }
+    ]
+   }
+  },
+  "command-r7b-arabic_latest_1000_seed1": {
+   "n_predicted": 4472,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 1539,
+    "entity_error": 2726,
+    "different": 185,
+    "right_pair": 207,
+    "broader": 22,
+    "different_related": 8,
+    "right_pair_off_list": 2
+   },
+   "share_of_predictions": {
+    "correct": 0.3441413237924866,
+    "alias": 0.0,
+    "broader": 0.004919499105545617,
+    "different": 0.04136851520572451,
+    "entity_error": 0.6095706618962433
+   },
+   "share_of_errors": {
+    "alias": 0.0,
+    "broader": 0.007500852369587453,
+    "different": 0.06307534947153086,
+    "different_related": 0.002727582679849983,
+    "entity_error": 0.9294237981588817,
+    "right_pair": 0.0705762018411183
+   },
+   "f1_strict": {
+    "precision": 0.3441413237924866,
+    "recall": 0.26663201663201663,
+    "f1": 0.30046856696602886,
+    "tp": 1539,
+    "fp": 2933,
+    "fn": 4233
+   },
+   "f1_implied": {
+    "precision": 0.3490608228980322,
+    "recall": 0.27044352044352044,
+    "f1": 0.30476376415462714,
+    "tp": 1561,
+    "fp": 2911,
+    "fn": 4211
+   },
+   "f1_pair": {
+    "precision": 0.3904293381037567,
+    "recall": 0.3024948024948025,
+    "f1": 0.3408824677860211,
+    "tp": 1746,
+    "fp": 2726,
+    "fn": 4026
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.3914053426248548,
+      "recall": 0.337,
+      "f1": 0.3621708758731864,
+      "tp": 337,
+      "fp": 524,
+      "fn": 663
+     },
+     "entity": {
+      "precision": 0.3328717806701745,
+      "recall": 0.2518860016764459,
+      "f1": 0.28677084575927475,
+      "tp": 1202,
+      "fp": 2409,
+      "fn": 3570
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.3914053426248548,
+      "recall": 0.337,
+      "f1": 0.3621708758731864,
+      "tp": 337,
+      "fp": 524,
+      "fn": 663
+     },
+     "entity": {
+      "precision": 0.3389642758238715,
+      "recall": 0.2564962279966471,
+      "f1": 0.29201956340212337,
+      "tp": 1224,
+      "fp": 2387,
+      "fn": 3548
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.4361948955916473,
+      "recall": 0.376,
+      "f1": 0.4038668098818474,
+      "tp": 376,
+      "fp": 486,
+      "fn": 624
+     },
+     "entity": {
+      "precision": 0.37950138504155123,
+      "recall": 0.28709136630343673,
+      "f1": 0.32689095681221664,
+      "tp": 1370,
+      "fp": 2240,
+      "fn": 3402
+     }
+    }
+   },
+   "top_pairs": {
+    "different": [
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of birth",
+      "n": 37
+     },
+     {
+      "gold": "country",
+      "predicted": "place of birth",
+      "n": 23
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "point in time",
+      "n": 23
+     },
+     {
+      "gold": "sport",
+      "predicted": "occupation",
+      "n": 21
+     },
+     {
+      "gold": "occupation",
+      "predicted": "instance of",
+      "n": 17
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "part of",
+      "n": 15
+     },
+     {
+      "gold": "date of death",
+      "predicted": "point in time",
+      "n": 13
+     },
+     {
+      "gold": "position played on team/speciality",
+      "predicted": "occupation",
+      "n": 5
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "place of birth",
+      "n": 3
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "place of death",
+      "n": 3
+     },
+     {
+      "gold": "country",
+      "predicted": "member of sports team",
+      "n": 3
+     },
+     {
+      "gold": "country",
+      "predicted": "country of citizenship",
+      "n": 2
+     }
+    ],
+    "broader": [
+     {
+      "gold": "country",
+      "predicted": "located in the administrative territorial entity",
+      "n": 12
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "country",
+      "n": 4
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "part of",
+      "n": 3
+     },
+     {
+      "gold": "country",
+      "predicted": "part of",
+      "n": 1
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "located in the administrative territorial entity",
+      "n": 1
+     },
+     {
+      "gold": "parent taxon",
+      "predicted": "subclass of",
+      "n": 1
+     }
+    ]
+   },
+   "gold_fate": {
+    "occupation": {
+     "matched": 223,
+     "missed": 379,
+     "right_pair_different": 17
+    },
+    "country of citizenship": {
+     "matched": 486,
+     "missed": 594,
+     "right_pair_different": 40,
+     "right_pair_broader": 5
+    },
+    "member of sports team": {
+     "matched": 166,
+     "missed": 183,
+     "right_pair_different": 15
+    },
+    "position played on team/speciality": {
+     "missed": 61,
+     "right_pair_different": 5,
+     "matched": 55
+    },
+    "place of birth": {
+     "missed": 223,
+     "matched": 156,
+     "right_pair_different": 5
+    },
+    "instance of": {
+     "missed": 253,
+     "matched": 12
+    },
+    "country": {
+     "missed": 1140,
+     "right_pair_broader": 13,
+     "right_pair_different": 30,
+     "matched": 19
+    },
+    "point in time": {
+     "missed": 352,
+     "right_pair_different": 1,
+     "matched": 1
+    },
+    "date of death": {
+     "matched": 85,
+     "missed": 65,
+     "right_pair_different": 14
+    },
+    "sport": {
+     "missed": 126,
+     "matched": 29,
+     "right_pair_different": 24
+    },
+    "date of birth": {
+     "matched": 245,
+     "missed": 193,
+     "right_pair_different": 23
+    },
+    "place of death": {
+     "missed": 66,
+     "matched": 23
+    },
+    "member of political party": {
+     "matched": 15,
+     "missed": 23
+    },
+    "diplomatic relation": {
+     "missed": 64
+    },
+    "parent taxon": {
+     "missed": 35,
+     "right_pair_different": 2,
+     "right_pair_broader": 1
+    },
+    "located in the administrative territorial entity": {
+     "missed": 108,
+     "matched": 17,
+     "right_pair_different": 5,
+     "right_pair_broader": 3
+    },
+    "part of": {
+     "missed": 43
+    },
+    "subclass of": {
+     "missed": 83,
+     "right_pair_different": 3
+    },
+    "inception": {
+     "missed": 14,
+     "matched": 6,
+     "right_pair_different": 1
+    },
+    "participant": {
+     "missed": 21,
+     "matched": 1
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "different": [
+     {
+      "item_id": "arsred_435201",
+      "gold": [
+       "تومويوكي شيرايشي",
+       "position played on team / speciality",
+       "لاعب وسط"
+      ],
+      "predicted": [
+       "تومويوكي شيرايشي",
+       "occupation",
+       "لاعب وسط"
+      ]
+     },
+     {
+      "item_id": "arsred_220731",
+      "gold": [
+       "أميرسويل",
+       "located in the administrative territorial entity",
+       "مقاطعة لنسبورغ"
+      ],
+      "predicted": [
+       "أميرسويل",
+       "place of birth",
+       "مقاطعة لنسبورغ"
+      ]
+     },
+     {
+      "item_id": "arsred_21121",
+      "gold": [
+       "جان بيير داروسان",
+       "country of citizenship",
+       "فرنسا"
+      ],
+      "predicted": [
+       "جان بيير داروسان",
+       "place of birth",
+       "فرنسا"
+      ]
+     },
+     {
+      "item_id": "arsred_301507",
+      "gold": [
+       "فرانك راميريز",
+       "country of citizenship",
+       "كولومبيا"
+      ],
+      "predicted": [
+       "فرانك راميريز",
+       "place of birth",
+       "كولومبيا"
+      ]
+     },
+     {
+      "item_id": "arsred_465616",
+      "gold": [
+       "سوزان فان فيين",
+       "sport",
+       "دراجة"
+      ],
+      "predicted": [
+       "سوزان فان فيين",
+       "instance of",
+       "دراجة"
+      ]
+     }
+    ],
+    "broader": [
+     {
+      "item_id": "arsred_317014",
+      "gold": [
+       "أرفوريدو",
+       "country",
+       "البرازيل"
+      ],
+      "predicted": [
+       "أرفوريدو",
+       "part of",
+       "البرازيل"
+      ]
+     },
+     {
+      "item_id": "arsred_69948",
+      "gold": [
+       "قسم بسطام الريفي (مقاطعة تشايبارة)",
+       "country",
+       "إيران"
+      ],
+      "predicted": [
+       "قسم بسطام الريفي (مقاطعة تشايبارة)",
+       "located in the administrative territorial entity",
+       "إيران"
+      ]
+     },
+     {
+      "item_id": "arsred_85137",
+      "gold": [
+       "هونغ كونغ",
+       "country",
+       "الصين"
+      ],
+      "predicted": [
+       "هونغ كونغ",
+       "located in the administrative territorial entity",
+       "الصين"
+      ]
+     },
+     {
+      "item_id": "arsred_72353",
+      "gold": [
+       "كهف انسو",
+       "country",
+       "تركيا"
+      ],
+      "predicted": [
+       "كهف انسو",
+       "located in the administrative territorial entity",
+       "تركيا"
+      ]
+     },
+     {
+      "item_id": "arsred_378811",
+      "gold": [
+       "ايسبن ستورم",
+       "country of citizenship",
+       "أستراليا"
+      ],
+      "predicted": [
+       "ايسبن ستورم",
+       "country",
+       "أستراليا"
+      ]
+     }
+    ]
+   }
+  },
+  "gemma4_12b_1000_seed1": {
+   "n_predicted": 4797,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 2242,
+    "different": 259,
+    "right_pair": 432,
+    "entity_error": 2123,
+    "broader": 173,
+    "different_related": 3
+   },
+   "share_of_predictions": {
+    "correct": 0.46737544298519906,
+    "alias": 0.0,
+    "broader": 0.036064206795914114,
+    "different": 0.053992078382322284,
+    "entity_error": 0.4425682718365645
+   },
+   "share_of_errors": {
+    "alias": 0.0,
+    "broader": 0.06771037181996085,
+    "different": 0.10136986301369863,
+    "different_related": 0.0011741682974559687,
+    "entity_error": 0.8309197651663405,
+    "right_pair": 0.1690802348336595
+   },
+   "f1_strict": {
+    "precision": 0.46737544298519906,
+    "recall": 0.38842688842688844,
+    "f1": 0.4242596272116568,
+    "tp": 2242,
+    "fp": 2555,
+    "fn": 3530
+   },
+   "f1_implied": {
+    "precision": 0.5034396497811132,
+    "recall": 0.4183991683991684,
+    "f1": 0.45699687766108427,
+    "tp": 2415,
+    "fp": 2382,
+    "fn": 3357
+   },
+   "f1_pair": {
+    "precision": 0.5574317281634354,
+    "recall": 0.4632709632709633,
+    "f1": 0.506008137004447,
+    "tp": 2674,
+    "fp": 2123,
+    "fn": 3098
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.49344978165938863,
+      "recall": 0.565,
+      "f1": 0.5268065268065268,
+      "tp": 565,
+      "fp": 580,
+      "fn": 435
+     },
+     "entity": {
+      "precision": 0.4592004381161008,
+      "recall": 0.3514249790444258,
+      "f1": 0.39814814814814814,
+      "tp": 1677,
+      "fp": 1975,
+      "fn": 3095
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.49344978165938863,
+      "recall": 0.565,
+      "f1": 0.5268065268065268,
+      "tp": 565,
+      "fp": 580,
+      "fn": 435
+     },
+     "entity": {
+      "precision": 0.5065717415115005,
+      "recall": 0.3876781223805532,
+      "f1": 0.43922127255460586,
+      "tp": 1850,
+      "fp": 1802,
+      "fn": 2922
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.5175131348511384,
+      "recall": 0.591,
+      "f1": 0.5518207282913166,
+      "tp": 591,
+      "fp": 551,
+      "fn": 409
+     },
+     "entity": {
+      "precision": 0.5699042407660738,
+      "recall": 0.4365046102263202,
+      "f1": 0.49436335587990976,
+      "tp": 2083,
+      "fp": 1572,
+      "fn": 2689
+     }
+    }
+   },
+   "top_pairs": {
+    "different": [
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of birth",
+      "n": 87
+     },
+     {
+      "gold": "occupation",
+      "predicted": "instance of",
+      "n": 40
+     },
+     {
+      "gold": "sport",
+      "predicted": "occupation",
+      "n": 36
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "point in time",
+      "n": 24
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "participant",
+      "n": 20
+     },
+     {
+      "gold": "sport",
+      "predicted": "instance of",
+      "n": 17
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of death",
+      "n": 14
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "place of death",
+      "n": 8
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "country of citizenship",
+      "n": 3
+     },
+     {
+      "gold": "part of",
+      "predicted": "point in time",
+      "n": 3
+     },
+     {
+      "gold": "date of death",
+      "predicted": "point in time",
+      "n": 2
+     },
+     {
+      "gold": "instance of",
+      "predicted": "subclass of",
+      "n": 1
+     }
+    ],
+    "broader": [
+     {
+      "gold": "country",
+      "predicted": "located in the administrative territorial entity",
+      "n": 154
+     },
+     {
+      "gold": "parent taxon",
+      "predicted": "subclass of",
+      "n": 9
+     },
+     {
+      "gold": "country",
+      "predicted": "part of",
+      "n": 4
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "part of",
+      "n": 4
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "country",
+      "n": 2
+     }
+    ]
+   },
+   "gold_fate": {
+    "country of citizenship": {
+     "matched": 571,
+     "missed": 451,
+     "right_pair_different": 101,
+     "right_pair_broader": 2
+    },
+    "place of birth": {
+     "matched": 138,
+     "missed": 235,
+     "right_pair_different": 11
+    },
+    "member of sports team": {
+     "matched": 299,
+     "missed": 45,
+     "right_pair_different": 20
+    },
+    "occupation": {
+     "right_pair_different": 40,
+     "matched": 518,
+     "missed": 61
+    },
+    "country": {
+     "right_pair_broader": 158,
+     "missed": 1044
+    },
+    "position played on team/speciality": {
+     "missed": 85,
+     "matched": 36
+    },
+    "instance of": {
+     "missed": 246,
+     "matched": 18,
+     "right_pair_different": 1
+    },
+    "point in time": {
+     "missed": 343,
+     "matched": 11
+    },
+    "date of death": {
+     "matched": 145,
+     "missed": 17,
+     "right_pair_different": 2
+    },
+    "sport": {
+     "missed": 120,
+     "right_pair_different": 54,
+     "matched": 5
+    },
+    "date of birth": {
+     "matched": 403,
+     "missed": 34,
+     "right_pair_different": 24
+    },
+    "place of death": {
+     "missed": 76,
+     "matched": 13
+    },
+    "member of political party": {
+     "matched": 36,
+     "missed": 2
+    },
+    "diplomatic relation": {
+     "missed": 63,
+     "matched": 1
+    },
+    "parent taxon": {
+     "right_pair_broader": 9,
+     "missed": 28,
+     "right_pair_different": 1
+    },
+    "located in the administrative territorial entity": {
+     "missed": 89,
+     "matched": 40,
+     "right_pair_broader": 4
+    },
+    "part of": {
+     "missed": 39,
+     "right_pair_different": 4
+    },
+    "subclass of": {
+     "missed": 83,
+     "matched": 2,
+     "right_pair_different": 1
+    },
+    "inception": {
+     "missed": 15,
+     "matched": 6
+    },
+    "participant": {
+     "missed": 22
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "different": [
+     {
+      "item_id": "arsred_191419",
+      "gold": [
+       "رينان ماركيز",
+       "occupation",
+       "لاعب كرة قدم"
+      ],
+      "predicted": [
+       "رينان ماركيز",
+       "instance of",
+       "لاعب كرة قدم"
+      ]
+     },
+     {
+      "item_id": "arsred_146300",
+      "gold": [
+       "جوناثان دي ليون",
+       "occupation",
+       "لاعب كرة قدم"
+      ],
+      "predicted": [
+       "جوناثان دي ليون",
+       "instance of",
+       "لاعب كرة قدم"
+      ]
+     },
+     {
+      "item_id": "arsred_18137",
+      "gold": [
+       "كرايغ بولوك",
+       "occupation",
+       "شخصية أعمال"
+      ],
+      "predicted": [
+       "كرايغ بولوك",
+       "instance of",
+       "شخصية أعمال"
+      ]
+     },
+     {
+      "item_id": "arsred_18137",
+      "gold": [
+       "كرايغ بولوك",
+       "country of citizenship",
+       "المملكة المتحدة"
+      ],
+      "predicted": [
+       "كرايغ بولوك",
+       "place of birth",
+       "في المملكة المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_256937",
+      "gold": [
+       "نوريكو واتانابي",
+       "occupation",
+       "ممثلة"
+      ],
+      "predicted": [
+       "نوريكو واتانابي",
+       "instance of",
+       "ممثلة"
+      ]
+     }
+    ],
+    "broader": [
+     {
+      "item_id": "arsred_191419",
+      "gold": [
+       "بلدية فرناندوبولس",
+       "country",
+       "برازيلي"
+      ],
+      "predicted": [
+       "بلدية فرناندوبولس",
+       "located in the administrative territorial entity",
+       "البرازيل"
+      ]
+     },
+     {
+      "item_id": "arsred_324328",
+      "gold": [
+       "إكيليل فالنتيني",
+       "parent taxon",
+       "الإكيليل"
+      ],
+      "predicted": [
+       "إكيليل فالنتيني",
+       "subclass of",
+       "الإكيليل"
+      ]
+     },
+     {
+      "item_id": "arsred_317014",
+      "gold": [
+       "المنطقة الجنوبية",
+       "country",
+       "البرازيل"
+      ],
+      "predicted": [
+       "المنطقة الجنوبية",
+       "located in the administrative territorial entity",
+       "البرازيل"
+      ]
+     },
+     {
+      "item_id": "arsred_220731",
+      "gold": [
+       "كانتون أرجاو",
+       "country",
+       "سويسرا"
+      ],
+      "predicted": [
+       "كانتون أرجاو",
+       "located in the administrative territorial entity",
+       "سويسرا"
+      ]
+     },
+     {
+      "item_id": "arsred_34884",
+      "gold": [
+       "ولاية ميلة",
+       "country",
+       "الجزائر"
+      ],
+      "predicted": [
+       "ولاية ميلة",
+       "located in the administrative territorial entity",
+       "الجزائرية"
+      ]
+     }
+    ]
+   }
+  },
+  "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M_1000_seed1": {
+   "n_predicted": 3310,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 1060,
+    "entity_error": 2109,
+    "different": 121,
+    "right_pair": 141,
+    "right_pair_off_list": 22,
+    "different_related": 10,
+    "broader": 18,
+    "alias": 2
+   },
+   "share_of_predictions": {
+    "correct": 0.3202416918429003,
+    "alias": 0.0006042296072507553,
+    "broader": 0.005438066465256798,
+    "different": 0.036555891238670694,
+    "entity_error": 0.6371601208459214
+   },
+   "share_of_errors": {
+    "alias": 0.0008888888888888889,
+    "broader": 0.008,
+    "different": 0.05377777777777778,
+    "different_related": 0.0044444444444444444,
+    "entity_error": 0.9373333333333334,
+    "right_pair": 0.06266666666666666
+   },
+   "f1_strict": {
+    "precision": 0.3202416918429003,
+    "recall": 0.18364518364518365,
+    "f1": 0.23342876018498127,
+    "tp": 1060,
+    "fp": 2250,
+    "fn": 4712
+   },
+   "f1_implied": {
+    "precision": 0.32628398791540786,
+    "recall": 0.18711018711018712,
+    "f1": 0.23783307641488657,
+    "tp": 1080,
+    "fp": 2230,
+    "fn": 4692
+   },
+   "f1_pair": {
+    "precision": 0.36283987915407856,
+    "recall": 0.20807345807345806,
+    "f1": 0.2644791896058137,
+    "tp": 1201,
+    "fp": 2109,
+    "fn": 4571
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.4520990312163617,
+      "recall": 0.42,
+      "f1": 0.4354587869362364,
+      "tp": 420,
+      "fp": 509,
+      "fn": 580
+     },
+     "entity": {
+      "precision": 0.26879462410751787,
+      "recall": 0.13411567476948869,
+      "f1": 0.17894589682650636,
+      "tp": 640,
+      "fp": 1741,
+      "fn": 4132
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.4532760472610097,
+      "recall": 0.422,
+      "f1": 0.43707923355774203,
+      "tp": 422,
+      "fp": 509,
+      "fn": 578
+     },
+     "entity": {
+      "precision": 0.2765868011769651,
+      "recall": 0.13788767812238056,
+      "f1": 0.18403020556565516,
+      "tp": 658,
+      "fp": 1721,
+      "fn": 4114
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.45435016111707843,
+      "recall": 0.423,
+      "f1": 0.43811496633868463,
+      "tp": 423,
+      "fp": 508,
+      "fn": 577
+     },
+     "entity": {
+      "precision": 0.3270281630937369,
+      "recall": 0.16303436714165967,
+      "f1": 0.21759194518249195,
+      "tp": 778,
+      "fp": 1601,
+      "fn": 3994
+     }
+    }
+   },
+   "top_pairs": {
+    "different": [
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of birth",
+      "n": 44
+     },
+     {
+      "gold": "sport",
+      "predicted": "occupation",
+      "n": 19
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of death",
+      "n": 10
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "country of birth",
+      "n": 10
+     },
+     {
+      "gold": "position played on team/speciality",
+      "predicted": "position played on team or speciality",
+      "n": 8
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "participant",
+      "n": 7
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "place of death",
+      "n": 5
+     },
+     {
+      "gold": "country",
+      "predicted": "country of citizenship",
+      "n": 4
+     },
+     {
+      "gold": "instance of",
+      "predicted": "subclass of",
+      "n": 3
+     },
+     {
+      "gold": "country",
+      "predicted": "member of sports team",
+      "n": 3
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "country of citizenship",
+      "n": 2
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "capital",
+      "n": 1
+     }
+    ],
+    "broader": [
+     {
+      "gold": "parent taxon",
+      "predicted": "subclass of",
+      "n": 9
+     },
+     {
+      "gold": "country",
+      "predicted": "located in the administrative territorial entity",
+      "n": 6
+     },
+     {
+      "gold": "country",
+      "predicted": "part of",
+      "n": 2
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "part of",
+      "n": 1
+     }
+    ],
+    "alias": [
+     {
+      "gold": "inception",
+      "predicted": "date of inception",
+      "n": 2
+     }
+    ]
+   },
+   "gold_fate": {
+    "place of birth": {
+     "matched": 65,
+     "missed": 311,
+     "right_pair_different": 8
+    },
+    "country of citizenship": {
+     "matched": 203,
+     "missed": 857,
+     "right_pair_different": 65
+    },
+    "occupation": {
+     "matched": 212,
+     "missed": 407
+    },
+    "position played on team/speciality": {
+     "missed": 94,
+     "right_pair_different": 8,
+     "matched": 19
+    },
+    "member of sports team": {
+     "missed": 283,
+     "matched": 74,
+     "right_pair_different": 7
+    },
+    "instance of": {
+     "missed": 254,
+     "right_pair_different": 3,
+     "matched": 8
+    },
+    "country": {
+     "missed": 1186,
+     "right_pair_broader": 8,
+     "matched": 1,
+     "right_pair_different": 7
+    },
+    "point in time": {
+     "missed": 351,
+     "right_pair_different": 1,
+     "matched": 2
+    },
+    "date of death": {
+     "missed": 56,
+     "matched": 108
+    },
+    "sport": {
+     "missed": 159,
+     "right_pair_different": 19,
+     "matched": 1
+    },
+    "date of birth": {
+     "matched": 305,
+     "missed": 156
+    },
+    "place of death": {
+     "missed": 75,
+     "matched": 14
+    },
+    "member of political party": {
+     "matched": 21,
+     "missed": 17
+    },
+    "diplomatic relation": {
+     "missed": 64
+    },
+    "parent taxon": {
+     "missed": 28,
+     "right_pair_broader": 9,
+     "matched": 1
+    },
+    "located in the administrative territorial entity": {
+     "missed": 110,
+     "matched": 21,
+     "right_pair_different": 1,
+     "right_pair_broader": 1
+    },
+    "part of": {
+     "missed": 42,
+     "right_pair_different": 1
+    },
+    "subclass of": {
+     "missed": 85,
+     "right_pair_different": 1
+    },
+    "inception": {
+     "missed": 14,
+     "matched": 5,
+     "right_pair_alias": 2
+    },
+    "participant": {
+     "missed": 22
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "different": [
+     {
+      "item_id": "arsred_18137",
+      "gold": [
+       "كرايغ بولوك",
+       "country of citizenship",
+       "المملكة المتحدة"
+      ],
+      "predicted": [
+       "كرايغ بولوك",
+       "place_of_birth",
+       "المملكة المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_21121",
+      "gold": [
+       "جان بيير داروسان",
+       "country of citizenship",
+       "فرنسي"
+      ],
+      "predicted": [
+       "جان بيير داروسان",
+       "place_of_birth",
+       "فرنسا"
+      ]
+     },
+     {
+      "item_id": "arsred_301507",
+      "gold": [
+       "فرانك راميريز",
+       "country of citizenship",
+       "كولومبيا"
+      ],
+      "predicted": [
+       "فرانك راميريز",
+       "place of birth",
+       "كولومبيا"
+      ]
+     },
+     {
+      "item_id": "arsred_394941",
+      "gold": [
+       "كايسا إرنست",
+       "country of citizenship",
+       "السويد"
+      ],
+      "predicted": [
+       "كايسا إرنست",
+       "place_of_birth",
+       "السويد"
+      ]
+     },
+     {
+      "item_id": "arsred_310646",
+      "gold": [
+       "رالف وارن",
+       "country of citizenship",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "رالف وارن",
+       "place_of_birth",
+       "الولايات المتحدة"
+      ]
+     }
+    ],
+    "broader": [
+     {
+      "item_id": "arsred_143719",
+      "gold": [
+       "كتيلة",
+       "parent taxon",
+       "نجمية"
+      ],
+      "predicted": [
+       "الكتيلة",
+       "subclass_of",
+       "النجمية"
+      ]
+     },
+     {
+      "item_id": "arsred_232071",
+      "gold": [
+       "جوبار",
+       "country",
+       "إيران"
+      ],
+      "predicted": [
+       "جوبار",
+       "located in the administrative territorial entity",
+       "إيران"
+      ]
+     },
+     {
+      "item_id": "arsred_438704",
+      "gold": [
+       "لبيسية",
+       "parent taxon",
+       "شبوطيات"
+      ],
+      "predicted": [
+       "اللبيسية",
+       "subclass_of",
+       "الشبوطيات"
+      ]
+     },
+     {
+      "item_id": "arsred_95343",
+      "gold": [
+       "جدجد شجري بيروفي",
+       "parent taxon",
+       "الجدجد الشجري"
+      ],
+      "predicted": [
+       "جدجد شجري بيروفي",
+       "subclass_of",
+       "الجدجد الشجري"
+      ]
+     },
+     {
+      "item_id": "arsred_234866",
+      "gold": [
+       "لاميون أبيض",
+       "parent taxon",
+       "اللاميون"
+      ],
+      "predicted": [
+       "لاميون أبيض",
+       "subclass_of",
+       "اللاميون"
+      ]
+     }
+    ],
+    "alias": [
+     {
+      "item_id": "arsred_347233",
+      "gold": [
+       "شركة كلينتون وروسيل",
+       "inception",
+       "1894"
+      ],
+      "predicted": [
+       "شركة كلينتون وروسيل",
+       "date of inception",
+       "1894"
+      ]
+     },
+     {
+      "item_id": "arsred_430340",
+      "gold": [
+       "وزارة أحمد زيور باشا الثانية",
+       "inception",
+       "13 مارس 1925"
+      ],
+      "predicted": [
+       "وزارة أحمد زيور باشا الثانية",
+       "date_of_inception",
+       "13 مارس 1925"
+      ]
+     }
+    ]
+   }
+  },
+  "iKhalid_ALLaM_7b_1000_seed1": {
+   "n_predicted": 914,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 238,
+    "entity_error": 520,
+    "different": 147,
+    "right_pair": 156,
+    "right_pair_off_list": 97,
+    "alias": 8,
+    "different_related": 1,
+    "broader": 1
+   },
+   "share_of_predictions": {
+    "correct": 0.2603938730853392,
+    "alias": 0.0087527352297593,
+    "broader": 0.0010940919037199124,
+    "different": 0.16083150984682712,
+    "entity_error": 0.5689277899343544
+   },
+   "share_of_errors": {
+    "alias": 0.011834319526627219,
+    "broader": 0.0014792899408284023,
+    "different": 0.21745562130177515,
+    "different_related": 0.0014792899408284023,
+    "entity_error": 0.7692307692307693,
+    "right_pair": 0.23076923076923078
+   },
+   "f1_strict": {
+    "precision": 0.2603938730853392,
+    "recall": 0.041233541233541234,
+    "f1": 0.0711935387376608,
+    "tp": 238,
+    "fp": 676,
+    "fn": 5534
+   },
+   "f1_implied": {
+    "precision": 0.2702407002188184,
+    "recall": 0.04279279279279279,
+    "f1": 0.0738857313790009,
+    "tp": 247,
+    "fp": 667,
+    "fn": 5525
+   },
+   "f1_pair": {
+    "precision": 0.4310722100656455,
+    "recall": 0.06826056826056826,
+    "f1": 0.11785821118755609,
+    "tp": 394,
+    "fp": 520,
+    "fn": 5378
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.54,
+      "recall": 0.135,
+      "f1": 0.216,
+      "tp": 135,
+      "fp": 115,
+      "fn": 865
+     },
+     "entity": {
+      "precision": 0.15512048192771086,
+      "recall": 0.021584241408214584,
+      "f1": 0.03789551140544518,
+      "tp": 103,
+      "fp": 561,
+      "fn": 4669
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.5454545454545454,
+      "recall": 0.138,
+      "f1": 0.22027134876296886,
+      "tp": 138,
+      "fp": 115,
+      "fn": 862
+     },
+     "entity": {
+      "precision": 0.1649016641452345,
+      "recall": 0.02284157585917854,
+      "f1": 0.04012516105282533,
+      "tp": 109,
+      "fp": 552,
+      "fn": 4663
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.5892857142857143,
+      "recall": 0.165,
+      "f1": 0.2578125,
+      "tp": 165,
+      "fp": 115,
+      "fn": 835
+     },
+     "entity": {
+      "precision": 0.361198738170347,
+      "recall": 0.04798826487845767,
+      "f1": 0.08472068072512025,
+      "tp": 229,
+      "fp": 405,
+      "fn": 4543
+     }
+    }
+   },
+   "top_pairs": {
+    "different": [
+     {
+      "gold": "country",
+      "predicted": "place of birth",
+      "n": 16
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of birth",
+      "n": 12
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "ولد في",
+      "n": 9
+     },
+     {
+      "gold": "occupation",
+      "predicted": "is",
+      "n": 9
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "member of political party",
+      "n": 8
+     },
+     {
+      "gold": "sport",
+      "predicted": "member of sports team",
+      "n": 5
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "لاعب كرة قدم",
+      "n": 4
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "مواليد",
+      "n": 4
+     },
+     {
+      "gold": "sport",
+      "predicted": "occupation",
+      "n": 3
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "ولد",
+      "n": 3
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "member of sports team",
+      "n": 3
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "بلد الميلاد",
+      "n": 3
+     }
+    ],
+    "alias": [
+     {
+      "gold": "date of birth",
+      "predicted": "birth date",
+      "n": 3
+     },
+     {
+      "gold": "instance of",
+      "predicted": "نوع",
+      "n": 1
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "born in",
+      "n": 1
+     },
+     {
+      "gold": "occupation",
+      "predicted": "profession",
+      "n": 1
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "لعب مع",
+      "n": 1
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "birth place",
+      "n": 1
+     }
+    ],
+    "broader": [
+     {
+      "gold": "country of citizenship",
+      "predicted": "country",
+      "n": 1
+     }
+    ]
+   },
+   "gold_fate": {
+    "occupation": {
+     "missed": 563,
+     "matched": 38,
+     "right_pair_different": 17,
+     "right_pair_alias": 1
+    },
+    "country of citizenship": {
+     "missed": 1028,
+     "right_pair_different": 55,
+     "matched": 41,
+     "right_pair_broader": 1
+    },
+    "position played on team/speciality": {
+     "missed": 116,
+     "right_pair_different": 3,
+     "matched": 2
+    },
+    "place of birth": {
+     "missed": 371,
+     "matched": 6,
+     "right_pair_alias": 2,
+     "right_pair_different": 5
+    },
+    "member of sports team": {
+     "missed": 354,
+     "matched": 5,
+     "right_pair_different": 4,
+     "right_pair_alias": 1
+    },
+    "instance of": {
+     "missed": 264,
+     "right_pair_alias": 1
+    },
+    "country": {
+     "missed": 1181,
+     "right_pair_different": 21
+    },
+    "point in time": {
+     "missed": 354
+    },
+    "date of death": {
+     "matched": 43,
+     "missed": 117,
+     "right_pair_different": 4
+    },
+    "sport": {
+     "missed": 166,
+     "right_pair_different": 13
+    },
+    "place of death": {
+     "missed": 88,
+     "matched": 1
+    },
+    "date of birth": {
+     "missed": 344,
+     "matched": 92,
+     "right_pair_different": 22,
+     "right_pair_alias": 3
+    },
+    "member of political party": {
+     "missed": 26,
+     "right_pair_different": 2,
+     "matched": 10
+    },
+    "diplomatic relation": {
+     "missed": 64
+    },
+    "parent taxon": {
+     "missed": 38
+    },
+    "located in the administrative territorial entity": {
+     "missed": 133
+    },
+    "part of": {
+     "missed": 43
+    },
+    "subclass of": {
+     "missed": 86
+    },
+    "inception": {
+     "missed": 20,
+     "right_pair_different": 1
+    },
+    "participant": {
+     "missed": 22
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "different": [
+     {
+      "item_id": "arsred_146300",
+      "gold": [
+       "جوناثان دي ليون",
+       "country of citizenship",
+       "مكسيكي"
+      ],
+      "predicted": [
+       "جوناثان دي ليون",
+       "لاعب كرة قدم",
+       "مكسيكي"
+      ]
+     },
+     {
+      "item_id": "arsred_146300",
+      "gold": [
+       "مونتيري",
+       "country",
+       "مكسيكي"
+      ],
+      "predicted": [
+       "مونتيري",
+       "مكان الميلاد",
+       "المكسيك"
+      ]
+     },
+     {
+      "item_id": "arsred_38961",
+      "gold": [
+       "مقاطعة رتشلاند",
+       "country",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "مقاطعة ريتشلاند",
+       "مكان الميلاد",
+       "الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_120695",
+      "gold": [
+       "لورنس أوبراين",
+       "country of citizenship",
+       "كندي"
+      ],
+      "predicted": [
+       "لورنس أوبراين",
+       "عضو في حزب سياسي",
+       "كندي"
+      ]
+     },
+     {
+      "item_id": "arsred_301507",
+      "gold": [
+       "فرانك راميريز",
+       "country of citizenship",
+       "كولومبي"
+      ],
+      "predicted": [
+       "فرانك راميريز",
+       "place of birth",
+       "كولومبيا"
+      ]
+     }
+    ],
+    "alias": [
+     {
+      "item_id": "arsred_330176",
+      "gold": [
+       "جامندو",
+       "instance of",
+       "موقع ويب"
+      ],
+      "predicted": [
+       "جامندو",
+       "نوع",
+       "موقع ويب"
+      ]
+     },
+     {
+      "item_id": "arsred_404426",
+      "gold": [
+       "أنتوني زان",
+       "date of birth",
+       "14 أكتوبر 1976"
+      ],
+      "predicted": [
+       "أنتوني زان",
+       "birth date",
+       "14 أكتوبر 1976"
+      ]
+     },
+     {
+      "item_id": "arsred_437469",
+      "gold": [
+       "جودي كارتر",
+       "place of birth",
+       "لوس أنجلوس"
+      ],
+      "predicted": [
+       "جودي كارتر",
+       "born in",
+       "لوس أنجلوس"
+      ]
+     },
+     {
+      "item_id": "arsred_473391",
+      "gold": [
+       "كيري وونغ",
+       "date of birth",
+       "25 ديسمبر 1989"
+      ],
+      "predicted": [
+       "كيري وونغ",
+       "birth date",
+       "25 ديسمبر 1989"
+      ]
+     },
+     {
+      "item_id": "arsred_79419",
+      "gold": [
+       "ميلاني كامب",
+       "occupation",
+       "ممثلة"
+      ],
+      "predicted": [
+       "ميلاني كامب",
+       "profession",
+       "ممثلة"
+      ]
+     }
+    ],
+    "broader": [
+     {
+      "item_id": "arsred_412018",
+      "gold": [
+       "أتيلا إلك",
+       "country of citizenship",
+       "مجري"
+      ],
+      "predicted": [
+       "أتيلا إلك",
+       "بلد",
+       "المجر"
+      ]
+     }
+    ]
+   }
+  },
+  "llama3.1_8b_1000_seed1": {
+   "n_predicted": 4710,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 1681,
+    "entity_error": 2677,
+    "broader": 76,
+    "right_pair": 352,
+    "alias": 23,
+    "right_pair_off_list": 42,
+    "different": 253,
+    "different_related": 25
+   },
+   "share_of_predictions": {
+    "correct": 0.35690021231422503,
+    "alias": 0.004883227176220807,
+    "broader": 0.01613588110403397,
+    "different": 0.05371549893842888,
+    "entity_error": 0.5683651804670913
+   },
+   "share_of_errors": {
+    "alias": 0.0075932651039947174,
+    "broader": 0.025090789039286892,
+    "different": 0.08352591614394189,
+    "different_related": 0.008253549026081214,
+    "entity_error": 0.8837900297127765,
+    "right_pair": 0.1162099702872235
+   },
+   "f1_strict": {
+    "precision": 0.35690021231422503,
+    "recall": 0.2912335412335412,
+    "f1": 0.32074031673344783,
+    "tp": 1681,
+    "fp": 3029,
+    "fn": 4091
+   },
+   "f1_implied": {
+    "precision": 0.37791932059447986,
+    "recall": 0.30838530838530837,
+    "f1": 0.3396298416332761,
+    "tp": 1780,
+    "fp": 2930,
+    "fn": 3992
+   },
+   "f1_pair": {
+    "precision": 0.4316348195329087,
+    "recall": 0.35221760221760223,
+    "f1": 0.38790307193283724,
+    "tp": 2033,
+    "fp": 2677,
+    "fn": 3739
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.5865504358655044,
+      "recall": 0.471,
+      "f1": 0.5224625623960066,
+      "tp": 471,
+      "fp": 332,
+      "fn": 529
+     },
+     "entity": {
+      "precision": 0.3097005374968006,
+      "recall": 0.25356244761106456,
+      "f1": 0.2788339670468948,
+      "tp": 1210,
+      "fp": 2697,
+      "fn": 3562
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.5896168108776267,
+      "recall": 0.477,
+      "f1": 0.527363184079602,
+      "tp": 477,
+      "fp": 332,
+      "fn": 523
+     },
+     "entity": {
+      "precision": 0.3340169187387849,
+      "recall": 0.27305113160100586,
+      "f1": 0.30047273146546755,
+      "tp": 1303,
+      "fp": 2598,
+      "fn": 3469
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.6012121212121212,
+      "recall": 0.496,
+      "f1": 0.5435616438356164,
+      "tp": 496,
+      "fp": 329,
+      "fn": 504
+     },
+     "entity": {
+      "precision": 0.39562419562419565,
+      "recall": 0.3220871751886002,
+      "f1": 0.35508836779484815,
+      "tp": 1537,
+      "fp": 2348,
+      "fn": 3235
+     }
+    }
+   },
+   "top_pairs": {
+    "broader": [
+     {
+      "gold": "country",
+      "predicted": "located in the administrative territorial entity",
+      "n": 23
+     },
+     {
+      "gold": "country",
+      "predicted": "part of",
+      "n": 14
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "country",
+      "n": 11
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "part of",
+      "n": 10
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "located in the administrative territorial entity",
+      "n": 9
+     },
+     {
+      "gold": "parent taxon",
+      "predicted": "subclass of",
+      "n": 7
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "part of",
+      "n": 1
+     },
+     {
+      "gold": "country",
+      "predicted": "is part of",
+      "n": 1
+     }
+    ],
+    "alias": [
+     {
+      "gold": "place of birth",
+      "predicted": "birth place",
+      "n": 14
+     },
+     {
+      "gold": "date of death",
+      "predicted": "death",
+      "n": 4
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "born in",
+      "n": 2
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "citizenship",
+      "n": 1
+     },
+     {
+      "gold": "inception",
+      "predicted": "date of establishment",
+      "n": 1
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "birth date",
+      "n": 1
+     }
+    ],
+    "different": [
+     {
+      "gold": "occupation",
+      "predicted": "instance of",
+      "n": 83
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of birth",
+      "n": 42
+     },
+     {
+      "gold": "sport",
+      "predicted": "instance of",
+      "n": 25
+     },
+     {
+      "gold": "sport",
+      "predicted": "occupation",
+      "n": 11
+     },
+     {
+      "gold": "country",
+      "predicted": "country of citizenship",
+      "n": 9
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "part of",
+      "n": 9
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "participant",
+      "n": 7
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "place of birth",
+      "n": 7
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of death",
+      "n": 5
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "place of death",
+      "n": 5
+     },
+     {
+      "gold": "parent taxon",
+      "predicted": "instance of",
+      "n": 5
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "born in",
+      "n": 4
+     }
+    ]
+   },
+   "gold_fate": {
+    "occupation": {
+     "matched": 114,
+     "missed": 420,
+     "right_pair_different": 85
+    },
+    "country of citizenship": {
+     "matched": 477,
+     "right_pair_broader": 21,
+     "missed": 569,
+     "right_pair_different": 57,
+     "right_pair_alias": 1
+    },
+    "place of birth": {
+     "matched": 281,
+     "right_pair_different": 8,
+     "missed": 79,
+     "right_pair_alias": 16
+    },
+    "position played on team/speciality": {
+     "missed": 56,
+     "matched": 64,
+     "right_pair_different": 1
+    },
+    "member of sports team": {
+     "missed": 224,
+     "matched": 121,
+     "right_pair_different": 19
+    },
+    "instance of": {
+     "missed": 254,
+     "right_pair_different": 2,
+     "matched": 9
+    },
+    "country": {
+     "missed": 1133,
+     "matched": 18,
+     "right_pair_different": 13,
+     "right_pair_broader": 38
+    },
+    "point in time": {
+     "missed": 352,
+     "matched": 2
+    },
+    "date of death": {
+     "right_pair_alias": 4,
+     "matched": 133,
+     "missed": 22,
+     "right_pair_different": 5
+    },
+    "sport": {
+     "missed": 142,
+     "right_pair_different": 37
+    },
+    "date of birth": {
+     "matched": 333,
+     "missed": 113,
+     "right_pair_different": 14,
+     "right_pair_alias": 1
+    },
+    "place of death": {
+     "matched": 73,
+     "missed": 16
+    },
+    "member of political party": {
+     "matched": 28,
+     "missed": 10
+    },
+    "diplomatic relation": {
+     "missed": 62,
+     "right_pair_different": 2
+    },
+    "parent taxon": {
+     "right_pair_broader": 7,
+     "missed": 26,
+     "right_pair_different": 5
+    },
+    "located in the administrative territorial entity": {
+     "missed": 98,
+     "matched": 22,
+     "right_pair_broader": 10,
+     "right_pair_different": 3
+    },
+    "part of": {
+     "missed": 42,
+     "matched": 1
+    },
+    "subclass of": {
+     "missed": 82,
+     "matched": 2,
+     "right_pair_different": 2
+    },
+    "inception": {
+     "missed": 17,
+     "matched": 3,
+     "right_pair_alias": 1
+    },
+    "participant": {
+     "missed": 22
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "broader": [
+     {
+      "item_id": "arsred_191419",
+      "gold": [
+       "رينان ماركيز",
+       "country of citizenship",
+       "البرازيل"
+      ],
+      "predicted": [
+       "رينان ماركيز",
+       "located in the administrative territorial entity",
+       "البرازيل"
+      ]
+     },
+     {
+      "item_id": "arsred_324328",
+      "gold": [
+       "إكيليل فالنتيني",
+       "parent taxon",
+       "الإكيليل"
+      ],
+      "predicted": [
+       "إكيليل فالنتيني",
+       "subclass of",
+       "الإكيليل"
+      ]
+     },
+     {
+      "item_id": "arsred_139954",
+      "gold": [
+       "جزر كريه الرائحة",
+       "parent taxon",
+       "الجزر"
+      ],
+      "predicted": [
+       "جزر كريه الرائحة",
+       "subclass of",
+       "الجزر"
+      ]
+     },
+     {
+      "item_id": "arsred_226856",
+      "gold": [
+       "جوهانس أغارد",
+       "country of citizenship",
+       "الدنمارك"
+      ],
+      "predicted": [
+       "جوهانس أغارد",
+       "country",
+       "الدنمارك"
+      ]
+     },
+     {
+      "item_id": "arsred_200389",
+      "gold": [
+       "روبرت إف. كان",
+       "country of citizenship",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "روبرت إف. كان",
+       "country",
+       "الولايات المتحدة"
+      ]
+     }
+    ],
+    "alias": [
+     {
+      "item_id": "arsred_465454",
+      "gold": [
+       "سبيد غاردنر",
+       "date of death",
+       "25 أبريل 1972"
+      ],
+      "predicted": [
+       "سبيد غاردنر",
+       "death",
+       "25 أبريل 1972"
+      ]
+     },
+     {
+      "item_id": "arsred_195815",
+      "gold": [
+       "ماركوس بروس كريستيان",
+       "date of death",
+       "21 نوفمبر 1976"
+      ],
+      "predicted": [
+       "ماركوس بروس كريستان",
+       "death",
+       "21 نوفمبر 1976"
+      ]
+     },
+     {
+      "item_id": "arsred_205071",
+      "gold": [
+       "وولف كالر",
+       "place of birth",
+       "كيل"
+      ],
+      "predicted": [
+       "وولف كالر",
+       "birth place",
+       "كيل"
+      ]
+     },
+     {
+      "item_id": "arsred_348695",
+      "gold": [
+       "سيباستين روبرتس",
+       "place of birth",
+       "مونتريال"
+      ],
+      "predicted": [
+       "سيباستين روبرتس",
+       "born in",
+       "مونتريال"
+      ]
+     },
+     {
+      "item_id": "arsred_243437",
+      "gold": [
+       "ترينت غرين",
+       "place of birth",
+       "سانت لويس"
+      ],
+      "predicted": [
+       "ترينت غرين",
+       "born in",
+       "سانت لويس"
+      ]
+     }
+    ],
+    "different": [
+     {
+      "item_id": "arsred_10257",
+      "gold": [
+       "أوليفر رويير",
+       "place of birth",
+       "نانسي"
+      ],
+      "predicted": [
+       "أوليفر رويير",
+       "located in the administrative territorial entity",
+       "نانسي"
+      ]
+     },
+     {
+      "item_id": "arsred_90691",
+      "gold": [
+       "جوستين رايت",
+       "occupation",
+       "مونتيرة"
+      ],
+      "predicted": [
+       "جوستين رايت",
+       "instance of",
+       "مونتيرة"
+      ]
+     },
+     {
+      "item_id": "arsred_317014",
+      "gold": [
+       "أرفوريدو",
+       "instance of",
+       "بلدية"
+      ],
+      "predicted": [
+       "أرفوريدو",
+       "country",
+       "بلدية"
+      ]
+     },
+     {
+      "item_id": "arsred_21121",
+      "gold": [
+       "جان بيير داروسان",
+       "country of citizenship",
+       "فرنسا"
+      ],
+      "predicted": [
+       "جان بيير داروسان",
+       "birth place",
+       "فرنسا"
+      ]
+     },
+     {
+      "item_id": "arsred_301507",
+      "gold": [
+       "فرانك راميريز",
+       "country of citizenship",
+       "كولومبيا"
+      ],
+      "predicted": [
+       "فرانك راميريز",
+       "place of birth",
+       "كولومبيا"
+      ]
+     }
+    ]
+   }
+  },
+  "mistral-nemo_12b_1000_seed1": {
+   "n_predicted": 2778,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 1062,
+    "entity_error": 1600,
+    "different": 113,
+    "right_pair": 116,
+    "right_pair_off_list": 19,
+    "broader": 3,
+    "different_related": 3
+   },
+   "share_of_predictions": {
+    "correct": 0.38228941684665224,
+    "alias": 0.0,
+    "broader": 0.0010799136069114472,
+    "different": 0.040676745860331175,
+    "entity_error": 0.5759539236861051
+   },
+   "share_of_errors": {
+    "alias": 0.0,
+    "broader": 0.0017482517482517483,
+    "different": 0.06585081585081586,
+    "different_related": 0.0017482517482517483,
+    "entity_error": 0.9324009324009324,
+    "right_pair": 0.0675990675990676
+   },
+   "f1_strict": {
+    "precision": 0.38228941684665224,
+    "recall": 0.183991683991684,
+    "f1": 0.24842105263157893,
+    "tp": 1062,
+    "fp": 1716,
+    "fn": 4710
+   },
+   "f1_implied": {
+    "precision": 0.3833693304535637,
+    "recall": 0.1845114345114345,
+    "f1": 0.24912280701754386,
+    "tp": 1065,
+    "fp": 1713,
+    "fn": 4707
+   },
+   "f1_pair": {
+    "precision": 0.4240460763138949,
+    "recall": 0.20408870408870408,
+    "f1": 0.27555555555555555,
+    "tp": 1178,
+    "fp": 1600,
+    "fn": 4594
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.4905149051490515,
+      "recall": 0.362,
+      "f1": 0.4165707710011507,
+      "tp": 362,
+      "fp": 376,
+      "fn": 638
+     },
+     "entity": {
+      "precision": 0.3431372549019608,
+      "recall": 0.14668901927912825,
+      "f1": 0.20551967116852612,
+      "tp": 700,
+      "fp": 1340,
+      "fn": 4072
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.4905149051490515,
+      "recall": 0.362,
+      "f1": 0.4165707710011507,
+      "tp": 362,
+      "fp": 376,
+      "fn": 638
+     },
+     "entity": {
+      "precision": 0.3446078431372549,
+      "recall": 0.14731768650461022,
+      "f1": 0.2064004697592484,
+      "tp": 703,
+      "fp": 1337,
+      "fn": 4069
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.49118046132971505,
+      "recall": 0.362,
+      "f1": 0.4168105929763961,
+      "tp": 362,
+      "fp": 375,
+      "fn": 638
+     },
+     "entity": {
+      "precision": 0.39980401763841256,
+      "recall": 0.17099748533109807,
+      "f1": 0.23954205195948922,
+      "tp": 816,
+      "fp": 1225,
+      "fn": 3956
+     }
+    }
+   },
+   "top_pairs": {
+    "different": [
+     {
+      "gold": "member of sports team",
+      "predicted": "participant",
+      "n": 35
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of birth",
+      "n": 26
+     },
+     {
+      "gold": "sport",
+      "predicted": "occupation",
+      "n": 17
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "ountry of citizenship",
+      "n": 7
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "country of birth",
+      "n": 6
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of death",
+      "n": 5
+     },
+     {
+      "gold": "sport",
+      "predicted": "instance of",
+      "n": 4
+     },
+     {
+      "gold": "country",
+      "predicted": "country of citizenship",
+      "n": 3
+     },
+     {
+      "gold": "occupation",
+      "predicted": "instance of",
+      "n": 2
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "شارك مع",
+      "n": 2
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "date of death",
+      "n": 1
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "country of citizenship",
+      "n": 1
+     }
+    ],
+    "broader": [
+     {
+      "gold": "country of citizenship",
+      "predicted": "country",
+      "n": 3
+     }
+    ]
+   },
+   "gold_fate": {
+    "occupation": {
+     "matched": 61,
+     "missed": 556,
+     "right_pair_different": 2
+    },
+    "member of sports team": {
+     "matched": 147,
+     "missed": 180,
+     "right_pair_different": 37
+    },
+    "country of citizenship": {
+     "missed": 823,
+     "matched": 255,
+     "right_pair_different": 44,
+     "right_pair_broader": 3
+    },
+    "position played on team/speciality": {
+     "missed": 99,
+     "matched": 21,
+     "right_pair_different": 1
+    },
+    "place of birth": {
+     "missed": 224,
+     "matched": 157,
+     "right_pair_different": 3
+    },
+    "instance of": {
+     "missed": 264,
+     "matched": 1
+    },
+    "country": {
+     "missed": 1197,
+     "right_pair_different": 4,
+     "matched": 1
+    },
+    "point in time": {
+     "missed": 354
+    },
+    "date of death": {
+     "matched": 85,
+     "missed": 79
+    },
+    "sport": {
+     "missed": 158,
+     "right_pair_different": 21
+    },
+    "place of death": {
+     "missed": 54,
+     "matched": 35
+    },
+    "date of birth": {
+     "missed": 185,
+     "matched": 276
+    },
+    "member of political party": {
+     "missed": 17,
+     "matched": 21
+    },
+    "diplomatic relation": {
+     "missed": 64
+    },
+    "parent taxon": {
+     "missed": 38
+    },
+    "located in the administrative territorial entity": {
+     "missed": 132,
+     "matched": 1
+    },
+    "part of": {
+     "missed": 43
+    },
+    "subclass of": {
+     "missed": 85,
+     "right_pair_different": 1
+    },
+    "inception": {
+     "missed": 20,
+     "matched": 1
+    },
+    "participant": {
+     "missed": 22
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "different": [
+     {
+      "item_id": "arsred_21121",
+      "gold": [
+       "جان بيير داروسان",
+       "country of citizenship",
+       "فرنسي"
+      ],
+      "predicted": [
+       "جان بيير داروسان",
+       "country of birth",
+       "فرنسا"
+      ]
+     },
+     {
+      "item_id": "arsred_301507",
+      "gold": [
+       "فرانك راميريز",
+       "country of citizenship",
+       "كولومبيا"
+      ],
+      "predicted": [
+       "فرانك راميريز",
+       "place of birth",
+       "كولومبيا"
+      ]
+     },
+     {
+      "item_id": "arsred_310646",
+      "gold": [
+       "رالف وارن",
+       "country of citizenship",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "رالف وارن",
+       "ountry of citizenship",
+       "الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_310646",
+      "gold": [
+       "رالف وارن",
+       "sport",
+       "لاعب كرة قدم أمريكية"
+      ],
+      "predicted": [
+       "رالف وارن",
+       "occupation",
+       "لاعب كرة قدم أمريكية"
+      ]
+     },
+     {
+      "item_id": "arsred_392317",
+      "gold": [
+       "أبيجيل آدامز ألين",
+       "country of citizenship",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "أبيجيل آدامز ألين",
+       "place of birth",
+       "في الولايات المتحدة"
+      ]
+     }
+    ],
+    "broader": [
+     {
+      "item_id": "arsred_318236",
+      "gold": [
+       "كين رايتشل",
+       "country of citizenship",
+       "ألمانيا"
+      ],
+      "predicted": [
+       "كين رايتشل",
+       "country",
+       "ألمانيا"
+      ]
+     },
+     {
+      "item_id": "arsred_174383",
+      "gold": [
+       "جيمس فيليبس ويلسون",
+       "country of citizenship",
+       "أسترالي"
+      ],
+      "predicted": [
+       "جيمس فيليبس ويلسون",
+       "country",
+       "أستراليا"
+      ]
+     },
+     {
+      "item_id": "arsred_125490",
+      "gold": [
+       "آرثر روبرت هوغ",
+       "country of citizenship",
+       "أسترالي"
+      ],
+      "predicted": [
+       "آرثر روبرت هوغ",
+       "country",
+       "أستراليا"
+      ]
+     }
+    ]
+   }
+  },
+  "mrebel_1000": {
+   "n_predicted": 1121,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 815,
+    "entity_error": 298,
+    "different": 7,
+    "right_pair": 8,
+    "right_pair_off_list": 4,
+    "broader": 1,
+    "different_related": 1
+   },
+   "share_of_predictions": {
+    "correct": 0.7270294380017841,
+    "alias": 0.0,
+    "broader": 0.0008920606601248885,
+    "different": 0.006244424620874219,
+    "entity_error": 0.26583407671721676
+   },
+   "share_of_errors": {
+    "alias": 0.0,
+    "broader": 0.0032679738562091504,
+    "different": 0.02287581699346405,
+    "different_related": 0.0032679738562091504,
+    "entity_error": 0.9738562091503268,
+    "right_pair": 0.026143790849673203
+   },
+   "f1_strict": {
+    "precision": 0.7270294380017841,
+    "recall": 0.1411988911988912,
+    "f1": 0.23647178296822863,
+    "tp": 815,
+    "fp": 306,
+    "fn": 4957
+   },
+   "f1_implied": {
+    "precision": 0.727921498661909,
+    "recall": 0.14137214137214138,
+    "f1": 0.23676193239518353,
+    "tp": 816,
+    "fp": 305,
+    "fn": 4956
+   },
+   "f1_pair": {
+    "precision": 0.7341659232827832,
+    "recall": 0.1425848925848926,
+    "f1": 0.2387929783838677,
+    "tp": 823,
+    "fp": 298,
+    "fn": 4949
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.7611940298507462,
+      "recall": 0.153,
+      "f1": 0.2547876769358867,
+      "tp": 153,
+      "fp": 48,
+      "fn": 847
+     },
+     "entity": {
+      "precision": 0.7195652173913043,
+      "recall": 0.13872590108968985,
+      "f1": 0.2326071679550246,
+      "tp": 662,
+      "fp": 258,
+      "fn": 4110
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.7611940298507462,
+      "recall": 0.153,
+      "f1": 0.2547876769358867,
+      "tp": 153,
+      "fp": 48,
+      "fn": 847
+     },
+     "entity": {
+      "precision": 0.7206521739130435,
+      "recall": 0.13893545683151717,
+      "f1": 0.2329585382993675,
+      "tp": 663,
+      "fp": 257,
+      "fn": 4109
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.7635467980295566,
+      "recall": 0.155,
+      "f1": 0.25768911055694094,
+      "tp": 155,
+      "fp": 48,
+      "fn": 845
+     },
+     "entity": {
+      "precision": 0.7276688453159041,
+      "recall": 0.1399832355406538,
+      "f1": 0.23479789103690682,
+      "tp": 668,
+      "fp": 250,
+      "fn": 4104
+     }
+    }
+   },
+   "top_pairs": {
+    "different": [
+     {
+      "gold": "place of death",
+      "predicted": "place of birth",
+      "n": 2
+     },
+     {
+      "gold": "subclass of",
+      "predicted": "موسيقي",
+      "n": 1
+     },
+     {
+      "gold": "point in time",
+      "predicted": "follows",
+      "n": 1
+     },
+     {
+      "gold": "sport",
+      "predicted": "كرة قدم",
+      "n": 1
+     },
+     {
+      "gold": "point in time",
+      "predicted": "point in time period",
+      "n": 1
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "country",
+      "n": 1
+     }
+    ],
+    "broader": [
+     {
+      "gold": "country",
+      "predicted": "located in the administrative territorial entity",
+      "n": 1
+     }
+    ]
+   },
+   "gold_fate": {
+    "instance of": {
+     "matched": 88,
+     "missed": 177
+    },
+    "country": {
+     "matched": 287,
+     "missed": 914,
+     "right_pair_broader": 1
+    },
+    "occupation": {
+     "missed": 573,
+     "matched": 46
+    },
+    "country of citizenship": {
+     "missed": 1032,
+     "matched": 93
+    },
+    "position played on team/speciality": {
+     "missed": 114,
+     "matched": 7
+    },
+    "place of birth": {
+     "missed": 360,
+     "matched": 24
+    },
+    "member of sports team": {
+     "missed": 338,
+     "matched": 26
+    },
+    "point in time": {
+     "missed": 249,
+     "matched": 103,
+     "right_pair_different": 2
+    },
+    "date of death": {
+     "missed": 155,
+     "matched": 9
+    },
+    "sport": {
+     "missed": 164,
+     "matched": 14,
+     "right_pair_different": 1
+    },
+    "place of death": {
+     "missed": 81,
+     "right_pair_different": 2,
+     "matched": 6
+    },
+    "date of birth": {
+     "missed": 421,
+     "matched": 40
+    },
+    "member of political party": {
+     "missed": 35,
+     "matched": 3
+    },
+    "diplomatic relation": {
+     "missed": 57,
+     "matched": 7
+    },
+    "parent taxon": {
+     "missed": 33,
+     "matched": 5
+    },
+    "located in the administrative territorial entity": {
+     "missed": 108,
+     "matched": 24,
+     "right_pair_different": 1
+    },
+    "part of": {
+     "missed": 38,
+     "matched": 5
+    },
+    "subclass of": {
+     "right_pair_different": 1,
+     "missed": 63,
+     "matched": 22
+    },
+    "inception": {
+     "missed": 20,
+     "matched": 1
+    },
+    "participant": {
+     "missed": 17,
+     "matched": 5
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "different": [
+     {
+      "item_id": "arsred_446514",
+      "gold": [
+       "مغني",
+       "subclass of",
+       "موسيقي"
+      ],
+      "predicted": [
+       "مغني",
+       "موسيقي",
+       "موسيقي"
+      ]
+     },
+     {
+      "item_id": "arsred_425923",
+      "gold": [
+       "1974",
+       "point in time",
+       "1974"
+      ],
+      "predicted": [
+       "1974",
+       "follows",
+       "1974"
+      ]
+     },
+     {
+      "item_id": "arsred_310669",
+      "gold": [
+       "كاميلي إرلانغر",
+       "place of death",
+       "باريس"
+      ],
+      "predicted": [
+       "كاميلي إرلانغر",
+       "place of birth",
+       "باريس"
+      ]
+     },
+     {
+      "item_id": "arsred_149170",
+      "gold": [
+       "لاعب وسط",
+       "sport",
+       "كرة قدم"
+      ],
+      "predicted": [
+       "لاعب وسط",
+       "كرة قدم",
+       "كرة قدم"
+      ]
+     },
+     {
+      "item_id": "arsred_365834",
+      "gold": [
+       "1980",
+       "point in time",
+       "1980"
+      ],
+      "predicted": [
+       "1980",
+       "point in time period",
+       "1980"
+      ]
+     }
+    ],
+    "broader": [
+     {
+      "item_id": "arsred_460406",
+      "gold": [
+       "غيلونغ",
+       "country",
+       "أستراليا"
+      ],
+      "predicted": [
+       "غيلونغ",
+       "located in the administrative territorial entity",
+       "أسترالي"
+      ]
+     }
+    ]
+   }
+  },
+  "qwen3.5_2b_1000_seed1": {
+   "n_predicted": 2006,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 623,
+    "entity_error": 1172,
+    "broader": 29,
+    "right_pair": 211,
+    "different": 180,
+    "different_related": 24,
+    "right_pair_off_list": 5,
+    "alias": 2
+   },
+   "share_of_predictions": {
+    "correct": 0.31056829511465606,
+    "alias": 0.0009970089730807576,
+    "broader": 0.014456630109670987,
+    "different": 0.0897308075772682,
+    "entity_error": 0.584247258225324
+   },
+   "share_of_errors": {
+    "alias": 0.0014461315979754157,
+    "broader": 0.02096890817064353,
+    "different": 0.1301518438177874,
+    "different_related": 0.01735357917570499,
+    "entity_error": 0.8474331164135936,
+    "right_pair": 0.15256688358640635
+   },
+   "f1_strict": {
+    "precision": 0.31056829511465606,
+    "recall": 0.10793485793485794,
+    "f1": 0.16019542298791462,
+    "tp": 623,
+    "fp": 1383,
+    "fn": 5149
+   },
+   "f1_implied": {
+    "precision": 0.32602193419740777,
+    "recall": 0.11330561330561331,
+    "f1": 0.16816662381074826,
+    "tp": 654,
+    "fp": 1352,
+    "fn": 5118
+   },
+   "f1_pair": {
+    "precision": 0.41575274177467597,
+    "recall": 0.1444906444906445,
+    "f1": 0.21445101568526614,
+    "tp": 834,
+    "fp": 1172,
+    "fn": 4938
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.41216216216216217,
+      "recall": 0.122,
+      "f1": 0.1882716049382716,
+      "tp": 122,
+      "fp": 174,
+      "fn": 878
+     },
+     "entity": {
+      "precision": 0.2929824561403509,
+      "recall": 0.10498742665549037,
+      "f1": 0.15458191916075287,
+      "tp": 501,
+      "fp": 1209,
+      "fn": 4271
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.4161073825503356,
+      "recall": 0.124,
+      "f1": 0.19106317411402157,
+      "tp": 124,
+      "fp": 174,
+      "fn": 876
+     },
+     "entity": {
+      "precision": 0.31030444964871196,
+      "recall": 0.11106454316848281,
+      "f1": 0.16358024691358025,
+      "tp": 530,
+      "fp": 1178,
+      "fn": 4242
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.4774193548387097,
+      "recall": 0.148,
+      "f1": 0.22595419847328244,
+      "tp": 148,
+      "fp": 162,
+      "fn": 852
+     },
+     "entity": {
+      "precision": 0.4044811320754717,
+      "recall": 0.1437552388935457,
+      "f1": 0.2121212121212121,
+      "tp": 686,
+      "fp": 1010,
+      "fn": 4086
+     }
+    }
+   },
+   "top_pairs": {
+    "broader": [
+     {
+      "gold": "country of citizenship",
+      "predicted": "country",
+      "n": 10
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "located in the administrative territorial entity",
+      "n": 7
+     },
+     {
+      "gold": "country",
+      "predicted": "located in the administrative territorial entity",
+      "n": 7
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "part of",
+      "n": 3
+     },
+     {
+      "gold": "parent taxon",
+      "predicted": "subclass of",
+      "n": 2
+     }
+    ],
+    "different": [
+     {
+      "gold": "sport",
+      "predicted": "occupation",
+      "n": 26
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "part of",
+      "n": 25
+     },
+     {
+      "gold": "country",
+      "predicted": "place of birth",
+      "n": 18
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of birth",
+      "n": 16
+     },
+     {
+      "gold": "occupation",
+      "predicted": "instance of",
+      "n": 12
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "place of birth",
+      "n": 8
+     },
+     {
+      "gold": "position played on team/speciality",
+      "predicted": "occupation",
+      "n": 7
+     },
+     {
+      "gold": "country",
+      "predicted": "country of citizenship",
+      "n": 7
+     },
+     {
+      "gold": "member of sports team",
+      "predicted": "instance of",
+      "n": 7
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "point in time",
+      "n": 6
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "member of sports team",
+      "n": 6
+     },
+     {
+      "gold": "country",
+      "predicted": "place of death",
+      "n": 5
+     }
+    ],
+    "alias": [
+     {
+      "gold": "date of birth",
+      "predicted": "birth date",
+      "n": 1
+     },
+     {
+      "gold": "date of death",
+      "predicted": "death date",
+      "n": 1
+     }
+    ]
+   },
+   "gold_fate": {
+    "member of sports team": {
+     "matched": 116,
+     "missed": 215,
+     "right_pair_different": 33
+    },
+    "country of citizenship": {
+     "right_pair_broader": 17,
+     "missed": 981,
+     "matched": 102,
+     "right_pair_different": 25
+    },
+    "occupation": {
+     "missed": 394,
+     "matched": 208,
+     "right_pair_different": 17
+    },
+    "position played on team/speciality": {
+     "missed": 111,
+     "right_pair_different": 8,
+     "matched": 2
+    },
+    "place of birth": {
+     "missed": 361,
+     "matched": 19,
+     "right_pair_different": 4
+    },
+    "instance of": {
+     "missed": 259,
+     "matched": 4,
+     "right_pair_different": 2
+    },
+    "country": {
+     "missed": 1156,
+     "right_pair_different": 35,
+     "right_pair_broader": 7,
+     "matched": 4
+    },
+    "point in time": {
+     "missed": 354
+    },
+    "date of death": {
+     "missed": 133,
+     "matched": 22,
+     "right_pair_different": 8,
+     "right_pair_alias": 1
+    },
+    "sport": {
+     "missed": 138,
+     "matched": 13,
+     "right_pair_different": 28
+    },
+    "date of birth": {
+     "matched": 98,
+     "missed": 348,
+     "right_pair_different": 14,
+     "right_pair_alias": 1
+    },
+    "place of death": {
+     "missed": 87,
+     "matched": 2
+    },
+    "member of political party": {
+     "missed": 15,
+     "matched": 23
+    },
+    "diplomatic relation": {
+     "missed": 64
+    },
+    "parent taxon": {
+     "missed": 36,
+     "right_pair_broader": 2
+    },
+    "located in the administrative territorial entity": {
+     "missed": 118,
+     "matched": 8,
+     "right_pair_different": 4,
+     "right_pair_broader": 3
+    },
+    "part of": {
+     "missed": 43
+    },
+    "subclass of": {
+     "missed": 86
+    },
+    "inception": {
+     "missed": 17,
+     "matched": 2,
+     "right_pair_different": 2
+    },
+    "participant": {
+     "missed": 22
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "broader": [
+     {
+      "item_id": "arsred_191419",
+      "gold": [
+       "رينان ماركيز",
+       "country of citizenship",
+       "برازيلي"
+      ],
+      "predicted": [
+       "رينان ماركيز",
+       "located in the administrative territorial entity",
+       "البرازيل"
+      ]
+     },
+     {
+      "item_id": "arsred_268491",
+      "gold": [
+       "رأس سيدي علي المكي",
+       "country",
+       "للبلاد التونسية"
+      ],
+      "predicted": [
+       "رأس سيدي علي المكي",
+       "located in the administrative territorial entity",
+       "البلاد التونسية"
+      ]
+     },
+     {
+      "item_id": "arsred_377967",
+      "gold": [
+       "أندي نيلسون",
+       "country of citizenship",
+       "المملكة المتحدة"
+      ],
+      "predicted": [
+       "أندي نيلسون",
+       "located in the administrative territorial entity",
+       "المملكة المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_49101",
+      "gold": [
+       "البوغنفيلية",
+       "parent taxon",
+       "الشبية"
+      ],
+      "predicted": [
+       "البوغنفيلية",
+       "subclass of",
+       "الشبية"
+      ]
+     },
+     {
+      "item_id": "arsred_455942",
+      "gold": [
+       "تركي الثقفي",
+       "country of citizenship",
+       "سعودي"
+      ],
+      "predicted": [
+       "تركي الثقفي",
+       "located in the administrative territorial entity",
+       "السعودية"
+      ]
+     }
+    ],
+    "different": [
+     {
+      "item_id": "arsred_38961",
+      "gold": [
+       "إيلي بوين",
+       "country of citizenship",
+       "أمريكي"
+      ],
+      "predicted": [
+       "إيلي بوين",
+       "occupation",
+       "أمريكي"
+      ]
+     },
+     {
+      "item_id": "arsred_38961",
+      "gold": [
+       "مقاطعة رتشلاند",
+       "country",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "مقاطعة رتشلاند",
+       "place of birth",
+       "الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_18137",
+      "gold": [
+       "كرايغ بولوك",
+       "country of citizenship",
+       "المملكة المتحدة"
+      ],
+      "predicted": [
+       "كرايغ بولوك",
+       "place of birth",
+       "في المملكة المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_227952",
+      "gold": [
+       "سولت ليك",
+       "country",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "سولت ليك",
+       "place of birth",
+       "في الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_425655",
+      "gold": [
+       "توررانسي",
+       "country",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "توررانسي",
+       "place of birth",
+       "في الولايات المتحدة"
+      ]
+     }
+    ],
+    "alias": [
+     {
+      "item_id": "arsred_440942",
+      "gold": [
+       "مومو أساكورا",
+       "date of birth",
+       "25 يونيو 1994"
+      ],
+      "predicted": [
+       "مومو أساكورا",
+       "birth date",
+       "25 يونيو 1994"
+      ]
+     },
+     {
+      "item_id": "arsred_219531",
+      "gold": [
+       "تشارلز دينيسون",
+       "date of death",
+       "27 يونيو 1867"
+      ],
+      "predicted": [
+       "تشارلز دينيسون",
+       "death date",
+       "27 يونيو 1867"
+      ]
+     }
+    ]
+   }
+  },
+  "qwen3.5_4b_1000_seed1": {
+   "n_predicted": 2419,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 1008,
+    "entity_error": 1260,
+    "broader": 46,
+    "right_pair": 151,
+    "different": 105,
+    "different_related": 6,
+    "right_pair_off_list": 1
+   },
+   "share_of_predictions": {
+    "correct": 0.41670111616370403,
+    "alias": 0.0,
+    "broader": 0.019016122364613478,
+    "different": 0.0434063662670525,
+    "entity_error": 0.52087639520463
+   },
+   "share_of_errors": {
+    "alias": 0.0,
+    "broader": 0.03260099220411056,
+    "different": 0.0744153082919915,
+    "different_related": 0.004252303330970942,
+    "entity_error": 0.892983699503898,
+    "right_pair": 0.10701630049610206
+   },
+   "f1_strict": {
+    "precision": 0.41670111616370403,
+    "recall": 0.17463617463617465,
+    "f1": 0.2461237944084972,
+    "tp": 1008,
+    "fp": 1411,
+    "fn": 4764
+   },
+   "f1_implied": {
+    "precision": 0.4357172385283175,
+    "recall": 0.1826056826056826,
+    "f1": 0.2573556342326944,
+    "tp": 1054,
+    "fp": 1365,
+    "fn": 4718
+   },
+   "f1_pair": {
+    "precision": 0.47912360479537,
+    "recall": 0.20079695079695078,
+    "f1": 0.2829935294835795,
+    "tp": 1159,
+    "fp": 1260,
+    "fn": 4613
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.5718562874251497,
+      "recall": 0.382,
+      "f1": 0.45803357314148685,
+      "tp": 382,
+      "fp": 286,
+      "fn": 618
+     },
+     "entity": {
+      "precision": 0.35750999428897773,
+      "recall": 0.13118189438390612,
+      "f1": 0.1919362256630385,
+      "tp": 626,
+      "fp": 1125,
+      "fn": 4146
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.5718562874251497,
+      "recall": 0.382,
+      "f1": 0.45803357314148685,
+      "tp": 382,
+      "fp": 286,
+      "fn": 618
+     },
+     "entity": {
+      "precision": 0.3837806967447173,
+      "recall": 0.14082145850796313,
+      "f1": 0.20604016556799018,
+      "tp": 672,
+      "fp": 1079,
+      "fn": 4100
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.5763473053892215,
+      "recall": 0.385,
+      "f1": 0.4616306954436451,
+      "tp": 385,
+      "fp": 283,
+      "fn": 615
+     },
+     "entity": {
+      "precision": 0.4420331239291833,
+      "recall": 0.16219614417435038,
+      "f1": 0.2373141192702744,
+      "tp": 774,
+      "fp": 977,
+      "fn": 3998
+     }
+    }
+   },
+   "top_pairs": {
+    "broader": [
+     {
+      "gold": "country",
+      "predicted": "located in the administrative territorial entity",
+      "n": 41
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "located in the administrative territorial entity",
+      "n": 3
+     },
+     {
+      "gold": "country",
+      "predicted": "part of",
+      "n": 1
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "part of",
+      "n": 1
+     }
+    ],
+    "different": [
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of birth",
+      "n": 53
+     },
+     {
+      "gold": "sport",
+      "predicted": "occupation",
+      "n": 27
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of death",
+      "n": 5
+     },
+     {
+      "gold": "occupation",
+      "predicted": "instance of",
+      "n": 4
+     },
+     {
+      "gold": "country",
+      "predicted": "place of birth",
+      "n": 3
+     },
+     {
+      "gold": "country",
+      "predicted": "country of citizenship",
+      "n": 3
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "country of citizenship",
+      "n": 3
+     },
+     {
+      "gold": "date of death",
+      "predicted": "place of death",
+      "n": 1
+     },
+     {
+      "gold": "sport",
+      "predicted": "instance of",
+      "n": 1
+     },
+     {
+      "gold": "place of death",
+      "predicted": "date of death",
+      "n": 1
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "location in administrative territorial entity",
+      "n": 1
+     },
+     {
+      "gold": "date of death",
+      "predicted": "point in time",
+      "n": 1
+     }
+    ]
+   },
+   "gold_fate": {
+    "occupation": {
+     "matched": 158,
+     "missed": 457,
+     "right_pair_different": 4
+    },
+    "country of citizenship": {
+     "matched": 335,
+     "missed": 728,
+     "right_pair_different": 59,
+     "right_pair_broader": 3
+    },
+    "position played on team/speciality": {
+     "missed": 102,
+     "matched": 19
+    },
+    "place of birth": {
+     "missed": 323,
+     "matched": 57,
+     "right_pair_different": 4
+    },
+    "member of sports team": {
+     "missed": 335,
+     "matched": 29
+    },
+    "instance of": {
+     "missed": 260,
+     "matched": 5
+    },
+    "country": {
+     "missed": 1154,
+     "right_pair_broader": 42,
+     "right_pair_different": 6
+    },
+    "point in time": {
+     "missed": 353,
+     "right_pair_different": 1
+    },
+    "date of death": {
+     "matched": 74,
+     "missed": 88,
+     "right_pair_different": 2
+    },
+    "sport": {
+     "missed": 149,
+     "matched": 2,
+     "right_pair_different": 28
+    },
+    "date of birth": {
+     "matched": 306,
+     "missed": 155
+    },
+    "place of death": {
+     "missed": 83,
+     "matched": 5,
+     "right_pair_different": 1
+    },
+    "member of political party": {
+     "matched": 8,
+     "missed": 30
+    },
+    "diplomatic relation": {
+     "missed": 64
+    },
+    "parent taxon": {
+     "missed": 38
+    },
+    "located in the administrative territorial entity": {
+     "missed": 124,
+     "matched": 8,
+     "right_pair_broader": 1
+    },
+    "part of": {
+     "missed": 43
+    },
+    "subclass of": {
+     "missed": 86
+    },
+    "inception": {
+     "missed": 19,
+     "matched": 2
+    },
+    "participant": {
+     "missed": 22
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "broader": [
+     {
+      "item_id": "arsred_227952",
+      "gold": [
+       "سولت ليك",
+       "country",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "سولت ليك",
+       "located in the administrative territorial entity",
+       "الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_227665",
+      "gold": [
+       "كارسون",
+       "country",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "كارسون",
+       "located in the administrative territorial entity",
+       "الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_346520",
+      "gold": [
+       "دونكاستر",
+       "country",
+       "المملكة المتحدة"
+      ],
+      "predicted": [
+       "دونكاستر",
+       "located in the administrative territorial entity",
+       "المملكة المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_227641",
+      "gold": [
+       "فلينت",
+       "country",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "فلينت",
+       "located in the administrative territorial entity",
+       "الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_156172",
+      "gold": [
+       "مسكيغون",
+       "country",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "مسكيغون",
+       "located in the administrative territorial entity",
+       "الولايات المتحدة"
+      ]
+     }
+    ],
+    "different": [
+     {
+      "item_id": "arsred_301507",
+      "gold": [
+       "فرانك راميريز",
+       "country of citizenship",
+       "كولومبيا"
+      ],
+      "predicted": [
+       "فرانك راميريز",
+       "place of birth",
+       "كولومبيا"
+      ]
+     },
+     {
+      "item_id": "arsred_310646",
+      "gold": [
+       "رالف وارن",
+       "country of citizenship",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "رالف وارن",
+       "place of birth",
+       "في الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_392317",
+      "gold": [
+       "أبيجيل آدامز ألين",
+       "country of citizenship",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "أبيجيل آدامز ألين",
+       "place of birth",
+       "في الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_228597",
+      "gold": [
+       "باب كلارك",
+       "country of citizenship",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "باب كلارك",
+       "place of birth",
+       "في الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_444673",
+      "gold": [
+       "سيمون دانر",
+       "sport",
+       "لاعب هوكي الجليد"
+      ],
+      "predicted": [
+       "سيمون دانر",
+       "occupation",
+       "لاعب هوكي الجليد"
+      ]
+     }
+    ]
+   }
+  },
+  "qwen3.5_9b_1000_seed1": {
+   "n_predicted": 3500,
+   "n_gold": 5772,
+   "counts": {
+    "correct": 1597,
+    "entity_error": 1681,
+    "different": 192,
+    "right_pair": 222,
+    "broader": 30,
+    "different_related": 9,
+    "right_pair_off_list": 1
+   },
+   "share_of_predictions": {
+    "correct": 0.4562857142857143,
+    "alias": 0.0,
+    "broader": 0.008571428571428572,
+    "different": 0.054857142857142854,
+    "entity_error": 0.48028571428571426
+   },
+   "share_of_errors": {
+    "alias": 0.0,
+    "broader": 0.015764582238570676,
+    "different": 0.10089332632685234,
+    "different_related": 0.004729374671571204,
+    "entity_error": 0.883342091434577,
+    "right_pair": 0.11665790856542302
+   },
+   "f1_strict": {
+    "precision": 0.4562857142857143,
+    "recall": 0.2766805266805267,
+    "f1": 0.3444779982743744,
+    "tp": 1597,
+    "fp": 1903,
+    "fn": 4175
+   },
+   "f1_implied": {
+    "precision": 0.46485714285714286,
+    "recall": 0.2818780318780319,
+    "f1": 0.35094909404659197,
+    "tp": 1627,
+    "fp": 1873,
+    "fn": 4145
+   },
+   "f1_pair": {
+    "precision": 0.5197142857142857,
+    "recall": 0.31514206514206516,
+    "f1": 0.3923641069887834,
+    "tp": 1819,
+    "fp": 1681,
+    "fn": 3953
+   },
+   "by_style": {
+    "strict": {
+     "attribute": {
+      "precision": 0.5230263157894737,
+      "recall": 0.477,
+      "f1": 0.4989539748953974,
+      "tp": 477,
+      "fp": 435,
+      "fn": 523
+     },
+     "entity": {
+      "precision": 0.4327666151468315,
+      "recall": 0.2347024308466052,
+      "f1": 0.3043478260869565,
+      "tp": 1120,
+      "fp": 1468,
+      "fn": 3652
+     }
+    },
+    "implied": {
+     "attribute": {
+      "precision": 0.5230263157894737,
+      "recall": 0.477,
+      "f1": 0.4989539748953974,
+      "tp": 477,
+      "fp": 435,
+      "fn": 523
+     },
+     "entity": {
+      "precision": 0.44435857805255025,
+      "recall": 0.240989103101425,
+      "f1": 0.3125,
+      "tp": 1150,
+      "fp": 1438,
+      "fn": 3622
+     }
+    },
+    "pair": {
+     "attribute": {
+      "precision": 0.5590809628008753,
+      "recall": 0.511,
+      "f1": 0.5339602925809821,
+      "tp": 511,
+      "fp": 403,
+      "fn": 489
+     },
+     "entity": {
+      "precision": 0.505800464037123,
+      "recall": 0.2740989103101425,
+      "f1": 0.35553139440065235,
+      "tp": 1308,
+      "fp": 1278,
+      "fn": 3464
+     }
+    }
+   },
+   "top_pairs": {
+    "different": [
+     {
+      "gold": "occupation",
+      "predicted": "instance of",
+      "n": 56
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of birth",
+      "n": 41
+     },
+     {
+      "gold": "date of birth",
+      "predicted": "point in time",
+      "n": 23
+     },
+     {
+      "gold": "sport",
+      "predicted": "instance of",
+      "n": 22
+     },
+     {
+      "gold": "sport",
+      "predicted": "occupation",
+      "n": 12
+     },
+     {
+      "gold": "date of death",
+      "predicted": "point in time",
+      "n": 9
+     },
+     {
+      "gold": "country",
+      "predicted": "country of citizenship",
+      "n": 8
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "place of death",
+      "n": 7
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "place of death",
+      "n": 3
+     },
+     {
+      "gold": "position played on team/speciality",
+      "predicted": "occupation",
+      "n": 2
+     },
+     {
+      "gold": "place of birth",
+      "predicted": "country of citizenship",
+      "n": 2
+     },
+     {
+      "gold": "country",
+      "predicted": "member of sports team",
+      "n": 2
+     }
+    ],
+    "broader": [
+     {
+      "gold": "country",
+      "predicted": "located in the administrative territorial entity",
+      "n": 26
+     },
+     {
+      "gold": "country of citizenship",
+      "predicted": "country",
+      "n": 2
+     },
+     {
+      "gold": "located in the administrative territorial entity",
+      "predicted": "part of",
+      "n": 1
+     },
+     {
+      "gold": "country",
+      "predicted": "part of",
+      "n": 1
+     }
+    ]
+   },
+   "gold_fate": {
+    "country of citizenship": {
+     "matched": 512,
+     "missed": 562,
+     "right_pair_broader": 2,
+     "right_pair_different": 49
+    },
+    "occupation": {
+     "matched": 198,
+     "missed": 365,
+     "right_pair_different": 56
+    },
+    "member of sports team": {
+     "matched": 179,
+     "missed": 185
+    },
+    "position played on team/speciality": {
+     "missed": 74,
+     "matched": 45,
+     "right_pair_different": 2
+    },
+    "place of birth": {
+     "missed": 263,
+     "matched": 116,
+     "right_pair_different": 5
+    },
+    "instance of": {
+     "missed": 256,
+     "matched": 9
+    },
+    "country": {
+     "missed": 1163,
+     "right_pair_broader": 27,
+     "matched": 2,
+     "right_pair_different": 10
+    },
+    "point in time": {
+     "missed": 353,
+     "matched": 1
+    },
+    "date of death": {
+     "matched": 120,
+     "right_pair_different": 10,
+     "missed": 34
+    },
+    "sport": {
+     "missed": 128,
+     "right_pair_different": 34,
+     "matched": 17
+    },
+    "date of birth": {
+     "matched": 351,
+     "missed": 87,
+     "right_pair_different": 23
+    },
+    "place of death": {
+     "missed": 79,
+     "matched": 10
+    },
+    "member of political party": {
+     "missed": 12,
+     "matched": 26
+    },
+    "diplomatic relation": {
+     "missed": 64
+    },
+    "parent taxon": {
+     "missed": 37,
+     "right_pair_different": 1
+    },
+    "located in the administrative territorial entity": {
+     "missed": 125,
+     "matched": 6,
+     "right_pair_broader": 1,
+     "right_pair_different": 1
+    },
+    "part of": {
+     "missed": 43
+    },
+    "subclass of": {
+     "missed": 86
+    },
+    "inception": {
+     "missed": 15,
+     "matched": 5,
+     "right_pair_different": 1
+    },
+    "participant": {
+     "missed": 22
+    }
+   },
+   "gold_by_relation": {
+    "occupation": 619,
+    "country of citizenship": 1125,
+    "position played on team/speciality": 121,
+    "place of birth": 384,
+    "member of sports team": 364,
+    "instance of": 265,
+    "country": 1202,
+    "point in time": 354,
+    "date of death": 164,
+    "sport": 179,
+    "place of death": 89,
+    "date of birth": 461,
+    "member of political party": 38,
+    "diplomatic relation": 64,
+    "parent taxon": 38,
+    "located in the administrative territorial entity": 133,
+    "part of": 43,
+    "subclass of": 86,
+    "inception": 21,
+    "participant": 22
+   },
+   "examples": {
+    "different": [
+     {
+      "item_id": "arsred_444174",
+      "gold": [
+       "بيتر كيس",
+       "occupation",
+       "رياضياتي"
+      ],
+      "predicted": [
+       "بيتر كيس",
+       "instance of",
+       "رياضياتي"
+      ]
+     },
+     {
+      "item_id": "arsred_120695",
+      "gold": [
+       "لورنس أوبراين",
+       "date of death",
+       "28 أبريل 1870"
+      ],
+      "predicted": [
+       "لورنس أوبراين",
+       "point in time",
+       "28 أبريل 1870"
+      ]
+     },
+     {
+      "item_id": "arsred_256937",
+      "gold": [
+       "نوريكو واتانابي",
+       "occupation",
+       "ممثلة"
+      ],
+      "predicted": [
+       "نوريكو واتانابي",
+       "instance of",
+       "ممثلة"
+      ]
+     },
+     {
+      "item_id": "arsred_294656",
+      "gold": [
+       "مونيكا فيشر",
+       "occupation",
+       "مصورة"
+      ],
+      "predicted": [
+       "مونيكا فيشر",
+       "instance of",
+       "مصورة"
+      ]
+     },
+     {
+      "item_id": "arsred_21121",
+      "gold": [
+       "جان بيير داروسان",
+       "country of citizenship",
+       "فرنسا"
+      ],
+      "predicted": [
+       "جان بيير داروسان",
+       "place of birth",
+       "فرنسا"
+      ]
+     }
+    ],
+    "broader": [
+     {
+      "item_id": "arsred_435201",
+      "gold": [
+       "تومويوكي شيرايشي",
+       "country of citizenship",
+       "اليابان"
+      ],
+      "predicted": [
+       "تومويوكي شيرايشي",
+       "country",
+       "اليابان"
+      ]
+     },
+     {
+      "item_id": "arsred_227952",
+      "gold": [
+       "سولت ليك",
+       "country",
+       "الولايات المتحدة"
+      ],
+      "predicted": [
+       "سولت ليك",
+       "located in the administrative territorial entity",
+       "الولايات المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_372484",
+      "gold": [
+       "سامي كولينز",
+       "country of citizenship",
+       "المملكة المتحدة"
+      ],
+      "predicted": [
+       "سامي كولينز",
+       "country",
+       "المملكة المتحدة"
+      ]
+     },
+     {
+      "item_id": "arsred_232071",
+      "gold": [
+       "جوبار",
+       "country",
+       "إيران"
+      ],
+      "predicted": [
+       "جوبار",
+       "located in the administrative territorial entity",
+       "إيران"
+      ]
+     },
+     {
+      "item_id": "arsred_133443",
+      "gold": [
+       "تلال الإمارات",
+       "country",
+       "الإمارات العربية المتحدة"
+      ],
+      "predicted": [
+       "تلال الإمارات",
+       "located in the administrative territorial entity",
+       "الإمارات العربية المتحدة"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

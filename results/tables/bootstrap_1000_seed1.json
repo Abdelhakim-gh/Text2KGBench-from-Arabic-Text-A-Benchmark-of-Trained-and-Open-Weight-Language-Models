@@ -1,0 +1,1096 @@
+{
+ "scale": 1000,
+ "seed": 1,
+ "n_items": 1000,
+ "n_resamples": 10000,
+ "rng_seed": 20261008,
+ "what_it_measures": "uncertainty from the choice of test sentences; not decoding randomness",
+ "ranking": [
+  "gemma4_12b",
+  "qwen3.5_9b",
+  "llama3.1_8b",
+  "aya-expanse_8b",
+  "command-r7b-arabic_latest",
+  "mistral-nemo_12b",
+  "qwen3.5_4b",
+  "mrebel",
+  "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M",
+  "qwen3.5_2b",
+  "iKhalid_ALLaM_7b"
+ ],
+ "models": {
+  "aya-expanse_8b": {
+   "display_name": "Aya-Expanse 8B",
+   "f1": 0.30685373977995356,
+   "f1_ci95": [
+    0.2920810908669002,
+    0.32176636965728617
+   ],
+   "precision": 0.3675937122128174,
+   "precision_ci95": [
+    0.34664292544711284,
+    0.38850152839636226
+   ],
+   "recall": 0.26334026334026334,
+   "recall_ci95": [
+    0.2503332825602365,
+    0.27673175821039087
+   ],
+   "attr_f1": 0.5693354264782836,
+   "attr_f1_ci95": [
+    0.5384615384615384,
+    0.5997996645937868
+   ],
+   "ent_f1": 0.24412206103051526,
+   "ent_f1_ci95": [
+    0.22928199918310205,
+    0.25936633662652653
+   ],
+   "attr_minus_ent": 0.32521336544776835,
+   "attr_minus_ent_ci95": [
+    0.2921009740332645,
+    0.35846741188634307
+   ],
+   "share_of_resamples_gap_positive": 1.0
+  },
+  "command-r7b-arabic_latest": {
+   "display_name": "Command-R7B-Arabic",
+   "f1": 0.3004685669660289,
+   "f1_ci95": [
+    0.28400015608849616,
+    0.3166337688172962
+   ],
+   "precision": 0.3441413237924866,
+   "precision_ci95": [
+    0.32141970548916327,
+    0.3673935909906535
+   ],
+   "recall": 0.26663201663201663,
+   "recall_ci95": [
+    0.2522386864363061,
+    0.28085338361799295
+   ],
+   "attr_f1": 0.36217087587318647,
+   "attr_f1_ci95": [
+    0.3283416528008874,
+    0.394411651692038
+   ],
+   "ent_f1": 0.2867708457592747,
+   "ent_f1_ci95": [
+    0.26899305574485755,
+    0.3043224840513827
+   ],
+   "attr_minus_ent": 0.07540003011391178,
+   "attr_minus_ent_ci95": [
+    0.03965777559171878,
+    0.11080126312905825
+   ],
+   "share_of_resamples_gap_positive": 1.0
+  },
+  "gemma4_12b": {
+   "display_name": "Gemma4 12B",
+   "f1": 0.4242596272116567,
+   "f1_ci95": [
+    0.40811262462233705,
+    0.43984189034155957
+   ],
+   "precision": 0.46737544298519906,
+   "precision_ci95": [
+    0.4463717411360187,
+    0.48767258624323656
+   ],
+   "recall": 0.38842688842688844,
+   "recall_ci95": [
+    0.3735478912267564,
+    0.4031904583261876
+   ],
+   "attr_f1": 0.5268065268065268,
+   "attr_f1_ci95": [
+    0.49455024860046176,
+    0.5585674219260632
+   ],
+   "ent_f1": 0.39814814814814814,
+   "ent_f1_ci95": [
+    0.3806340394205137,
+    0.41503057365666063
+   ],
+   "attr_minus_ent": 0.1286583786583787,
+   "attr_minus_ent_ci95": [
+    0.09397495521902162,
+    0.16234035314007877
+   ],
+   "share_of_resamples_gap_positive": 1.0
+  },
+  "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M": {
+   "display_name": "Fanar-1 9B",
+   "f1": 0.2334287601849813,
+   "f1_ci95": [
+    0.2166703052880857,
+    0.25018511561208895
+   ],
+   "precision": 0.3202416918429003,
+   "precision_ci95": [
+    0.2962291982095023,
+    0.3446031726868843
+   ],
+   "recall": 0.18364518364518365,
+   "recall_ci95": [
+    0.1701376351806805,
+    0.19760424748421185
+   ],
+   "attr_f1": 0.4354587869362364,
+   "attr_f1_ci95": [
+    0.40186903788168443,
+    0.46988074622649617
+   ],
+   "ent_f1": 0.17894589682650636,
+   "ent_f1_ci95": [
+    0.1615382761386524,
+    0.19707250519750522
+   ],
+   "attr_minus_ent": 0.25651289010973005,
+   "attr_minus_ent_ci95": [
+    0.22059508735279126,
+    0.29196414300927065
+   ],
+   "share_of_resamples_gap_positive": 1.0
+  },
+  "iKhalid_ALLaM_7b": {
+   "display_name": "ALLaM 7B",
+   "f1": 0.07119353873766078,
+   "f1_ci95": [
+    0.06057715876231487,
+    0.08233039013510529
+   ],
+   "precision": 0.2603938730853392,
+   "precision_ci95": [
+    0.22673695254856835,
+    0.29508196721311475
+   ],
+   "recall": 0.041233541233541234,
+   "recall_ci95": [
+    0.03484669826148467,
+    0.048024648998000026
+   ],
+   "attr_f1": 0.216,
+   "attr_f1_ci95": [
+    0.18006308235288349,
+    0.2515928703513458
+   ],
+   "ent_f1": 0.03789551140544518,
+   "ent_f1_ci95": [
+    0.02938428874879615,
+    0.04698712597421463
+   ],
+   "attr_minus_ent": 0.17810448859455483,
+   "attr_minus_ent_ci95": [
+    0.14218764422321375,
+    0.21364434240819544
+   ],
+   "share_of_resamples_gap_positive": 1.0
+  },
+  "llama3.1_8b": {
+   "display_name": "Llama3.1 8B",
+   "f1": 0.32074031673344783,
+   "f1_ci95": [
+    0.30573562762642187,
+    0.3357958416714313
+   ],
+   "precision": 0.35690021231422503,
+   "precision_ci95": [
+    0.334352431447117,
+    0.37994376906769134
+   ],
+   "recall": 0.2912335412335412,
+   "recall_ci95": [
+    0.27842064526397026,
+    0.3041110267374554
+   ],
+   "attr_f1": 0.5224625623960066,
+   "attr_f1_ci95": [
+    0.48883750509773943,
+    0.5550361404342922
+   ],
+   "ent_f1": 0.2788339670468948,
+   "ent_f1_ci95": [
+    0.26386316027138845,
+    0.29386913750701127
+   ],
+   "attr_minus_ent": 0.24362859534911185,
+   "attr_minus_ent_ci95": [
+    0.20970308703342666,
+    0.2767358165056692
+   ],
+   "share_of_resamples_gap_positive": 1.0
+  },
+  "mistral-nemo_12b": {
+   "display_name": "Mistral-Nemo 12B",
+   "f1": 0.24842105263157896,
+   "f1_ci95": [
+    0.23135738735455683,
+    0.26606359043688227
+   ],
+   "precision": 0.38228941684665224,
+   "precision_ci95": [
+    0.35580951393005333,
+    0.40932835820895525
+   ],
+   "recall": 0.183991683991684,
+   "recall_ci95": [
+    0.17037274559150356,
+    0.19796488934181936
+   ],
+   "attr_f1": 0.41657077100115075,
+   "attr_f1_ci95": [
+    0.38250714146727516,
+    0.45008660623203584
+   ],
+   "ent_f1": 0.20551967116852612,
+   "ent_f1_ci95": [
+    0.1879529029945433,
+    0.22363494853382168
+   ],
+   "attr_minus_ent": 0.21105109983262463,
+   "attr_minus_ent_ci95": [
+    0.17647315048358678,
+    0.2450865354600192
+   ],
+   "share_of_resamples_gap_positive": 1.0
+  },
+  "mrebel": {
+   "display_name": "mREBEL (baseline)",
+   "f1": 0.23647178296822863,
+   "f1_ci95": [
+    0.206695186557751,
+    0.2657538174215453
+   ],
+   "precision": 0.7270294380017841,
+   "precision_ci95": [
+    0.6793948857054598,
+    0.7717518946208142
+   ],
+   "recall": 0.1411988911988912,
+   "recall_ci95": [
+    0.12119941145927873,
+    0.16151519462279745
+   ],
+   "attr_f1": 0.2547876769358868,
+   "attr_f1_ci95": [
+    0.21593757303108202,
+    0.2931598591073969
+   ],
+   "ent_f1": 0.2326071679550246,
+   "ent_f1_ci95": [
+    0.20109474147866518,
+    0.26363324605916727
+   ],
+   "attr_minus_ent": 0.022180508980862185,
+   "attr_minus_ent_ci95": [
+    -0.013948250430013048,
+    0.05850481099721754
+   ],
+   "share_of_resamples_gap_positive": 0.884
+  },
+  "qwen3.5_2b": {
+   "display_name": "Qwen3.5 2B",
+   "f1": 0.16019542298791464,
+   "f1_ci95": [
+    0.1480204752682876,
+    0.17227738402623488
+   ],
+   "precision": 0.31056829511465606,
+   "precision_ci95": [
+    0.2861505217985775,
+    0.3343688144153983
+   ],
+   "recall": 0.10793485793485794,
+   "recall_ci95": [
+    0.09938269431179866,
+    0.11658457205728932
+   ],
+   "attr_f1": 0.1882716049382716,
+   "attr_f1_ci95": [
+    0.15809617245953694,
+    0.2185380557648832
+   ],
+   "ent_f1": 0.15458191916075287,
+   "ent_f1_ci95": [
+    0.14113796698349737,
+    0.16793690488444818
+   ],
+   "attr_minus_ent": 0.03368968577751874,
+   "attr_minus_ent_ci95": [
+    0.0004927070878087126,
+    0.06778136869731448
+   ],
+   "share_of_resamples_gap_positive": 0.9764
+  },
+  "qwen3.5_4b": {
+   "display_name": "Qwen3.5 4B",
+   "f1": 0.24612379440849713,
+   "f1_ci95": [
+    0.23022798649036677,
+    0.2623268774263413
+   ],
+   "precision": 0.41670111616370403,
+   "precision_ci95": [
+    0.39253117732338355,
+    0.44121365360303416
+   ],
+   "recall": 0.17463617463617465,
+   "recall_ci95": [
+    0.16222787931534668,
+    0.18754337265787646
+   ],
+   "attr_f1": 0.4580335731414868,
+   "attr_f1_ci95": [
+    0.4246003323543307,
+    0.4908675799086758
+   ],
+   "ent_f1": 0.19193622566303847,
+   "ent_f1_ci95": [
+    0.1758233516895584,
+    0.2086754423480945
+   ],
+   "attr_minus_ent": 0.2660973474784483,
+   "attr_minus_ent_ci95": [
+    0.23130832860599104,
+    0.30155945165207787
+   ],
+   "share_of_resamples_gap_positive": 1.0
+  },
+  "qwen3.5_9b": {
+   "display_name": "Qwen3.5 9B",
+   "f1": 0.3444779982743745,
+   "f1_ci95": [
+    0.3266441424804653,
+    0.3613357979168872
+   ],
+   "precision": 0.4562857142857143,
+   "precision_ci95": [
+    0.43249897669743953,
+    0.4791440595357254
+   ],
+   "recall": 0.2766805266805267,
+   "recall_ci95": [
+    0.2610397839184336,
+    0.291477549176027
+   ],
+   "attr_f1": 0.4989539748953975,
+   "attr_f1_ci95": [
+    0.46625750944454,
+    0.5318361385917005
+   ],
+   "ent_f1": 0.30434782608695654,
+   "ent_f1_ci95": [
+    0.2853320442088072,
+    0.3223981109912683
+   ],
+   "attr_minus_ent": 0.19460614880844096,
+   "attr_minus_ent_ci95": [
+    0.16016931625853448,
+    0.22890951517727573
+   ],
+   "share_of_resamples_gap_positive": 1.0
+  }
+ },
+ "pairs": {
+  "gemma4_12b vs qwen3.5_9b": {
+   "a": "Gemma4 12B",
+   "b": "Qwen3.5 9B",
+   "f1_diff": 0.07978162893728225,
+   "diff_ci95": [
+    0.06262713549987467,
+    0.09701405991368964
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "gemma4_12b vs llama3.1_8b": {
+   "a": "Gemma4 12B",
+   "b": "Llama3.1 8B",
+   "f1_diff": 0.10351931047820889,
+   "diff_ci95": [
+    0.08727566940148966,
+    0.11966834209544093
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "gemma4_12b vs aya-expanse_8b": {
+   "a": "Gemma4 12B",
+   "b": "Aya-Expanse 8B",
+   "f1_diff": 0.11740588743170316,
+   "diff_ci95": [
+    0.10033227196002052,
+    0.1336715272305892
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "gemma4_12b vs command-r7b-arabic_latest": {
+   "a": "Gemma4 12B",
+   "b": "Command-R7B-Arabic",
+   "f1_diff": 0.1237910602456278,
+   "diff_ci95": [
+    0.10732617836932776,
+    0.13996211254140312
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "gemma4_12b vs mistral-nemo_12b": {
+   "a": "Gemma4 12B",
+   "b": "Mistral-Nemo 12B",
+   "f1_diff": 0.17583857458007776,
+   "diff_ci95": [
+    0.15472498294162443,
+    0.19580689416924602
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "gemma4_12b vs qwen3.5_4b": {
+   "a": "Gemma4 12B",
+   "b": "Qwen3.5 4B",
+   "f1_diff": 0.1781358328031596,
+   "diff_ci95": [
+    0.1593180945932768,
+    0.1964445415618999
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "gemma4_12b vs mrebel": {
+   "a": "Gemma4 12B",
+   "b": "mREBEL (baseline)",
+   "f1_diff": 0.1877878442434281,
+   "diff_ci95": [
+    0.15526304474943994,
+    0.22091545407162905
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "gemma4_12b vs hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M": {
+   "a": "Gemma4 12B",
+   "b": "Fanar-1 9B",
+   "f1_diff": 0.19083086702667543,
+   "diff_ci95": [
+    0.17249303661991813,
+    0.20896392630288424
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "gemma4_12b vs qwen3.5_2b": {
+   "a": "Gemma4 12B",
+   "b": "Qwen3.5 2B",
+   "f1_diff": 0.2640642042237421,
+   "diff_ci95": [
+    0.2465633024395241,
+    0.28057408469550327
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "gemma4_12b vs iKhalid_ALLaM_7b": {
+   "a": "Gemma4 12B",
+   "b": "ALLaM 7B",
+   "f1_diff": 0.35306608847399595,
+   "diff_ci95": [
+    0.3351539392753132,
+    0.3701168488586998
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_9b vs llama3.1_8b": {
+   "a": "Qwen3.5 9B",
+   "b": "Llama3.1 8B",
+   "f1_diff": 0.023737681540926647,
+   "diff_ci95": [
+    0.004447569496214863,
+    0.042243586599125235
+   ],
+   "p_two_sided": 0.015,
+   "share_a_ahead": 0.9925
+  },
+  "qwen3.5_9b vs aya-expanse_8b": {
+   "a": "Qwen3.5 9B",
+   "b": "Aya-Expanse 8B",
+   "f1_diff": 0.037624258494420915,
+   "diff_ci95": [
+    0.019971314204198325,
+    0.05512151583739533
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_9b vs command-r7b-arabic_latest": {
+   "a": "Qwen3.5 9B",
+   "b": "Command-R7B-Arabic",
+   "f1_diff": 0.04400943130834556,
+   "diff_ci95": [
+    0.023808141122844705,
+    0.06399068702120439
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_9b vs mistral-nemo_12b": {
+   "a": "Qwen3.5 9B",
+   "b": "Mistral-Nemo 12B",
+   "f1_diff": 0.09605694564279552,
+   "diff_ci95": [
+    0.07309006461189953,
+    0.11824239728551654
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_9b vs qwen3.5_4b": {
+   "a": "Qwen3.5 9B",
+   "b": "Qwen3.5 4B",
+   "f1_diff": 0.09835420386587734,
+   "diff_ci95": [
+    0.07885798066716204,
+    0.11753377041821024
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_9b vs mrebel": {
+   "a": "Qwen3.5 9B",
+   "b": "mREBEL (baseline)",
+   "f1_diff": 0.10800621530614585,
+   "diff_ci95": [
+    0.07491455806735536,
+    0.14081443046933803
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_9b vs hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M": {
+   "a": "Qwen3.5 9B",
+   "b": "Fanar-1 9B",
+   "f1_diff": 0.11104923808939318,
+   "diff_ci95": [
+    0.08772320447363785,
+    0.13300590502737183
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_9b vs qwen3.5_2b": {
+   "a": "Qwen3.5 9B",
+   "b": "Qwen3.5 2B",
+   "f1_diff": 0.18428257528645983,
+   "diff_ci95": [
+    0.16507039116972835,
+    0.20260342067536172
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_9b vs iKhalid_ALLaM_7b": {
+   "a": "Qwen3.5 9B",
+   "b": "ALLaM 7B",
+   "f1_diff": 0.2732844595367137,
+   "diff_ci95": [
+    0.25390802874549523,
+    0.2917905940137302
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "llama3.1_8b vs aya-expanse_8b": {
+   "a": "Llama3.1 8B",
+   "b": "Aya-Expanse 8B",
+   "f1_diff": 0.013886576953494267,
+   "diff_ci95": [
+    -0.0004832637544809947,
+    0.028099615024696056
+   ],
+   "p_two_sided": 0.0576,
+   "share_a_ahead": 0.9712
+  },
+  "llama3.1_8b vs command-r7b-arabic_latest": {
+   "a": "Llama3.1 8B",
+   "b": "Command-R7B-Arabic",
+   "f1_diff": 0.020271749767418912,
+   "diff_ci95": [
+    0.0034739500438347843,
+    0.036909472803030134
+   ],
+   "p_two_sided": 0.0194,
+   "share_a_ahead": 0.9903
+  },
+  "llama3.1_8b vs mistral-nemo_12b": {
+   "a": "Llama3.1 8B",
+   "b": "Mistral-Nemo 12B",
+   "f1_diff": 0.07231926410186887,
+   "diff_ci95": [
+    0.053044168797307376,
+    0.09193698362876551
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "llama3.1_8b vs qwen3.5_4b": {
+   "a": "Llama3.1 8B",
+   "b": "Qwen3.5 4B",
+   "f1_diff": 0.0746165223249507,
+   "diff_ci95": [
+    0.055849538312691946,
+    0.09319509692472779
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "llama3.1_8b vs mrebel": {
+   "a": "Llama3.1 8B",
+   "b": "mREBEL (baseline)",
+   "f1_diff": 0.0842685337652192,
+   "diff_ci95": [
+    0.05193264606256951,
+    0.11613338199325038
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "llama3.1_8b vs hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M": {
+   "a": "Llama3.1 8B",
+   "b": "Fanar-1 9B",
+   "f1_diff": 0.08731155654846653,
+   "diff_ci95": [
+    0.06791047100737085,
+    0.10649575582528921
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "llama3.1_8b vs qwen3.5_2b": {
+   "a": "Llama3.1 8B",
+   "b": "Qwen3.5 2B",
+   "f1_diff": 0.16054489374553318,
+   "diff_ci95": [
+    0.1431524274067473,
+    0.177660503655272
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "llama3.1_8b vs iKhalid_ALLaM_7b": {
+   "a": "Llama3.1 8B",
+   "b": "ALLaM 7B",
+   "f1_diff": 0.24954677799578706,
+   "diff_ci95": [
+    0.23197333739450474,
+    0.2670170624629381
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "aya-expanse_8b vs command-r7b-arabic_latest": {
+   "a": "Aya-Expanse 8B",
+   "b": "Command-R7B-Arabic",
+   "f1_diff": 0.006385172813924644,
+   "diff_ci95": [
+    -0.010769569948468184,
+    0.02352522944871943
+   ],
+   "p_two_sided": 0.456,
+   "share_a_ahead": 0.772
+  },
+  "aya-expanse_8b vs mistral-nemo_12b": {
+   "a": "Aya-Expanse 8B",
+   "b": "Mistral-Nemo 12B",
+   "f1_diff": 0.0584326871483746,
+   "diff_ci95": [
+    0.038858983456442134,
+    0.07782254411108108
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "aya-expanse_8b vs qwen3.5_4b": {
+   "a": "Aya-Expanse 8B",
+   "b": "Qwen3.5 4B",
+   "f1_diff": 0.06072994537145643,
+   "diff_ci95": [
+    0.04375223730377186,
+    0.07810216962754234
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "aya-expanse_8b vs mrebel": {
+   "a": "Aya-Expanse 8B",
+   "b": "mREBEL (baseline)",
+   "f1_diff": 0.07038195681172493,
+   "diff_ci95": [
+    0.03852161781537645,
+    0.10206688216984929
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "aya-expanse_8b vs hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M": {
+   "a": "Aya-Expanse 8B",
+   "b": "Fanar-1 9B",
+   "f1_diff": 0.07342497959497227,
+   "diff_ci95": [
+    0.052897758291845356,
+    0.09377607767687468
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "aya-expanse_8b vs qwen3.5_2b": {
+   "a": "Aya-Expanse 8B",
+   "b": "Qwen3.5 2B",
+   "f1_diff": 0.14665831679203892,
+   "diff_ci95": [
+    0.13013014820423843,
+    0.16353846406158518
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "aya-expanse_8b vs iKhalid_ALLaM_7b": {
+   "a": "Aya-Expanse 8B",
+   "b": "ALLaM 7B",
+   "f1_diff": 0.2356602010422928,
+   "diff_ci95": [
+    0.21926028154895771,
+    0.2519239311119652
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "command-r7b-arabic_latest vs mistral-nemo_12b": {
+   "a": "Command-R7B-Arabic",
+   "b": "Mistral-Nemo 12B",
+   "f1_diff": 0.05204751433444996,
+   "diff_ci95": [
+    0.030627548646576252,
+    0.07360825074292697
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "command-r7b-arabic_latest vs qwen3.5_4b": {
+   "a": "Command-R7B-Arabic",
+   "b": "Qwen3.5 4B",
+   "f1_diff": 0.054344772557531784,
+   "diff_ci95": [
+    0.0330727442295558,
+    0.0751800452317554
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "command-r7b-arabic_latest vs mrebel": {
+   "a": "Command-R7B-Arabic",
+   "b": "mREBEL (baseline)",
+   "f1_diff": 0.06399678399780029,
+   "diff_ci95": [
+    0.03114073120882431,
+    0.09666317270946485
+   ],
+   "p_two_sided": 0.0002,
+   "share_a_ahead": 0.9999
+  },
+  "command-r7b-arabic_latest vs hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M": {
+   "a": "Command-R7B-Arabic",
+   "b": "Fanar-1 9B",
+   "f1_diff": 0.06703980678104762,
+   "diff_ci95": [
+    0.04687653157328155,
+    0.08609491585162969
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "command-r7b-arabic_latest vs qwen3.5_2b": {
+   "a": "Command-R7B-Arabic",
+   "b": "Qwen3.5 2B",
+   "f1_diff": 0.14027314397811427,
+   "diff_ci95": [
+    0.12238234551274829,
+    0.1581315535901716
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "command-r7b-arabic_latest vs iKhalid_ALLaM_7b": {
+   "a": "Command-R7B-Arabic",
+   "b": "ALLaM 7B",
+   "f1_diff": 0.22927502822836815,
+   "diff_ci95": [
+    0.21056624061345666,
+    0.24742550140969521
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "mistral-nemo_12b vs qwen3.5_4b": {
+   "a": "Mistral-Nemo 12B",
+   "b": "Qwen3.5 4B",
+   "f1_diff": 0.0022972582230818273,
+   "diff_ci95": [
+    -0.01768279527844054,
+    0.022074235869034536
+   ],
+   "p_two_sided": 0.8162,
+   "share_a_ahead": 0.5919
+  },
+  "mistral-nemo_12b vs mrebel": {
+   "a": "Mistral-Nemo 12B",
+   "b": "mREBEL (baseline)",
+   "f1_diff": 0.011949269663350331,
+   "diff_ci95": [
+    -0.020912398808596612,
+    0.044489981723461566
+   ],
+   "p_two_sided": 0.4628,
+   "share_a_ahead": 0.7686
+  },
+  "mistral-nemo_12b vs hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M": {
+   "a": "Mistral-Nemo 12B",
+   "b": "Fanar-1 9B",
+   "f1_diff": 0.014992292446597666,
+   "diff_ci95": [
+    -0.0073812798603399045,
+    0.03705085760715254
+   ],
+   "p_two_sided": 0.1974,
+   "share_a_ahead": 0.9013
+  },
+  "mistral-nemo_12b vs qwen3.5_2b": {
+   "a": "Mistral-Nemo 12B",
+   "b": "Qwen3.5 2B",
+   "f1_diff": 0.08822562964366432,
+   "diff_ci95": [
+    0.06903697832157855,
+    0.10797277044147413
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "mistral-nemo_12b vs iKhalid_ALLaM_7b": {
+   "a": "Mistral-Nemo 12B",
+   "b": "ALLaM 7B",
+   "f1_diff": 0.17722751389391816,
+   "diff_ci95": [
+    0.15723299245915656,
+    0.19721536015059632
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_4b vs mrebel": {
+   "a": "Qwen3.5 4B",
+   "b": "mREBEL (baseline)",
+   "f1_diff": 0.009652011440268504,
+   "diff_ci95": [
+    -0.023856044771516878,
+    0.04285469467215541
+   ],
+   "p_two_sided": 0.5762,
+   "share_a_ahead": 0.7119
+  },
+  "qwen3.5_4b vs hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M": {
+   "a": "Qwen3.5 4B",
+   "b": "Fanar-1 9B",
+   "f1_diff": 0.012695034223515839,
+   "diff_ci95": [
+    -0.008240366653562599,
+    0.033966251687312404
+   ],
+   "p_two_sided": 0.2422,
+   "share_a_ahead": 0.8789
+  },
+  "qwen3.5_4b vs qwen3.5_2b": {
+   "a": "Qwen3.5 4B",
+   "b": "Qwen3.5 2B",
+   "f1_diff": 0.08592837142058249,
+   "diff_ci95": [
+    0.06841797693318108,
+    0.1037144219669346
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_4b vs iKhalid_ALLaM_7b": {
+   "a": "Qwen3.5 4B",
+   "b": "ALLaM 7B",
+   "f1_diff": 0.17493025567083637,
+   "diff_ci95": [
+    0.15795582273022551,
+    0.19188293236189874
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "mrebel vs hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M": {
+   "a": "mREBEL (baseline)",
+   "b": "Fanar-1 9B",
+   "f1_diff": 0.0030430227832473344,
+   "diff_ci95": [
+    -0.03045436372421105,
+    0.0360498641768082
+   ],
+   "p_two_sided": 0.8706,
+   "share_a_ahead": 0.5647
+  },
+  "mrebel vs qwen3.5_2b": {
+   "a": "mREBEL (baseline)",
+   "b": "Qwen3.5 2B",
+   "f1_diff": 0.07627635998031398,
+   "diff_ci95": [
+    0.04454806669133089,
+    0.10830094044751876
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "mrebel vs iKhalid_ALLaM_7b": {
+   "a": "mREBEL (baseline)",
+   "b": "ALLaM 7B",
+   "f1_diff": 0.16527824423056786,
+   "diff_ci95": [
+    0.13289743254342903,
+    0.1967895656735849
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M vs qwen3.5_2b": {
+   "a": "Fanar-1 9B",
+   "b": "Qwen3.5 2B",
+   "f1_diff": 0.07323333719706665,
+   "diff_ci95": [
+    0.05522071239911486,
+    0.09144216498552482
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M vs iKhalid_ALLaM_7b": {
+   "a": "Fanar-1 9B",
+   "b": "ALLaM 7B",
+   "f1_diff": 0.1622352214473205,
+   "diff_ci95": [
+    0.14381257330721414,
+    0.180762282525158
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  },
+  "qwen3.5_2b vs iKhalid_ALLaM_7b": {
+   "a": "Qwen3.5 2B",
+   "b": "ALLaM 7B",
+   "f1_diff": 0.08900188425025386,
+   "diff_ci95": [
+    0.07400350462574261,
+    0.103929734846796
+   ],
+   "p_two_sided": 0.0,
+   "share_a_ahead": 1.0
+  }
+ },
+ "gap_vs_mrebel": {
+  "gemma4_12b": {
+   "display_name": "Gemma4 12B",
+   "gap_minus_mrebel_gap": 0.10647786967751652,
+   "ci95": [
+    0.05417132736915076,
+    0.16012775790360434
+   ],
+   "p_two_sided": 0.0002
+  },
+  "qwen3.5_9b": {
+   "display_name": "Qwen3.5 9B",
+   "gap_minus_mrebel_gap": 0.17242563982757877,
+   "ci95": [
+    0.12086153016643067,
+    0.2251034986263716
+   ],
+   "p_two_sided": 0.0
+  },
+  "llama3.1_8b": {
+   "display_name": "Llama3.1 8B",
+   "gap_minus_mrebel_gap": 0.22144808636824967,
+   "ci95": [
+    0.16992174830515913,
+    0.2732242325666953
+   ],
+   "p_two_sided": 0.0
+  },
+  "aya-expanse_8b": {
+   "display_name": "Aya-Expanse 8B",
+   "gap_minus_mrebel_gap": 0.30303285646690614,
+   "ci95": [
+    0.2506442008470547,
+    0.35476277322916133
+   ],
+   "p_two_sided": 0.0
+  },
+  "command-r7b-arabic_latest": {
+   "display_name": "Command-R7B-Arabic",
+   "gap_minus_mrebel_gap": 0.05321952113304959,
+   "ci95": [
+    1.311499158467329e-05,
+    0.10649059324350241
+   ],
+   "p_two_sided": 0.05
+  },
+  "mistral-nemo_12b": {
+   "display_name": "Mistral-Nemo 12B",
+   "gap_minus_mrebel_gap": 0.18887059085176244,
+   "ci95": [
+    0.13513617724643529,
+    0.24061249821438754
+   ],
+   "p_two_sided": 0.0
+  },
+  "qwen3.5_4b": {
+   "display_name": "Qwen3.5 4B",
+   "gap_minus_mrebel_gap": 0.24391683849758614,
+   "ci95": [
+    0.1910093301791672,
+    0.29642391387343914
+   ],
+   "p_two_sided": 0.0
+  },
+  "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M": {
+   "display_name": "Fanar-1 9B",
+   "gap_minus_mrebel_gap": 0.23433238112886787,
+   "ci95": [
+    0.1805918881284911,
+    0.28777364887875934
+   ],
+   "p_two_sided": 0.0
+  },
+  "qwen3.5_2b": {
+   "display_name": "Qwen3.5 2B",
+   "gap_minus_mrebel_gap": 0.011509176796656556,
+   "ci95": [
+    -0.04085112004390322,
+    0.0633230273929238
+   ],
+   "p_two_sided": 0.6688
+  },
+  "iKhalid_ALLaM_7b": {
+   "display_name": "ALLaM 7B",
+   "gap_minus_mrebel_gap": 0.15592397961369264,
+   "ci95": [
+    0.10391500533578774,
+    0.20699273480216468
+   ],
+   "p_two_sided": 0.0
+  }
+ }
+}

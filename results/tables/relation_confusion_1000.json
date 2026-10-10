@@ -1,0 +1,647 @@
+{
+ "aya-expanse_8b_1000_seed1": {
+  "n_predicted_triples": 4135,
+  "n_matched": 1520,
+  "n_unmatched": 2615,
+  "n_relation_confusions": 240,
+  "n_genuinely_wrong": 2375,
+  "confusion_share_of_errors_pct": 9.177820267686425,
+  "top_confusions": [
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of birth",
+    "n": 41
+   },
+   {
+    "gold": "sport",
+    "predicted": "occupation",
+    "n": 32
+   },
+   {
+    "gold": "country",
+    "predicted": "country - بلد",
+    "n": 26
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "الجنسية",
+    "n": 13
+   },
+   {
+    "gold": "country",
+    "predicted": "located in the administrative territorial entity",
+    "n": 8
+   },
+   {
+    "gold": "country",
+    "predicted": "country of citizenship",
+    "n": 7
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of death",
+    "n": 7
+   },
+   {
+    "gold": "position played on team/speciality",
+    "predicted": "مركز في الفريق أو التخصص",
+    "n": 5
+   },
+   {
+    "gold": "occupation",
+    "predicted": "مهنة",
+    "n": 5
+   },
+   {
+    "gold": "located in the administrative territorial entity",
+    "predicted": "يقع في",
+    "n": 5
+   }
+  ]
+ },
+ "command-r7b-arabic_latest_1000_seed1": {
+  "n_predicted_triples": 4472,
+  "n_matched": 1539,
+  "n_unmatched": 2933,
+  "n_relation_confusions": 207,
+  "n_genuinely_wrong": 2726,
+  "confusion_share_of_errors_pct": 7.057620184111831,
+  "top_confusions": [
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of birth",
+    "n": 37
+   },
+   {
+    "gold": "country",
+    "predicted": "place of birth",
+    "n": 23
+   },
+   {
+    "gold": "date of birth",
+    "predicted": "point in time",
+    "n": 23
+   },
+   {
+    "gold": "sport",
+    "predicted": "occupation",
+    "n": 21
+   },
+   {
+    "gold": "occupation",
+    "predicted": "instance of",
+    "n": 17
+   },
+   {
+    "gold": "member of sports team",
+    "predicted": "part of",
+    "n": 15
+   },
+   {
+    "gold": "date of death",
+    "predicted": "point in time",
+    "n": 13
+   },
+   {
+    "gold": "country",
+    "predicted": "located in the administrative territorial entity",
+    "n": 12
+   },
+   {
+    "gold": "position played on team/speciality",
+    "predicted": "occupation",
+    "n": 5
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "country",
+    "n": 4
+   }
+  ]
+ },
+ "gemma4_12b_1000_seed1": {
+  "n_predicted_triples": 4797,
+  "n_matched": 2242,
+  "n_unmatched": 2555,
+  "n_relation_confusions": 432,
+  "n_genuinely_wrong": 2123,
+  "confusion_share_of_errors_pct": 16.908023483365948,
+  "top_confusions": [
+   {
+    "gold": "country",
+    "predicted": "located in the administrative territorial entity",
+    "n": 154
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of birth",
+    "n": 87
+   },
+   {
+    "gold": "occupation",
+    "predicted": "instance of",
+    "n": 40
+   },
+   {
+    "gold": "sport",
+    "predicted": "occupation",
+    "n": 36
+   },
+   {
+    "gold": "date of birth",
+    "predicted": "point in time",
+    "n": 24
+   },
+   {
+    "gold": "member of sports team",
+    "predicted": "participant",
+    "n": 20
+   },
+   {
+    "gold": "sport",
+    "predicted": "instance of",
+    "n": 17
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of death",
+    "n": 14
+   },
+   {
+    "gold": "parent taxon",
+    "predicted": "subclass of",
+    "n": 9
+   },
+   {
+    "gold": "place of birth",
+    "predicted": "place of death",
+    "n": 8
+   }
+  ]
+ },
+ "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M_1000_seed1": {
+  "n_predicted_triples": 3310,
+  "n_matched": 1060,
+  "n_unmatched": 2250,
+  "n_relation_confusions": 141,
+  "n_genuinely_wrong": 2109,
+  "confusion_share_of_errors_pct": 6.266666666666667,
+  "top_confusions": [
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of birth",
+    "n": 44
+   },
+   {
+    "gold": "sport",
+    "predicted": "occupation",
+    "n": 19
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of death",
+    "n": 10
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "country of birth",
+    "n": 10
+   },
+   {
+    "gold": "parent taxon",
+    "predicted": "subclass of",
+    "n": 9
+   },
+   {
+    "gold": "position played on team/speciality",
+    "predicted": "position played on team or speciality",
+    "n": 8
+   },
+   {
+    "gold": "member of sports team",
+    "predicted": "participant",
+    "n": 7
+   },
+   {
+    "gold": "country",
+    "predicted": "located in the administrative territorial entity",
+    "n": 6
+   },
+   {
+    "gold": "place of birth",
+    "predicted": "place of death",
+    "n": 5
+   },
+   {
+    "gold": "country",
+    "predicted": "country of citizenship",
+    "n": 4
+   }
+  ]
+ },
+ "iKhalid_ALLaM_7b_1000_seed1": {
+  "n_predicted_triples": 914,
+  "n_matched": 238,
+  "n_unmatched": 676,
+  "n_relation_confusions": 156,
+  "n_genuinely_wrong": 520,
+  "confusion_share_of_errors_pct": 23.076923076923077,
+  "top_confusions": [
+   {
+    "gold": "country",
+    "predicted": "place of birth",
+    "n": 16
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of birth",
+    "n": 12
+   },
+   {
+    "gold": "date of birth",
+    "predicted": "ولد في",
+    "n": 9
+   },
+   {
+    "gold": "occupation",
+    "predicted": "is",
+    "n": 9
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "member of political party",
+    "n": 8
+   },
+   {
+    "gold": "sport",
+    "predicted": "member of sports team",
+    "n": 5
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "لاعب كرة قدم",
+    "n": 4
+   },
+   {
+    "gold": "date of birth",
+    "predicted": "مواليد",
+    "n": 4
+   },
+   {
+    "gold": "date of birth",
+    "predicted": "birth date",
+    "n": 3
+   },
+   {
+    "gold": "sport",
+    "predicted": "occupation",
+    "n": 3
+   }
+  ]
+ },
+ "llama3.1_8b_1000_seed1": {
+  "n_predicted_triples": 4710,
+  "n_matched": 1681,
+  "n_unmatched": 3029,
+  "n_relation_confusions": 352,
+  "n_genuinely_wrong": 2677,
+  "confusion_share_of_errors_pct": 11.62099702872235,
+  "top_confusions": [
+   {
+    "gold": "occupation",
+    "predicted": "instance of",
+    "n": 83
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of birth",
+    "n": 42
+   },
+   {
+    "gold": "sport",
+    "predicted": "instance of",
+    "n": 25
+   },
+   {
+    "gold": "country",
+    "predicted": "located in the administrative territorial entity",
+    "n": 23
+   },
+   {
+    "gold": "country",
+    "predicted": "part of",
+    "n": 14
+   },
+   {
+    "gold": "place of birth",
+    "predicted": "birth place",
+    "n": 14
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "country",
+    "n": 11
+   },
+   {
+    "gold": "sport",
+    "predicted": "occupation",
+    "n": 11
+   },
+   {
+    "gold": "located in the administrative territorial entity",
+    "predicted": "part of",
+    "n": 10
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "located in the administrative territorial entity",
+    "n": 9
+   }
+  ]
+ },
+ "mistral-nemo_12b_1000_seed1": {
+  "n_predicted_triples": 2778,
+  "n_matched": 1062,
+  "n_unmatched": 1716,
+  "n_relation_confusions": 116,
+  "n_genuinely_wrong": 1600,
+  "confusion_share_of_errors_pct": 6.75990675990676,
+  "top_confusions": [
+   {
+    "gold": "member of sports team",
+    "predicted": "participant",
+    "n": 35
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of birth",
+    "n": 26
+   },
+   {
+    "gold": "sport",
+    "predicted": "occupation",
+    "n": 17
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "ountry of citizenship",
+    "n": 7
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "country of birth",
+    "n": 6
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of death",
+    "n": 5
+   },
+   {
+    "gold": "sport",
+    "predicted": "instance of",
+    "n": 4
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "country",
+    "n": 3
+   },
+   {
+    "gold": "country",
+    "predicted": "country of citizenship",
+    "n": 3
+   },
+   {
+    "gold": "occupation",
+    "predicted": "instance of",
+    "n": 2
+   }
+  ]
+ },
+ "mrebel_1000": {
+  "n_predicted_triples": 1121,
+  "n_matched": 815,
+  "n_unmatched": 306,
+  "n_relation_confusions": 8,
+  "n_genuinely_wrong": 298,
+  "confusion_share_of_errors_pct": 2.6143790849673203,
+  "top_confusions": [
+   {
+    "gold": "place of death",
+    "predicted": "place of birth",
+    "n": 2
+   },
+   {
+    "gold": "subclass of",
+    "predicted": "موسيقي",
+    "n": 1
+   },
+   {
+    "gold": "point in time",
+    "predicted": "follows",
+    "n": 1
+   },
+   {
+    "gold": "sport",
+    "predicted": "كرة قدم",
+    "n": 1
+   },
+   {
+    "gold": "point in time",
+    "predicted": "point in time period",
+    "n": 1
+   },
+   {
+    "gold": "country",
+    "predicted": "located in the administrative territorial entity",
+    "n": 1
+   },
+   {
+    "gold": "located in the administrative territorial entity",
+    "predicted": "country",
+    "n": 1
+   }
+  ]
+ },
+ "qwen3.5_2b_1000_seed1": {
+  "n_predicted_triples": 2006,
+  "n_matched": 623,
+  "n_unmatched": 1383,
+  "n_relation_confusions": 211,
+  "n_genuinely_wrong": 1172,
+  "confusion_share_of_errors_pct": 15.256688358640636,
+  "top_confusions": [
+   {
+    "gold": "sport",
+    "predicted": "occupation",
+    "n": 26
+   },
+   {
+    "gold": "member of sports team",
+    "predicted": "part of",
+    "n": 25
+   },
+   {
+    "gold": "country",
+    "predicted": "place of birth",
+    "n": 18
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of birth",
+    "n": 16
+   },
+   {
+    "gold": "occupation",
+    "predicted": "instance of",
+    "n": 12
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "country",
+    "n": 10
+   },
+   {
+    "gold": "date of birth",
+    "predicted": "place of birth",
+    "n": 8
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "located in the administrative territorial entity",
+    "n": 7
+   },
+   {
+    "gold": "country",
+    "predicted": "located in the administrative territorial entity",
+    "n": 7
+   },
+   {
+    "gold": "position played on team/speciality",
+    "predicted": "occupation",
+    "n": 7
+   }
+  ]
+ },
+ "qwen3.5_4b_1000_seed1": {
+  "n_predicted_triples": 2419,
+  "n_matched": 1008,
+  "n_unmatched": 1411,
+  "n_relation_confusions": 151,
+  "n_genuinely_wrong": 1260,
+  "confusion_share_of_errors_pct": 10.701630049610205,
+  "top_confusions": [
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of birth",
+    "n": 53
+   },
+   {
+    "gold": "country",
+    "predicted": "located in the administrative territorial entity",
+    "n": 41
+   },
+   {
+    "gold": "sport",
+    "predicted": "occupation",
+    "n": 27
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of death",
+    "n": 5
+   },
+   {
+    "gold": "occupation",
+    "predicted": "instance of",
+    "n": 4
+   },
+   {
+    "gold": "country",
+    "predicted": "place of birth",
+    "n": 3
+   },
+   {
+    "gold": "country",
+    "predicted": "country of citizenship",
+    "n": 3
+   },
+   {
+    "gold": "place of birth",
+    "predicted": "country of citizenship",
+    "n": 3
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "located in the administrative territorial entity",
+    "n": 3
+   },
+   {
+    "gold": "date of death",
+    "predicted": "place of death",
+    "n": 1
+   }
+  ]
+ },
+ "qwen3.5_9b_1000_seed1": {
+  "n_predicted_triples": 3500,
+  "n_matched": 1597,
+  "n_unmatched": 1903,
+  "n_relation_confusions": 222,
+  "n_genuinely_wrong": 1681,
+  "confusion_share_of_errors_pct": 11.665790856542301,
+  "top_confusions": [
+   {
+    "gold": "occupation",
+    "predicted": "instance of",
+    "n": 56
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of birth",
+    "n": 41
+   },
+   {
+    "gold": "country",
+    "predicted": "located in the administrative territorial entity",
+    "n": 26
+   },
+   {
+    "gold": "date of birth",
+    "predicted": "point in time",
+    "n": 23
+   },
+   {
+    "gold": "sport",
+    "predicted": "instance of",
+    "n": 22
+   },
+   {
+    "gold": "sport",
+    "predicted": "occupation",
+    "n": 12
+   },
+   {
+    "gold": "date of death",
+    "predicted": "point in time",
+    "n": 9
+   },
+   {
+    "gold": "country",
+    "predicted": "country of citizenship",
+    "n": 8
+   },
+   {
+    "gold": "country of citizenship",
+    "predicted": "place of death",
+    "n": 7
+   },
+   {
+    "gold": "place of birth",
+    "predicted": "place of death",
+    "n": 3
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+# Python 3.14. These are the versions used for the paper's runs.
+numpy==2.4.4
+pandas==3.0.3
+pyarrow==25.0.0
+PyYAML==6.0.3
+rapidfuzz==3.14.5
+PyArabic==0.6.15
+datasets==5.0.1
+transformers==5.14.1
+sentencepiece==0.2.2
+# The runs used the CUDA 12.8 build (2.11.0+cu128); install the build that
+# matches your GPU from https://pytorch.org.
+torch==2.11.0
+ollama==0.6.2
+# GPU energy readings (optional; the runs work without an NVIDIA GPU, with no energy figures).
+nvidia-ml-py==13.610.43

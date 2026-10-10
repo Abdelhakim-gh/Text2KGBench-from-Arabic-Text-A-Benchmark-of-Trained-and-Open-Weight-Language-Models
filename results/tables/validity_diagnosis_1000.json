@@ -1,0 +1,144 @@
+{
+ "aya-expanse_8b_1000_seed1": {
+  "n_rows": 1000,
+  "n_invalid": 6,
+  "n_recorded_errors": 0,
+  "n_invalid_truncated": 5,
+  "n_invalid_other": 1,
+  "truncated_pct_of_all_rows": 0.5,
+  "truncated_share_of_invalid_pct": 83.33333333333333,
+  "salvageable_triples": 60,
+  "truncated_tail_examples": [
+   "\": \"المفاوضات مع الاتحاد الأوروبي\"\n    },\n    {\n        \"subject\": \"الصراع الكردي التركي\",\n        \"relation\": \"تسبب انتهاكات العديد من حقوق الإنسان\",\n        \"",
+   "نادي ساباديل\",\n        \"relation\": \"member of sports team\",\n        \"object\": \"رامون هيكس\"\n    },\n    {\n        \"subject\": \"نادي ليبرتاد\",\n        \"relation\": \"",
+   "t\": \"لا يوجد\"\n    },\n    {\n        \"subject\": \"سبستيان بنييرا\",\n        \"relation\": \"تلاها في الفترة الرئاسية التالية (2018 – 2022)\",\n        \"object\": \"لا يوجد"
+  ]
+ },
+ "command-r7b-arabic_latest_1000_seed1": {
+  "n_rows": 1000,
+  "n_invalid": 24,
+  "n_recorded_errors": 0,
+  "n_invalid_truncated": 21,
+  "n_invalid_other": 3,
+  "truncated_pct_of_all_rows": 2.1,
+  "truncated_share_of_invalid_pct": 87.5,
+  "salvageable_triples": 291,
+  "truncated_tail_examples": [
+   "ً فبنيت المنطقة جنوب النهر\"\n  },\n  {\n    \"subject\": \"شارع الوطني\",\n    \"relation\": \"instance of\",\n    \"object\": \"الشارع التجاري المهم في المنطقة\"\n  },\n  {\n    \"",
+   "بادي روي باتس\",\n    \"relation\": \"date of death\",\n    \"object\": \"لا يوجد\"\n  },\n  {\n    \"subject\": \"جزيرة سيلاند\",\n    \"relation\": \"place of death\",\n    \"object\":",
+   "نظر إليها ضد حقوق الإنسان\",\n    \"relation\": \"instance of\",\n    \"object\": \"قوانين\"\n  },\n  {\n    \"subject\": \"حظر حصول الأقليات على التعليم الابتدائي بلغتهم الأم\","
+  ]
+ },
+ "gemma4_12b_1000_seed1": {
+  "n_rows": 1000,
+  "n_invalid": 13,
+  "n_recorded_errors": 0,
+  "n_invalid_truncated": 12,
+  "n_invalid_other": 1,
+  "truncated_pct_of_all_rows": 1.2,
+  "truncated_share_of_invalid_pct": 92.3076923076923,
+  "salvageable_triples": 145,
+  "truncated_tail_examples": [
+   "\": \"جامع الخضيري\",\n    \"relation\": \"part of\",\n    \"object\": \"شارع الخضيري\"\n  },\n  {\n    \"subject\": \"جامع الأمير أو جامع المقام\",\n    \"relation\": \"located in the",
+   "يل\"},\n  {\"subject\": \"رامون هيكس\", \"relation\": \"member of sports team\", \"object\": \"نادي ليبرتاد\"},\n  {\"subject\": \"رامون هيكس\", \"relation\": \"member of sports team",
+   "ئاسية\", \"relation\": \"point in time\", \"object\": \"انتهت في الحادي عشر من مارس عام 2006\"},\n  {\"subject\": \"ميشال باشليت\", \"relation\": \"member of political party\", \""
+  ]
+ },
+ "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M_1000_seed1": {
+  "n_rows": 1000,
+  "n_invalid": 94,
+  "n_recorded_errors": 0,
+  "n_invalid_truncated": 21,
+  "n_invalid_other": 73,
+  "truncated_pct_of_all_rows": 2.1,
+  "truncated_share_of_invalid_pct": 22.340425531914892,
+  "salvageable_triples": 165,
+  "truncated_tail_examples": [
+   "_administrative_territorial_entity\", \"object\": \"دبي, الإمارات العربية المتحدة\"}\n]\n\nالثلاثيات الأخرى لا تتوافق مع العلاقات المحددة أو لم يتم ذكرها صراحة في النص.",
+   "ject\": \"نوريكو واتانابي\", \"relation\": \"place of birth\", \"object\": \"أويتا\"}}\n\n(ملاحظة: تم حذف ذكر اليابان لأنها ليست جزءاً مباشراً من العلاقة، بل هي بلد الميلاد)",
+   "تي يمكن استخراجها بشكل واضح من الجملة:\n[{\"subject\": \"Parti Communiste Révolutionnaire de Côte d'Ivoire\", \"relation\": \"inception\", \"object\": \"1990\"}, {\"subject\":"
+  ]
+ },
+ "iKhalid_ALLaM_7b_1000_seed1": {
+  "n_rows": 1000,
+  "n_invalid": 0,
+  "n_recorded_errors": 0,
+  "n_invalid_truncated": 0,
+  "n_invalid_other": 0,
+  "truncated_pct_of_all_rows": 0.0,
+  "truncated_share_of_invalid_pct": 0.0,
+  "salvageable_triples": 0,
+  "truncated_tail_examples": []
+ },
+ "llama3.1_8b_1000_seed1": {
+  "n_rows": 1000,
+  "n_invalid": 39,
+  "n_recorded_errors": 0,
+  "n_invalid_truncated": 38,
+  "n_invalid_other": 1,
+  "truncated_pct_of_all_rows": 3.8,
+  "truncated_share_of_invalid_pct": 97.43589743589743,
+  "salvageable_triples": 537,
+  "truncated_tail_examples": [
+   " \"instance of\", \"object\": \"ملك نورثمبريا\"}, {\"subject\": \"إيدان كتلبية\", \"relation\": \"participant\", \"object\": \"معركة مازرفيلد\"}, {\"subject\": \"بيندا\", \"relation\":",
+   "ية\"}, {\"subject\": \"المشروع\", \"relation\": \"located in the administrative territorial entity\", \"object\": \"دبي\"}, {\"subject\": \"المشروع\", \"relation\": \"instance of\",",
+   "د\"}, {\"subject\": \"حكومة الهند\", \"relation\": \"subclass of\", \"object\": \"سلطات حكومية\"}, {\"subject\": \"حكومة دلهي\", \"relation\": \"subclass of\", \"object\": \"سلطات حكوم"
+  ]
+ },
+ "mistral-nemo_12b_1000_seed1": {
+  "n_rows": 1000,
+  "n_invalid": 15,
+  "n_recorded_errors": 0,
+  "n_invalid_truncated": 6,
+  "n_invalid_other": 9,
+  "truncated_pct_of_all_rows": 0.6,
+  "truncated_share_of_invalid_pct": 40.0,
+  "salvageable_triples": 46,
+  "truncated_tail_examples": [
+   "}, {\"subject\": \"بيرتن ديكسترا\", \"relation\": \"date of death\", \"object\": \"2003 م\"}, {\"subject\": \"83 عاما\", \"relation\": \"age at death\", \"object\": \"بيرتن ديكسترا\"}}",
+   "ect\": \"Hedwig Markwart\", \"relation\": \"date of birth\", \"object\": \"28 November 1884\"}, {\"subject\": \"Hedwig Markwart\", \"relation\": \"place of death\", \"object\": \"Han",
+   "elation\": \"occupation\", \"object\": \"لاعب كرة قدم سابق\"}, {\"subject\": \"خوسيه لويز دوراي\", \"relation\": \"position played on team / speciality\", \"object\": \"كمدافع\"}}"
+  ]
+ },
+ "qwen3.5_2b_1000_seed1": {
+  "n_rows": 1000,
+  "n_invalid": 37,
+  "n_recorded_errors": 0,
+  "n_invalid_truncated": 32,
+  "n_invalid_other": 5,
+  "truncated_pct_of_all_rows": 3.2,
+  "truncated_share_of_invalid_pct": 86.48648648648648,
+  "salvageable_triples": 66,
+  "truncated_tail_examples": [
+   " political party\", \"object\": \"\"}, {\"subject\": \"كندي\", \"relation\": \"country\", \"object\": \"Canada\"}, {\"subject\": \"1792\", \"relation\": \"date of birth\", \"object\": \"\"}",
+   "ject\": \"\"}, {\"subject\": \"نوريكو واتانابي\", \"relation\": \"occupation\", \"object\": \"ممثلة\"}, {\"subject\": \"22 يوليو 1965\", \"relation\": \"date of birth\", \"object\": \"\"}",
+   "bject\": \"وزير الداخلية\"}, {\"subject\": \"نوري المالكي\", \"relation\": \"date of death\", \"object\": \"\"}, {\"subject\": \"2010\", \"relation\": \"point in time\", \"object\": \"\"}"
+  ]
+ },
+ "qwen3.5_4b_1000_seed1": {
+  "n_rows": 1000,
+  "n_invalid": 0,
+  "n_recorded_errors": 0,
+  "n_invalid_truncated": 0,
+  "n_invalid_other": 0,
+  "truncated_pct_of_all_rows": 0.0,
+  "truncated_share_of_invalid_pct": 0.0,
+  "salvageable_triples": 0,
+  "truncated_tail_examples": []
+ },
+ "qwen3.5_9b_1000_seed1": {
+  "n_rows": 1000,
+  "n_invalid": 23,
+  "n_recorded_errors": 0,
+  "n_invalid_truncated": 22,
+  "n_invalid_other": 1,
+  "truncated_pct_of_all_rows": 2.2,
+  "truncated_share_of_invalid_pct": 95.65217391304348,
+  "salvageable_triples": 209,
+  "truncated_tail_examples": [
+   ",\n    \"object\": \"2013 إلى 2017\"\n  },\n  {\n    \"subject\": \"خواجة محمد آصف\",\n    \"relation\": \"member of sports team\",\n    \"object\": \"وزارة المياه والطاقة\"\n  },\n  {",
+   "جمهورية أيرلندا - )\",\n    \"relation\": \"member of sports team\",\n    \"object\": \"روشدين ودايموندز\"\n  },\n  {\n    \"subject\": \"باري كوين (9 مايو 1979 بدبلن في جمهورية",
+   "of sports team\",\n    \"object\": \"نادي بريشيا\"\n  },\n  {\n    \"subject\": \"فرانسيسكو فلاتشي\",\n    \"relation\": \"member of sports team\",\n    \"object\": \"نادي سامبدوريا\""
+  ]
+ }
+}

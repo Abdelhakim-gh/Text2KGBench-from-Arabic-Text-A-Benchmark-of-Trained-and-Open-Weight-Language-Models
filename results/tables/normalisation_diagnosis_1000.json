@@ -1,0 +1,68 @@
+{
+ "scale": 1000,
+ "gold_spans_rewritten": 4120,
+ "gold_spans_total": 11544,
+ "gold_spans_rewritten_pct": 35.68953568953569,
+ "predicted_spans_rewritten": 26499,
+ "predicted_spans_total": 68324,
+ "predicted_spans_rewritten_pct": 38.78432176102102,
+ "triple_match_flips_at_exact": 56,
+ "triple_match_flips_at_operating_threshold": 9,
+ "operating_threshold": 86.0,
+ "flip_examples": [
+  {
+   "model": "gemma4_12b_1000_seed1",
+   "relation": "country of citizenship",
+   "predicted": "كورزيو مالابارته | إيطالي",
+   "gold": "كورزيو مالابارته | ايطالي"
+  },
+  {
+   "model": "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M_1000_seed1",
+   "relation": "country_of_citizenship",
+   "predicted": "أنتوني ريبلين | فرنسا",
+   "gold": "انتونى ريبلين | فرنسا"
+  },
+  {
+   "model": "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M_1000_seed1",
+   "relation": "country_of_citizenship",
+   "predicted": "أنتوني ريبلين | فرنسا",
+   "gold": "انتونى ريبلين | فرنسي"
+  },
+  {
+   "model": "hf.co_mradermacher_Fanar-1-9B-Instruct-GGUF_Q4_K_M_1000_seed1",
+   "relation": "occupation",
+   "predicted": "أنتوني ريبلين | لاعب كرة قدم",
+   "gold": "انتونى ريبلين | لاعب كرة قدم"
+  },
+  {
+   "model": "llama3.1_8b_1000_seed1",
+   "relation": "date of birth",
+   "predicted": "شوجو ناكاهارا | 19 مإثي 1994",
+   "gold": "شوجو ناكاهارا | 19 مايو 1994"
+  },
+  {
+   "model": "llama3.1_8b_1000_seed1",
+   "relation": "place of birth",
+   "predicted": "فرنسيس مارتن | أشلاند",
+   "gold": "فرنسيس مارتن | آشلاند"
+  },
+  {
+   "model": "mistral-nemo_12b_1000_seed1",
+   "relation": "country of citizenship",
+   "predicted": "كورزيو مالابارته | إيطالي",
+   "gold": "كورزيو مالابارته | ايطالي"
+  },
+  {
+   "model": "qwen3.5_4b_1000_seed1",
+   "relation": "country of citizenship",
+   "predicted": "أنطون ساخاروف | روسى",
+   "gold": "أنطون ساخاروف | روسيا"
+  },
+  {
+   "model": "qwen3.5_4b_1000_seed1",
+   "relation": "country of citizenship",
+   "predicted": "أنطون ساخاروف | روسى",
+   "gold": "أنطون ساخاروف | روسي"
+  }
+ ]
+}

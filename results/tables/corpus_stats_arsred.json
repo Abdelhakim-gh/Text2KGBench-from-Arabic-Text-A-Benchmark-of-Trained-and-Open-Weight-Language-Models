@@ -1,0 +1,29 @@
+{
+ "source_dataset": "U4RASD/ArSRED",
+ "source_file": "ArSRED.csv",
+ "n_rows": 499620,
+ "n_rows_missing_relations": 0,
+ "n_rows_with_triples": 499619,
+ "n_triples": 2940185,
+ "triples_per_row": 5.884842480285017,
+ "n_relation_labels": 393,
+ "by_k": {
+  "20": {
+   "triple_coverage_pct": 87.61207202948114,
+   "closed_sentences": 334057,
+   "closed_pct_of_rows": 66.86221528361554
+  },
+  "30": {
+   "triple_coverage_pct": 91.0462096772822,
+   "closed_sentences": 367150,
+   "closed_pct_of_rows": 73.48584924542652
+  }
+ },
+ "coverage_gain_20_to_30_points": 3.434137647801066,
+ "checks": {
+  "top20_equals_ontology_yaml": true,
+  "closed_k20_equals_closed_sentences_jsonl": true,
+  "closed_sentences_jsonl_lines": 334057,
+  "n_rows_equals_ontology_yaml": true
+ }
+}

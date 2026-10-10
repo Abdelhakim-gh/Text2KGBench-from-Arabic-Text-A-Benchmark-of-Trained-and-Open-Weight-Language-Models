@@ -1,0 +1,120 @@
+% Two panels sharing one model axis, to answer two reviewer points in the space
+% of one figure.
+%
+% (a) F1 with its 95% bootstrap interval over sentences (script 11), and the
+%     four models re-run at seeds 2 and 3 (script 15): which rank differences
+%     are larger than the noise (a reviewer's point). Ticks every 0.1 with
+%     one decimal; ticks every 0.05 rounded to one decimal printed 0.4 twice.
+% (b) Every predicted triple by outcome (script 12): correct; right subject and
+%     object with a relation Wikidata's subproperty hierarchy implies
+%     (broader); right pair under a non-canonical name of the gold relation
+%     (alias); right pair with another relation (different); no gold triple
+%     with that pair (unmatched). A reviewer's point. Fills run dark to
+%     light so the order survives greyscale printing.
+%
+% Numbers come from data_ci.dat and data_errors.dat, written by
+% scripts/08_make_figures.py. Nothing here is typed by hand.
+\pgfplotstableread[header=true]{figures/data_ci.dat}\cidata
+\pgfplotstableread[header=true]{figures/data_errors.dat}\errdata
+
+\begin{tikzpicture}
+\begin{axis}[
+  name=ci,
+  scale only axis,
+  width=38mm, height=42mm,
+  % xmax 0.58 leaves room for the printed F1 right of the top model's interval.
+  xmin=0, xmax=0.58, xtick={0,0.1,0.2,0.3,0.4,0.5},
+  enlarge y limits={abs=0.6},
+  y dir=reverse,
+  ytick=data,
+  yticklabels from table={\cidata}{model},
+  yticklabel style={font=\scriptsize},
+  xticklabel style={font=\scriptsize, /pgf/number format/fixed,
+                    /pgf/number format/precision=1, /pgf/number format/zerofill},
+  title={\footnotesize (a) F1 with 95\% interval},
+  title style={yshift=-1.5mm},
+  xmajorgrids, grid style={black!12, line width=0.3pt},
+  axis line style={black!45, line width=0.4pt},
+  tick style={black!45},
+  legend style={font=\scriptsize, at={(0.5,-0.10)}, anchor=north, legend columns=3,
+                draw=none, fill=none, column sep=3pt, inner sep=1pt},
+  legend cell align=left,
+]
+\addplot[only marks, mark=*, mark size=1.4pt, color=accent,
+         error bars/.cd, x dir=both, x explicit,
+         error bar style={line width=0.8pt, color=accent}, error mark options={rotate=90, mark size=1.5pt}]
+  table[x=f1, y expr=\coordindex,
+        x error minus expr=\thisrow{f1}-\thisrow{lo},
+        x error plus expr=\thisrow{hi}-\thisrow{f1}] {\cidata};
+\addlegendentry{seed 1}
+\addplot[only marks, mark=o, mark size=1.8pt, color=black!75, line width=0.6pt]
+  table[x=seed2, y expr=\coordindex] {\cidata};
+\addlegendentry{seed 2}
+\addplot[only marks, mark=diamond, mark size=2.1pt, color=black!75, line width=0.6pt]
+  table[x=seed3, y expr=\coordindex] {\cidata};
+\addlegendentry{seed 3}
+% Seed-1 F1 printed right of the interval and of any seed mark (labx); the
+% label text f1lab is rounded once by script 08, as in the text and Table 3.
+\addplot[only marks, mark=none, forget plot, point meta=explicit symbolic,
+         nodes near coords,
+         nodes near coords style={font=\scriptsize, anchor=west, xshift=3.6pt, inner sep=0pt}]
+  table[x=labx, y expr=\coordindex, meta=f1lab] {\cidata};
+\end{axis}
+
+\begin{axis}[
+  name=err,
+  at={(ci.east)}, anchor=west, xshift=4mm,
+  xbar stacked,
+  % One filled box per legend entry, not pgfplots' default two-bar icon.
+  area legend,
+  scale only axis,
+  width=44mm, height=42mm,
+  % Bars thick enough to hold a 6 pt number inside.
+  bar width=7pt,
+  ymin=-0.6, ymax=10.6,
+  xmin=0, xmax=1,
+  y dir=reverse,
+  ytick=data, yticklabels={},
+  xtick={0,0.25,0.5,0.75,1},
+  xticklabels={0,25,50,75,100\%},
+  xticklabel style={font=\scriptsize},
+  title={\footnotesize (b) Predicted triples by outcome},
+  title style={yshift=-1.5mm},
+  axis line style={black!45, line width=0.4pt},
+  tick style={black!45},
+  legend style={font=\scriptsize, at={(0.5,-0.10)}, anchor=north, legend columns=2,
+                draw=none, fill=none, column sep=3pt, inner sep=1pt},
+  legend cell align=left,
+]
+\addplot[draw=accent, fill=accent!85] table[x=correct, y expr=\coordindex] {\errdata};
+\addlegendentry{correct}
+\addplot[draw=accent, fill=accent!40] table[x=broader, y expr=\coordindex] {\errdata};
+\addlegendentry{right pair, broader}
+\addplot[draw=accent, fill=accent!12] table[x=alias, y expr=\coordindex] {\errdata};
+\addlegendentry{right pair, alias}
+\addplot[draw=black!60, fill=black!45] table[x=different, y expr=\coordindex] {\errdata};
+\addlegendentry{right pair, different}
+\addplot[draw=black!40, fill=black!6] table[x=entity, y expr=\coordindex] {\errdata};
+\addlegendentry{unmatched pair}
+\end{axis}
+
+% Per-cent labels at segment centres (c_*, l_*), drawn in an overlaid axis of
+% the same size so they are not stacked onto the bars. Segments under 8% stay
+% unlabelled: a 6 pt number does not fit inside them.
+\begin{axis}[
+  at={(err.south west)}, anchor=south west,
+  scale only axis, width=44mm, height=42mm,
+  xmin=0, xmax=1, ymin=-0.6, ymax=10.6, y dir=reverse,
+  hide axis,
+  point meta=explicit symbolic,
+  nodes near coords,
+  nodes near coords style={font=\fontsize{6}{6}\selectfont, anchor=center, inner sep=0pt},
+]
+\addplot[only marks, mark=none, nodes near coords style={text=white}]
+  table[x=c_correct, y expr=\coordindex, meta=l_correct] {\errdata};
+\addplot[only marks, mark=none, nodes near coords style={text=white}]
+  table[x=c_different, y expr=\coordindex, meta=l_different] {\errdata};
+\addplot[only marks, mark=none, nodes near coords style={text=black}]
+  table[x=c_entity, y expr=\coordindex, meta=l_entity] {\errdata};
+\end{axis}
+\end{tikzpicture}

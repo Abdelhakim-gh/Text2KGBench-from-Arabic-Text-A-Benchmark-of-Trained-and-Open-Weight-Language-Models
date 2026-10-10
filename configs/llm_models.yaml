@@ -1,0 +1,101 @@
+# Ollama chat models and generation settings for the extraction runs
+# (scripts/03_run_llm.py). The answer is a JSON array of triples, so
+# max_tokens is 512.
+
+ollama_host: "http://localhost:11434"
+seeds: [1]           # one seed by default, for time (2026-08-13); seeds 2 and 3 were run for four models with --seeds. The
+                     # cross-seed spread that scale_100's report still prints will read
+                     # 0.000 stdev over n=1 for every model, which is an absence of
+                     # evidence, not a stability finding: say so in the paper rather
+                     # than presenting it as low variance.
+temperature: 0.2     # low but nonzero, so the 3 seeds actually differ
+max_tokens: 512       # a sentence can carry several triples; 64 would truncate them
+think: false          # required, not cosmetic: see src/llm/model_runner.py's header on qwen3.5
+num_ctx: 8192          # must be passed explicitly on every call, Ollama defaults to 2048 otherwise
+                        # regardless of the model's own Modelfile; see src/llm/model_runner.py's header
+                        # comment for how this was found (AceGPT-13B failing on longer sentences)
+
+models:
+  # Ordered by ascending sanity_100 median latency (seconds/item, from
+  # results/tables/scale_100.json), not by size or family axis, so that
+  # main_1000 and confirm_10000 bank the most finished models per hour of
+  # wall clock rather than running in an order nobody chose. Reordered
+  # 2026-08-13, mid-run; job_runner.py's per-file resume made this free.
+  #
+  # 0.8b dropped 2026-08-13, see the exclusions block below; the size axis
+  # now runs 2b -> 4b -> 9b, three points rather than four.
+  - name: "iKhalid/ALLaM:7b"      # 0.6s, Arabic-specific
+    family: "allam"
+  - name: "qwen3.5:2b"            # 1.5s, size axis
+    family: "qwen3.5"
+  - name: "qwen3.5:4b"            # 2.6s, size axis
+    family: "qwen3.5"
+  - name: "mistral-nemo:12b"      # 4.9s, family axis
+    family: "mistral"
+  - name: "qwen3.5:9b"            # 5.3s, size axis
+    family: "qwen3.5"
+  - name: "command-r7b-arabic:latest"  # 5.6s, Arabic-specific
+    family: "command-r-arabic"
+  - name: "llama3.1:8b"           # 5.7s, family axis
+    family: "llama"
+  - name: "aya-expanse:8b"        # 6.2s, Arabic-specific
+    family: "aya"
+  # SILMA-9B dropped 2026-08-13, see the exclusions block below.
+  - name: "hf.co/mradermacher/Fanar-1-9B-Instruct-GGUF:Q4_K_M"  # 9.0s, Arabic-specific
+    family: "fanar"
+  - name: "gemma4:12b"            # 11.6s, family axis - slowest, runs last
+    family: "gemma4"
+
+# ---------------------------------------------------------------------------
+# Exclusions. The rule applied to all three: a model is dropped only when it
+# fails to produce the required output shape, never for scoring badly while
+# producing it. A weak-but-well-formed model is a result and stays in the
+# roster (ALLaM at F1 0.044 and Fanar at 56.2% raw conformance both stay).
+# Every excluded model keeps its sanity_100 result file on disk and its row
+# in results/tables/scale_100*, since script 04 scores by globbing
+# results/extraction/ rather than reading this list. Excluding here removes a
+# model from future runs; it does not erase what it already did.
+# ---------------------------------------------------------------------------
+#
+# hf.co/MhmdSyd/AceGPT-13B-chat-GGUF:Q4_K_S dropped 2026-08-07, two confirmed,
+# independent, unfixable-by-config problems: this GGUF's context length is
+# 2048 tokens baked into the file itself (confirmed via `ollama show`'s
+# model_info.llama.context_length; passing a larger num_ctx does not
+# override it), which the 20-relation ontology prompt exceeds on longer
+# sentences; separately, in an earlier study of ours it leaked raw
+# chat-template tokens on 45% of calls. Its sanity_100 numbers are kept in
+# results/tables/scale_100.json as a documented failure, not silently deleted.
+#
+# qwen3.5:0.8b dropped 2026-08-13. It does not emit the requested
+# (subject, relation, object) schema at all, so its score measures whether it
+# can follow a JSON schema rather than whether it can extract Arabic facts,
+# which is not what this study is asking. Across the 100 sanity sentences it
+# produced 13 relation strings in total (gemma4:12b produced 483) and matched
+# 1 of the 567 gold triples. Its actual output substitutes its own keys: an
+# invented `{"action": "extract_fact_from_sentence", "sentence": "<the whole
+# prompt sentence echoed back>", "subject": ...}` wrapper on some items, and
+# on others the relation name used as the JSON key itself
+# (`{"part of": ..., "occurrence in the administrative territorial entity": ...}`).
+# The parser reads those as valid JSON carrying zero triples, which is why
+# validity sits at 86% while recall is 0.2%. Same category as AceGPT: a
+# mechanical inability to produce the required shape.
+#
+# hf.co/mradermacher/SILMA-9B-Instruct-v1.0-GGUF:Q4_K_M dropped 2026-08-13,
+# for three distinct malformed-output modes in one 100-sentence run, on top of
+# mostly returning an empty array (2 output tokens) when it returns anything:
+# Python-style single-quoted pseudo-JSON (`[{'subject': ...}]`, not valid
+# JSON), arrays truncated before the closing bracket, and plain Arabic prose
+# in place of an answer ("هو رأي سلبي"). It produced 26 relation strings
+# across 100 sentences and matched 14 of 567 gold triples, and at 84% its
+# output validity is the lowest of any model that was not already excluded.
+
+scales: [100, 1000, 10000]
+# At 10,000 (planned, not run for the paper), only the best 2 models from the
+# 1,000-item table plus mREBEL (narrowed from the best 3-4 on 2026-08-13): the
+# confirm tier costs roughly 5 days of machine time against main_1000's 12
+# hours, so it is the only place where trimming the roster buys back real
+# schedule. Pick the two from the 1,000-item table, not from sanity_100.
+
+# mREBEL (Babelscape/mrebel-large) is not in this list: it is run through
+# transformers, not Ollama, since it is sequence-to-sequence rather than chat.
+# See scripts/02_run_mrebel_baseline.py.

@@ -1,0 +1,775 @@
+{
+ "P102": {
+  "label_en": "member of political party",
+  "label_ar": "التحزب السياسي",
+  "aliases_en": [
+   "party",
+   "member of",
+   "member of party",
+   "party membership",
+   "political party member",
+   "political party"
+  ],
+  "aliases_ar": [
+   "الحزب السياسي",
+   "عضو في حزب سياسي",
+   "حزب سياسي",
+   "تحزب سياسي",
+   "الحزب"
+  ],
+  "subproperty_of": [
+   "P463"
+  ],
+  "related_property": [
+   "P1268",
+   "P4100",
+   "P5832",
+   "P768"
+  ]
+ },
+ "P106": {
+  "label_en": "occupation",
+  "label_ar": "المهنة",
+  "aliases_en": [
+   "profession",
+   "job",
+   "work",
+   "career",
+   "employment",
+   "craft",
+   "employ",
+   "vocation",
+   "avocation"
+  ],
+  "aliases_ar": [
+   "الوظيفة",
+   "مهنة",
+   "وظيفة"
+  ],
+  "subproperty_of": [
+   "P2868"
+  ],
+  "related_property": [
+   "P101",
+   "P2650",
+   "P3618",
+   "P39",
+   "P3989",
+   "P452",
+   "P4968",
+   "P8258"
+  ]
+ },
+ "P131": {
+  "label_en": "located in the administrative territorial entity",
+  "label_ar": "تقع في التقسيم الإداري",
+  "aliases_en": [
+   "located in the administrative unit",
+   "located in administrative unit",
+   "is in administrative unit",
+   "is located in",
+   "is in the state of",
+   "is in the province of",
+   "is in the county of",
+   "is in the district of",
+   "is in the department of",
+   "is in the region of",
+   "is in the borough of",
+   "is in the city of",
+   "is in the town of",
+   "is in the village of",
+   "is in the municipality of",
+   "is in the territory of",
+   "is in the prefecture of",
+   "is in the voivodeship of",
+   "is in the Indian reservation of",
+   "is in the Indian reserve of",
+   "is in the ward of",
+   "is in the administrative region of",
+   "is in the settlement of",
+   "is in the local government area of",
+   "is in the rural city of",
+   "is in the shire of",
+   "happens in",
+   "is in the commune of",
+   "in administrative unit",
+   "in",
+   "is in the administrative unit",
+   "administrative territorial entity",
+   "city",
+   "town",
+   "state",
+   "Indian reservation",
+   "in the administrative unit",
+   "locality",
+   "is in the parish of",
+   "location (administrative territorial entity)",
+   "is in the principal area of",
+   "located in the territorial entity",
+   "region",
+   "is in the arrondissement of",
+   "administrative territory",
+   "territory"
+  ],
+  "aliases_ar": [
+   "مكانه في التقسيم الإداري",
+   "تقسيم إداري",
+   "التقسيم الإداري",
+   "المكان في التقسيم الإداري",
+   "الموقع في التقسيم الإداري"
+  ],
+  "subproperty_of": [
+   "P276",
+   "P361"
+  ],
+  "related_property": [
+   "P1001",
+   "P10254",
+   "P1383",
+   "P150",
+   "P159",
+   "P17",
+   "P206",
+   "P276",
+   "P3018",
+   "P3842",
+   "P5353",
+   "P5607",
+   "P669",
+   "P706",
+   "P7938",
+   "P7959",
+   "P8138"
+  ]
+ },
+ "P17": {
+  "label_en": "country",
+  "label_ar": "البلد",
+  "aliases_en": [
+   "sovereign state",
+   "state",
+   "land",
+   "host country"
+  ],
+  "aliases_ar": [
+   "دولة",
+   "دولة ذات سيادة",
+   "أرض",
+   "الدولة المضيفة"
+  ],
+  "subproperty_of": [
+   "P131"
+  ],
+  "related_property": [
+   "P1001",
+   "P131",
+   "P1336",
+   "P1532",
+   "P2012",
+   "P205",
+   "P2341",
+   "P2596",
+   "P27",
+   "P495",
+   "P8047"
+  ]
+ },
+ "P171": {
+  "label_en": "parent taxon",
+  "label_ar": "اﻷصنوفة العليا",
+  "aliases_en": [
+   "taxon parent",
+   "higher taxon"
+  ],
+  "aliases_ar": [
+   "أصنوفة أعلى"
+  ],
+  "subproperty_of": [
+   "P279"
+  ],
+  "related_property": [
+   "P3730"
+  ]
+ },
+ "P19": {
+  "label_en": "place of birth",
+  "label_ar": "مكان الولادة",
+  "aliases_en": [
+   "birthplace",
+   "born in",
+   "POB",
+   "birth place",
+   "location born",
+   "born at",
+   "birth location",
+   "location of birth",
+   "birth city",
+   "born"
+  ],
+  "aliases_ar": [
+   "مكان الميلاد",
+   "مكان ميلاد",
+   "مكان ولادة",
+   "مكان المولد",
+   "مكان مولد",
+   "مسقط رأس",
+   "مسقط راس",
+   "مسقط الرأس",
+   "مسقط الراس"
+  ],
+  "subproperty_of": [
+   "P276"
+  ],
+  "related_property": [
+   "P119",
+   "P1464",
+   "P569"
+  ]
+ },
+ "P20": {
+  "label_en": "place of death",
+  "label_ar": "مكان الوفاة",
+  "aliases_en": [
+   "deathplace",
+   "died in",
+   "death place",
+   "POD",
+   "location of death",
+   "death location",
+   "killed in",
+   "died"
+  ],
+  "aliases_ar": [],
+  "subproperty_of": [
+   "P276"
+  ],
+  "related_property": [
+   "P119",
+   "P570"
+  ]
+ },
+ "P27": {
+  "label_en": "country of citizenship",
+  "label_ar": "بلد المواطنة",
+  "aliases_en": [
+   "subject of (country)",
+   "citizenship",
+   "citizen of",
+   "nation of citizenship",
+   "national of",
+   "(legal) nationality",
+   "nationality",
+   "country",
+   "nation"
+  ],
+  "aliases_ar": [
+   "دولة مواطنة",
+   "مواطن من",
+   "المواطنة",
+   "مواطنة",
+   "جنسية",
+   "الجنسية"
+  ],
+  "subproperty_of": [
+   "P17"
+  ],
+  "related_property": [
+   "P11747",
+   "P1532",
+   "P17",
+   "P495",
+   "P5389",
+   "P945"
+  ]
+ },
+ "P279": {
+  "label_en": "subclass of",
+  "label_ar": "صنف فرعي من",
+  "aliases_en": [
+   "rdfs:subClassOf",
+   "has superclass",
+   "subtype of",
+   "subcategory of",
+   "is thereby also a",
+   "is necessarily also a",
+   "whose instances are among",
+   "is a type of",
+   "is a class of",
+   "type of",
+   "form of",
+   "way of",
+   "all members of this class also belong to",
+   "category of",
+   "whose instances are a subset of those of",
+   "sc (abbreviation)",
+   "kind of",
+   "sort of",
+   "variant of",
+   "subgenre of"
+  ],
+  "aliases_ar": [
+   "نوع فرعي من",
+   "فئة فرعية من"
+  ],
+  "subproperty_of": [],
+  "related_property": [
+   "P171",
+   "P31",
+   "P361",
+   "P4900"
+  ]
+ },
+ "P31": {
+  "label_en": "instance of",
+  "label_ar": "نموذج من",
+  "aliases_en": [
+   "is a",
+   "is an",
+   "is a[n]",
+   "unique individual of",
+   "unitary element of class",
+   "type",
+   "example of",
+   "is of type",
+   "has type",
+   "item of type",
+   "was a[n]",
+   "will be a[n] (use 'nature of statement' = 'expected')"
+  ],
+  "aliases_ar": [
+   "فرد مميز من",
+   "نوع",
+   "مثال من",
+   "هو من نوع",
+   "له نوع",
+   "نوع العنصر",
+   "عنصر وحيد من الصنف"
+  ],
+  "subproperty_of": [],
+  "related_property": [
+   "P279",
+   "P361"
+  ]
+ },
+ "P361": {
+  "label_en": "part of",
+  "label_ar": "جزء من",
+  "aliases_en": [
+   "meronym of",
+   "section of",
+   "system of",
+   "subsystem of",
+   "subassembly of",
+   "contained within",
+   "assembly of",
+   "part of-property",
+   "component of",
+   "in",
+   "within",
+   "is part of",
+   "subgroup of",
+   "collateral branch of",
+   "branch of",
+   "element of",
+   "chain",
+   "contained in",
+   "of"
+  ],
+  "aliases_ar": [
+   "قسم من",
+   "نظام من",
+   "نظام فرعي من",
+   "هو جزء من",
+   "من",
+   "سلسلة من",
+   "عنصر من",
+   "فرع من",
+   "مجموعة فرعية من",
+   "مكون من",
+   "مدمج مع",
+   "جزء من مجموعة",
+   "جزء من عنصر",
+   "تجميع من"
+  ],
+  "subproperty_of": [
+   "P1382"
+  ],
+  "related_property": [
+   "P1269",
+   "P127",
+   "P13044",
+   "P13188",
+   "P1382",
+   "P1433",
+   "P179",
+   "P186",
+   "P199",
+   "P2596",
+   "P2670",
+   "P463",
+   "P4900",
+   "P629",
+   "P703",
+   "P749",
+   "P7500",
+   "P7603"
+  ]
+ },
+ "P413": {
+  "label_en": "position played on team / speciality",
+  "label_ar": "مركز اللعب في الفريق",
+  "aliases_en": [
+   "fielding position",
+   "specialism",
+   "position (on team)",
+   "speciality",
+   "player position",
+   "position"
+  ],
+  "aliases_ar": [],
+  "subproperty_of": [],
+  "related_property": []
+ },
+ "P530": {
+  "label_en": "diplomatic relation",
+  "label_ar": "العلاقات الدبلوماسية",
+  "aliases_en": [
+   "diplomatic relations",
+   "ambassadorial relations",
+   "foreign relations",
+   "foreign relation",
+   "diplomatic relation",
+   "ambassadorial relation",
+   "political relations",
+   "political relation"
+  ],
+  "aliases_ar": [],
+  "subproperty_of": [],
+  "related_property": []
+ },
+ "P54": {
+  "label_en": "member of sports team",
+  "label_ar": "عضو في الفريق الرياضي",
+  "aliases_en": [
+   "member of team",
+   "team",
+   "played for",
+   "teams played for",
+   "of team",
+   "club played for",
+   "player of",
+   "part of team",
+   "team played for",
+   "plays for",
+   "sport team"
+  ],
+  "aliases_ar": [
+   "يلعب",
+   "يلعب في",
+   "لعب",
+   "لعب مع",
+   "لعب في",
+   "الفريق الرياضي",
+   "فريق رياضي",
+   "عضو في فريق رياضي",
+   "يلعب مع"
+  ],
+  "subproperty_of": [
+   "P463"
+  ],
+  "related_property": [
+   "P6087",
+   "P6112"
+  ]
+ },
+ "P569": {
+  "label_en": "date of birth",
+  "label_ar": "تاريخ الميلاد",
+  "aliases_en": [
+   "birthdate",
+   "birthyear",
+   "born",
+   "born on",
+   "year of birth",
+   "DOB",
+   "birth date",
+   "birth year"
+  ],
+  "aliases_ar": [
+   "تاريخ ميلاد",
+   "تاريخ مولد",
+   "تاريخ ولادة",
+   "تاريخ الولادة",
+   "تاريخ المولد"
+  ],
+  "subproperty_of": [
+   "P571"
+  ],
+  "related_property": [
+   "P1317",
+   "P1636",
+   "P19",
+   "P3150",
+   "P570"
+  ]
+ },
+ "P570": {
+  "label_en": "date of death",
+  "label_ar": "تاريخ الوفاة",
+  "aliases_en": [
+   "date of the end",
+   "died on",
+   "DOD",
+   "year of death",
+   "dead",
+   "deathdate",
+   "death",
+   "died",
+   "death date"
+  ],
+  "aliases_ar": [
+   "سنة الوفاة",
+   "تاريخ الموت"
+  ],
+  "subproperty_of": [
+   "P576",
+   "P582"
+  ],
+  "related_property": [
+   "P119",
+   "P1196",
+   "P1317",
+   "P20",
+   "P4602",
+   "P509",
+   "P569",
+   "P746"
+  ]
+ },
+ "P571": {
+  "label_en": "inception",
+  "label_ar": "البداية",
+  "aliases_en": [
+   "built",
+   "commenced on date",
+   "commencement date",
+   "completed",
+   "composed",
+   "constructed",
+   "construction end date",
+   "created",
+   "created in",
+   "created in year",
+   "created on",
+   "created on date",
+   "creation date",
+   "creation year",
+   "date commenced",
+   "date constructed",
+   "date created",
+   "date first created",
+   "date formed",
+   "date founded",
+   "date of commencement",
+   "date of creation",
+   "date of establishment",
+   "date of foundation",
+   "date of foundation or creation",
+   "date of founding",
+   "date of inception",
+   "date of origin",
+   "day of inception",
+   "dedication date",
+   "established",
+   "established on date",
+   "establishment date",
+   "first created on",
+   "first issue",
+   "formation",
+   "formation date",
+   "formed at",
+   "formed in",
+   "formed in year",
+   "formed on",
+   "formed on date",
+   "foundation",
+   "foundation date",
+   "foundation / creation date",
+   "founded",
+   "founded in",
+   "founded on",
+   "founded on date",
+   "founding date",
+   "inception date",
+   "initial release date",
+   "initiated",
+   "installated in",
+   "installated on",
+   "installation date",
+   "instantiation date",
+   "introduced",
+   "introduction",
+   "launch date",
+   "made in year",
+   "made on",
+   "start date",
+   "starting date",
+   "time of foundation or creation",
+   "time of inception",
+   "written on date",
+   "year commenced",
+   "year created",
+   "year established",
+   "year founded",
+   "year of creation",
+   "year of inception",
+   "year written",
+   "release date",
+   "released",
+   "released in",
+   "date of release",
+   "year of release",
+   "manufactured on",
+   "year of manufacture",
+   "year of mfg",
+   "date of manufacture",
+   "date of work",
+   "work date",
+   "date of creation of work",
+   "date of origin of work",
+   "origin date"
+  ],
+  "aliases_ar": [
+   "بداية",
+   "تأسيس",
+   "استهلال",
+   "تدشين",
+   "افتتاح",
+   "تنصيب",
+   "تقليد"
+  ],
+  "subproperty_of": [
+   "P580"
+  ],
+  "related_property": [
+   "P10135",
+   "P1071",
+   "P10786",
+   "P1191",
+   "P1249",
+   "P1619",
+   "P2754",
+   "P5204",
+   "P575",
+   "P577",
+   "P580",
+   "P729",
+   "P740",
+   "P7584"
+  ]
+ },
+ "P585": {
+  "label_en": "point in time",
+  "label_ar": "بتاريخ",
+  "aliases_en": [
+   "date",
+   "as of",
+   "time of event",
+   "at time",
+   "when",
+   "year",
+   "time",
+   "during",
+   "on",
+   "by date",
+   "occurred on",
+   "point time"
+  ],
+  "aliases_ar": [
+   "متى",
+   "عندما",
+   "حين",
+   "آن",
+   "نقطة في الزمن",
+   "التاريخ",
+   "الوقت",
+   "تاريخ الحدث",
+   "وقت الحدث"
+  ],
+  "subproperty_of": [],
+  "related_property": [
+   "P1191",
+   "P1249",
+   "P1619",
+   "P2031",
+   "P2894",
+   "P2913",
+   "P421",
+   "P4241",
+   "P4566",
+   "P4895",
+   "P571",
+   "P575",
+   "P576",
+   "P577",
+   "P580",
+   "P582",
+   "P6354",
+   "P6949",
+   "P730",
+   "P813",
+   "P837"
+  ]
+ },
+ "P641": {
+  "label_en": "sport",
+  "label_ar": "الرياضة",
+  "aliases_en": [
+   "sports",
+   "sport played",
+   "play",
+   "plays"
+  ],
+  "aliases_ar": [
+   "رياضة"
+  ],
+  "subproperty_of": [],
+  "related_property": [
+   "P2094",
+   "P2416"
+  ]
+ },
+ "P710": {
+  "label_en": "participant",
+  "label_ar": "المشاركون",
+  "aliases_en": [
+   "participants",
+   "attendee",
+   "player",
+   "competitor",
+   "party",
+   "event participant",
+   "agent",
+   "belligerents",
+   "between",
+   "suspect",
+   "accused",
+   "has participant"
+  ],
+  "aliases_ar": [
+   "مشاركون"
+  ],
+  "subproperty_of": [
+   "P3342"
+  ],
+  "related_property": [
+   "P10661",
+   "P1132",
+   "P1923",
+   "P2318",
+   "P2868",
+   "P726",
+   "P8031"
+  ]
+ }
+}
