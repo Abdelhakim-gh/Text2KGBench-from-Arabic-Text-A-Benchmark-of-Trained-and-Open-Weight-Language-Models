@@ -133,8 +133,7 @@ models' outputs are shared for research use; each model's own licence applies.
 @inproceedings{elghayoubi2026arabickg,
   title     = {Ontology-Guided Knowledge Graph Extraction from Arabic Text:
                A Benchmark of Ten Open-Weight Language Models},
-  author    = {EL Ghayoubi, Abdelhakim and Chahboune, Achraf and Sassi, Imad
-               and Bahassine, Said},
+  author    = {Abdelhakim {EL Ghayoubi} and Achraf Chahboune and Imad Sassi and Said Bahassine},
   booktitle = {Proceedings of the International Conference ICESST 2026},
   publisher = {Springer},
   year      = {2026},
