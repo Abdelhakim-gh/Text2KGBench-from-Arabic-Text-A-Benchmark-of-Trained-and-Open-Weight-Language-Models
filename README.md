@@ -1,7 +1,7 @@
 # Ontology-Guided Knowledge Graph Extraction from Arabic Text: A Benchmark of Ten Open-Weight Language Models
 
 Code, data and model outputs for the ICESST 2026 paper of the same title, by
-Abdelhakim EL Ghayoubi, Imad Sassi and Said Bahassine.
+Abdelhakim EL Ghayoubi, Achraf Chahboune, Imad Sassi and Said Bahassine.
 
 Ten open-weight chat models, run locally through Ollama, and the trained
 extractor mREBEL extract (subject, relation, object) triples from 1,000 Arabic
@@ -133,7 +133,8 @@ models' outputs are shared for research use; each model's own licence applies.
 @inproceedings{elghayoubi2026arabickg,
   title     = {Ontology-Guided Knowledge Graph Extraction from Arabic Text:
                A Benchmark of Ten Open-Weight Language Models},
-  author    = {EL Ghayoubi, Abdelhakim and Sassi, Imad and Bahassine, Said},
+  author    = {EL Ghayoubi, Abdelhakim and Chahboune, Achraf and Sassi, Imad
+               and Bahassine, Said},
   booktitle = {Proceedings of the International Conference ICESST 2026},
   publisher = {Springer},
   year      = {2026},
