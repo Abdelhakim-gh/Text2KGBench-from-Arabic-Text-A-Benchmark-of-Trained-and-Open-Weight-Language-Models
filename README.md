@@ -3,6 +3,13 @@
 Code, data and model outputs for the ICESST 2026 paper of the same title, by
 Abdelhakim El Ghayoubi, Achraf Chahboune, Imad Sassi and Said Bahassine.
 
+> [!NOTE]
+> **Get the paper:** [abdelhakim-elghayoubi.vercel.app/en/publications](https://abdelhakim-elghayoubi.vercel.app/en/publications)
+>
+> Author's accepted manuscript for presentation at ICESST 2026 (Casablanca,
+> Morocco, November 24–26, 2026). The official DOI link will be added once the
+> proceedings are published.
+
 Ten open-weight chat models, run locally through Ollama, and the trained
 extractor mREBEL extract (subject, relation, object) triples from 1,000 Arabic
 sentences of ArSRED, under a closed ontology of the 20 most frequent Wikidata
